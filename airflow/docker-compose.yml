@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  airflow:
+    container_name: airflow
+    build: .
+    restart: unless-stopped
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+    command: ["webserver"]
+    ports:
+      - 8008:8080
+    volumes:
+      - ./dags/:/usr/local/airflow/dags
+      - ./modules/:/usr/local/airflow/modules
+    healthcheck:
+      test: ["CMD-SHELL", "[ -f /usr/local/airflow/airflow-webserver.pid ]"]
+      interval: 30s
+      timeout: 30s
+      retries: 3
