@@ -11,6 +11,8 @@ from airflow.operators.python_operator import PythonOperator
 from airflow.utils.dates import days_ago
 import logging
 from proxypool_operator import ProxyPoolOperator
+from kafka import KafkaProducer
+import json
 
 # The connections below are created using one of the standard approaches - via environment
 # variables named AIRFLOW_CONN_* . The connections can also be created in the database
@@ -81,6 +83,14 @@ def create_sql(**kwargs):
     kwargs['ti'].xcom_push(key='proxy_records', value=records)
 
 
+def send_to_kafka(**kwargs):
+    proxies = kwargs['ti'].xcom_pull(key='proxies', task_ids='proxy_pool')
+    producer = KafkaProducer(bootstrap_servers='localhost:1234')
+    for proxy_obj in proxies:
+        producer.send('proxy_health', json.dumps(proxy_obj.__dict__).encode('utf-8'))
+
+
+
 with DAG(dag_id="proxy_update",
          description=f"Update latest proxy information",
          schedule_interval=timedelta(hours=1),
@@ -100,16 +110,22 @@ with DAG(dag_id="proxy_update",
         max_workers=config.NUMBER_OF_PROXIES,
     )
 
-    create_inserts = PythonOperator(
-        task_id="proxy_health_to_sql_transform",
-        python_callable=create_sql,
+    kafka_send = ProxyPoolOperator(
+        task_id="send_to_kafka",
+        python_callable=send_to_kafka,
         provide_context=True
     )
-    start >> proxypool >> create_inserts
-    insert_records = CloudSqlQueryOperator(
-        gcp_cloudsql_conn_id="mysql_tcp",
-        task_id="store_proxy_health",
-        sql="{{ ti.xcom_pull(key='proxy_records', task_ids='proxy_health_to_sql_transform') }}"
-    )
 
-    start >> proxypool >> create_inserts >> insert_records
+    # create_inserts = PythonOperator(
+    #     task_id="proxy_health_to_sql_transform",
+    #     python_callable=create_sql,
+    #     provide_context=True
+    # )
+
+    # insert_records = CloudSqlQueryOperator(
+    #     gcp_cloudsql_conn_id="mysql_tcp",
+    #     task_id="store_proxy_health",
+    #     sql="{{ ti.xcom_pull(key='proxy_records', task_ids='proxy_health_to_sql_transform') }}"
+    # )
+
+    start >> proxypool >> kafka_send
