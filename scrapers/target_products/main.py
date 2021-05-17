@@ -1,3 +1,5 @@
+import json
+
 import requests
 from kafka import KafkaConsumer
 
@@ -31,8 +33,20 @@ def request_product(product, store):
 
 
 if __name__ == '__main__':
-    consumer = KafkaConsumer('walmart.products', bootstrap_servers='localhost:9092')
-    for msg in consumer:
-        print(msg)
+    from kafka import KafkaConsumer
+    from json import loads
+
+    consumer = KafkaConsumer(
+        'test',
+        auto_offset_reset='earliest',
+        enable_auto_commit=True,
+        group_id='my-group-1',
+        value_deserializer=lambda m: loads(m.decode('utf-8')),
+        bootstrap_servers=['localhost:9092'])
+
+    for m in consumer:
+        print(m.value)
+
+
     # request_product("red apples", 686)
 

@@ -2,7 +2,7 @@ import json
 import requests
 from kafka import KafkaProducer
 
-producer = KafkaProducer(bootstrap_servers='localhost:9092', value_serializer=lambda v: json.dumps(v).encode('utf-8'))
+producer = KafkaProducer(bootstrap_servers=['localhost:9092'], value_serializer=lambda v: json.dumps(v).encode('utf-8'))
 
 
 def run_request(url, headers, parameters, proxies=None):
@@ -32,7 +32,8 @@ def request_product(product, store):
 
     res = run_request(url, headers, params)
     print(res)
-    producer.send('walmart.products', res)
+    producer.send('walmart', value=res)
+    producer.flush()
 
 
 if __name__ == '__main__':
