@@ -1,17 +1,21 @@
+import json
 import requests
+from kafka import KafkaProducer
+
+producer = KafkaProducer(bootstrap_servers='localhost:9092', value_serializer=lambda v: json.dumps(v).encode('utf-8'))
 
 
 def run_request(url, headers, parameters, proxies=None):
     val = requests.get(url, params=parameters, headers=headers, proxies=proxies)
     try:
-        json = val.json()
+        res = val.json()
     except Exception as e:
         if val.status_code == 408:
-            json = run_request(url, headers, parameters)
+            res = run_request(url, headers, parameters)
         else:
             print(f'{val.status_code}-{val.reason}')
             return []
-    return json
+    return res
 
 
 def request_product(product, store):
@@ -26,7 +30,9 @@ def request_product(product, store):
 
     url = "https://www.walmart.com/grocery/v4/api/products/search"
 
-    print(run_request(url, headers, params))
+    res = run_request(url, headers, params)
+    print(res)
+    producer.send('walmart.products', res)
 
 
 if __name__ == '__main__':

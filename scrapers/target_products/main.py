@@ -1,5 +1,5 @@
 import requests
-
+from kafka import KafkaConsumer
 
 def run_request(url, headers, parameters, proxies=None):
     val = requests.get(url, params=parameters, headers=headers, proxies=proxies)
@@ -31,4 +31,8 @@ def request_product(product, store):
 
 
 if __name__ == '__main__':
-    request_product("red apples", 686)
+    consumer = KafkaConsumer('walmart.products', bootstrap_servers='localhost:9092')
+    for msg in consumer:
+        print(msg)
+    # request_product("red apples", 686)
+
