@@ -1,0 +1,13 @@
+version: '1.0'
+networks:
+  shoppping-list-net:
+    driver: bridge
+services:
+  zookeeper-main:
+    extends:
+      file: kafka-docker/docker-compose.yml
+      service: zookeeper
+  kafka-main:
+    extends:
+      file: kafka-docker/docker-compose.yml
+      service: kafka
