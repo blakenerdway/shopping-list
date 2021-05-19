@@ -127,3 +127,32 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# Java class files
+*.class
+
+# Generated files
+gen/
+out/
+
+# Gradle files
+.gradle/
+
+# Images for cache
+js/public/cache/**
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Intellij
+*.iml
+.idea/
+*.iws
+*.ipr
+
+# Keystore files
+*.jks
+
+# IDEA Intellij
+**/.idea/**

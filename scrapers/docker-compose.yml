@@ -1,0 +1,8 @@
+version: "3.2"
+services:
+  scrapers:
+    build: .
+    ports:
+      - "47279:47279"
+    volumes:
+      - .:/code

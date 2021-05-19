@@ -3,21 +3,27 @@ networks:
   shoppping-list-net:
     driver: bridge
 services:
-  zookeeper-main:
+  zookeeper:
     extends:
       file: kafka-docker/docker-compose.yml
       service: zookeeper
     networks:
       - shoppping-list-net
-  kafka-main:
+  kafka:
     extends:
       file: kafka-docker/docker-compose.yml
       service: kafka
     networks:
       - shoppping-list-net
-  mysql-main:
+  mysql:
     extends:
       file: mysql/docker-compose.yml
       service: mysql
+    networks:
+      - shoppping-list-net
+  scrapers:
+    extends:
+      file: scrapers/docker-compose.yml
+      service: scrapers
     networks:
       - shoppping-list-net
