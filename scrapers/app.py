@@ -5,7 +5,7 @@ from flask import Flask, make_response, request
 
 # from amazon.amazon_product_scraper import AmazonProductScraper
 from publix.publix_sale_scraper import PublixSaleScraper
-from target.target_product_scraper import TargetProductScraper
+from target_scraper.target_product_scraper import TargetProductScraper
 from walmart.walmart_product_scraper import WalmartProductScraper
 
 app = Flask(__name__)
@@ -16,7 +16,7 @@ publix_scraper = PublixSaleScraper(kafka_producer=producer)
 # amazon_product_scraper = AmazonProductScraper(kafka_producer=producer)
 
 
-@app.route('/target/products', methods=['PUT'])
+@app.route('/target_scraper/products', methods=['PUT'])
 def get_target_products():
     stores = request.args.getlist("store")
     products = request.args.getlist("product")
