@@ -39,6 +39,6 @@ services:
       mysql:
         condition: service_healthy
       kafka:
-          condition: service_healthy
+        condition: service_healthy
       airflow:
         condition: service_healthy
