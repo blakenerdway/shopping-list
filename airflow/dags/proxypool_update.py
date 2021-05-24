@@ -8,6 +8,7 @@ from proxy_dag_config import Config as config
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.utils.dates import days_ago
+from airflow.providers.mysql.operators.mysql import MySqlOperator
 from proxypool_operator import ProxyPoolOperator
 
 # The connections below are created using one of the standard approaches - via environment
@@ -68,14 +69,12 @@ def dummy_callable():
 
 def create_sql(**kwargs):
     proxies = kwargs['ti'].xcom_pull(key='proxies', task_ids='proxy_pool')
-    health = ""
     records = ""
     for proxy_obj in proxies:
         int_ip = struct.unpack("!L", socket.inet_aton(proxy_obj.proxy.ip_address))[0]
         is_https = proxy_obj.proxy.https == "yes"
-        records += f'INSERT INTO proxy (ip, port, https, average_health, most_recent_health) VALUES({int_ip}, {proxy_obj.proxy.port}, {is_https}, {proxy_obj.health}, {proxy_obj.health});'
+        records += f'INSERT INTO proxy (ip, port, https, health) VALUES({int_ip}, {proxy_obj.proxy.port}, {is_https}, {proxy_obj.health});'
 
-    kwargs['ti'].xcom_push(key='proxy_health', value=health)
     kwargs['ti'].xcom_push(key='proxy_records', value=records)
 
 
@@ -98,22 +97,16 @@ with DAG(dag_id="proxy_update",
         max_workers=config.NUMBER_OF_PROXIES,
     )
 
-    kafka_send = ProxyPoolOperator(
-        task_id="send_to_db",
-        python_callable=send_to_kafka,
+    create_inserts = PythonOperator(
+        task_id="proxy_health_to_sql_transform",
+        python_callable=create_sql,
         provide_context=True
     )
 
-    # create_inserts = PythonOperator(
-    #     task_id="proxy_health_to_sql_transform",
-    #     python_callable=create_sql,
-    #     provide_context=True
-    # )
+    insert_records = MySqlOperator(
+        mysql_conn_id="airflow_conn_shopping_list_database",
+        task_id="store_proxy_health",
+        sql="{{ ti.xcom_pull(key='proxy_records', task_ids='proxy_health_to_sql_transform') }}"
+    )
 
-    # insert_records = CloudSqlQueryOperator(
-    #     gcp_cloudsql_conn_id="mysql_tcp",
-    #     task_id="store_proxy_health",
-    #     sql="{{ ti.xcom_pull(key='proxy_records', task_ids='proxy_health_to_sql_transform') }}"
-    # )
-
-    start >> proxypool >> kafka_send
+    start >> proxypool >> create_inserts >> insert_records

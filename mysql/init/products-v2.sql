@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS shopping-list;
-USE shopping-list;
+CREATE DATABASE IF NOT EXISTS shopping_list;
+USE shopping_list;
 
 CREATE TABLE `products` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -7,14 +7,13 @@ CREATE TABLE `products` (
   `brand` varchar(255),
   `size` varchar(255),
   `price` float4,
-  `supplier` varchar(255),
   `supplier_id` int,
-  `note_id` varchar(255) NOT NULL,
+  `note_id` int,
   `url` varchar(255)
 );
 
 CREATE TABLE `stores` (
-  `id` int AUTO_INCREMENT,
+  `id` int PRIMARY KEY AUTO_INCREMENT,
   `store` varchar(255),
   `address_line1` varchar(255),
   `city` varchar(255),
@@ -22,19 +21,7 @@ CREATE TABLE `stores` (
   `zip_code` varchar(255),
   `phone_number` varchar(255),
   `latitude` float4,
-  `longitude` float4,
-  PRIMARY KEY (`id`, `store`)
-);
-
-CREATE TABLE `product_tags_linking` (
-  `id` int PRIMARY KEY AUTO_INCREMENT,
-  `product_id` int,
-  `tag_id` int
-);
-
-CREATE TABLE `tag` (
-  `id` int PRIMARY KEY AUTO_INCREMENT,
-  `name` varchar(255)
+  `longitude` float4
 );
 
 CREATE TABLE `notes` (
@@ -42,11 +29,20 @@ CREATE TABLE `notes` (
   `note` varchar(255)
 );
 
-ALTER TABLE `notes` ADD FOREIGN KEY (`id`) REFERENCES `products` (`note_id`);
+CREATE TABLE `searches` (
+  `id` int PRIMARY KEY AUTO_INCREMENT,
+  `term` varchar(255)
+);
 
-ALTER TABLE `stores` ADD FOREIGN KEY (`id`, `store`) REFERENCES `products` (`supplier_id`, `supplier`);
+CREATE TABLE `product_searches` (
+  `id` int PRIMARY KEY AUTO_INCREMENT,
+  `product_id` int,
+  `term_id` int
+);
 
-ALTER TABLE `product_tags_linking` ADD FOREIGN KEY (`product_id`) REFERENCES `products` (`id`);
+ALTER TABLE `products` ADD FOREIGN KEY (`note_id`) REFERENCES `notes` (`id`);
 
-ALTER TABLE `product_tags_linking` ADD FOREIGN KEY (`tag_id`) REFERENCES `tag` (`id`);
+ALTER TABLE `products` ADD FOREIGN KEY (`supplier_id`) REFERENCES `products` (`id`);
 
+ALTER TABLE `product_searches` ADD FOREIGN KEY (`product_id`) REFERENCES `products` (`id`);
+ALTER TABLE `product_searches` ADD FOREIGN KEY (`term_id`) REFERENCES `searches` (`id`);

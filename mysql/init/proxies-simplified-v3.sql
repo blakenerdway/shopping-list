@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS shopping-list;
-USE shopping-list;
+CREATE DATABASE IF NOT EXISTS shopping_list;
+USE shopping_list;
 
 CREATE TABLE `proxy` (
   `ip` INT UNSIGNED,
