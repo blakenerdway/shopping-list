@@ -2,6 +2,7 @@ import json
 
 from kafka import KafkaProducer
 from flask import Flask, make_response, request
+from proxy.proxy_manager import ProxyManager
 
 # from amazon.amazon_product_scraper import AmazonProductScraper
 from publix.publix_sale_scraper import PublixSaleScraper
@@ -14,6 +15,18 @@ target_product_scraper = TargetProductScraper(kafka_producer=producer)
 walmart_product_scraper = WalmartProductScraper(kafka_producer=producer)
 publix_scraper = PublixSaleScraper(kafka_producer=producer)
 # amazon_product_scraper = AmazonProductScraper(kafka_producer=producer)
+
+
+db_conf = {
+    'user': 'root',
+    'password': 'password!',
+    'host': '127.0.0.1',
+    'database': 'proxies',
+    'raise_on_warnings': True
+}
+
+
+proxy_manager = ProxyManager(db_conf)
 
 
 @app.route('/target_scraper/products', methods=['PUT'])

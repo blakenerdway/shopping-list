@@ -1,4 +1,3 @@
-import json
 from concurrent.futures import ThreadPoolExecutor
 
 from retry.retry_on_exception import RetryOnException as retry

@@ -3,16 +3,12 @@ from datetime import timedelta, datetime
 import socket, struct
 from six.moves.urllib.parse import quote_plus
 
-from airflow.contrib.operators.gcp_sql_operator import CloudSqlQueryOperator
 
 from proxy_dag_config import Config as config
 from airflow import DAG
-from airflow.operators.python_operator import PythonOperator
+from airflow.operators.python import PythonOperator
 from airflow.utils.dates import days_ago
-import logging
 from proxypool_operator import ProxyPoolOperator
-from kafka import KafkaProducer
-import json
 
 # The connections below are created using one of the standard approaches - via environment
 # variables named AIRFLOW_CONN_* . The connections can also be created in the database
@@ -46,8 +42,8 @@ default_args = {
     'depends_on_past': False,
     'start_date': days_ago(1),
     'email': ['blakeordway2@gmail.com'],
-    'email_on_failure': False,
-    'email_on_retry': False,
+    'email_on_failure': True,
+    'email_on_retry': True,
     'retries': 1,
     'retry_delay': timedelta(minutes=5),
     # 'queue': 'bash_queue',
@@ -83,14 +79,6 @@ def create_sql(**kwargs):
     kwargs['ti'].xcom_push(key='proxy_records', value=records)
 
 
-def send_to_kafka(**kwargs):
-    proxies = kwargs['ti'].xcom_pull(key='proxies', task_ids='proxy_pool')
-    producer = KafkaProducer(bootstrap_servers='localhost:1234')
-    for proxy_obj in proxies:
-        producer.send('proxy_health', json.dumps(proxy_obj.__dict__).encode('utf-8'))
-
-
-
 with DAG(dag_id="proxy_update",
          description=f"Update latest proxy information",
          schedule_interval=timedelta(hours=1),
@@ -111,7 +99,7 @@ with DAG(dag_id="proxy_update",
     )
 
     kafka_send = ProxyPoolOperator(
-        task_id="send_to_kafka",
+        task_id="send_to_db",
         python_callable=send_to_kafka,
         provide_context=True
     )

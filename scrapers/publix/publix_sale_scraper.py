@@ -1,5 +1,4 @@
 from multiprocessing.pool import Pool
-# Use uuid to generate a random visitor_id
 from util import run_request
 from grocery_scraper import GroceryScraper
 

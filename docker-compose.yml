@@ -21,9 +21,24 @@ services:
       service: mysql
     networks:
       - shoppping-list-net
+  airflow:
+    extends:
+      file: airflow/docker-compose.yml
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - shoppping-list-net
   scrapers:
     extends:
       file: scrapers/docker-compose.yml
       service: scrapers
     networks:
       - shoppping-list-net
+    depends_on:
+      mysql:
+        condition: service_healthy
+      kafka:
+          condition: service_healthy
+      airflow:
+        condition: service_healthy
