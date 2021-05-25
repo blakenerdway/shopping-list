@@ -1,7 +1,6 @@
-import os
+import logging
 from datetime import timedelta, datetime
 import socket, struct
-from six.moves.urllib.parse import quote_plus
 
 
 from proxy_dag_config import Config as config
@@ -10,32 +9,31 @@ from airflow.operators.python import PythonOperator
 from airflow.utils.dates import days_ago
 from airflow.providers.mysql.operators.mysql import MySqlOperator
 from proxypool_operator import ProxyPoolOperator
+from airflow import settings
+from airflow.models import Connection
 
-# The connections below are created using one of the standard approaches - via environment
-# variables named AIRFLOW_CONN_* . The connections can also be created in the database
-# of AIRFLOW (using command line or UI).
-mysql_kwargs = dict(
-    user=quote_plus('root'),
-    password=quote_plus('grocerez-admin-inst1'),
-    public_port=3306,
-    public_ip=quote_plus('0.0.0.0'),
-    project_id=quote_plus('skilful-rite-279019'),
-    location=quote_plus(os.environ.get('GCP_REGION', 'us-central1')),
-    instance=quote_plus('grocerez-mysql-inst1'),
-    database=quote_plus('proxy_info')
-)
+conn_id = 'shopping_list_db'
+conn = Connection(
+        conn_id=conn_id,
+        conn_type='mysql',
+        host='localhost',
+        login='root',
+        password='password!',
+        port='3306'
+    )
+session = settings.Session()
+conn_name = session\
+.query(Connection)\
+.filter(Connection.conn_id == conn.conn_id)\
+.first()
 
-# MySQL: connect via proxy over TCP (specific proxy version)
-os.environ['AIRFLOW_CONN_MYSQL_TCP'] = \
-    "gcpcloudsql://{user}:{password}@{public_ip}:{public_port}/{database}?" \
-    "database_type=mysql&" \
-    "project_id={project_id}&" \
-    "location={location}&" \
-    "instance={instance}&" \
-    "use_proxy=True&" \
-    "sql_proxy_version=v1.13&" \
-    "extra__google_cloud_platform__key_path=/usr/local/airflow/key.json" \
-    "sql_proxy_use_tcp=True".format(**mysql_kwargs)
+if str(conn_name) == str(conn_id):
+    logging.info(f"Connection {conn_id} already exists")
+
+session.add(conn)
+session.commit()
+logging.info(Connection.log_info(conn))
+logging.info(f'Connection {conn_id} is created')
 
 
 default_args = {
@@ -104,7 +102,7 @@ with DAG(dag_id="proxy_update",
     )
 
     insert_records = MySqlOperator(
-        mysql_conn_id="airflow_conn_shopping_list_database",
+        mysql_conn_id="shopping_list_db",
         task_id="store_proxy_health",
         sql="{{ ti.xcom_pull(key='proxy_records', task_ids='proxy_health_to_sql_transform') }}"
     )

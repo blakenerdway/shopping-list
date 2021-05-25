@@ -1,5 +1,4 @@
 from concurrent.futures.thread import ThreadPoolExecutor
-import logging
 # logging.basicConfig(level=logging.NOTSET)
 
 from proxy.proxy_scraper import ProxyPoolScraper

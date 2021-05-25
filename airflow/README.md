@@ -3,6 +3,9 @@
 ### Requirements
 - pip >= 21.1.2
 - Python >= 3.8.10
+### Notes
+Dockerfile sets up a connection for the local MySQL instance for storing data from airflow job outputs (proxies, etc.)
+
 ### Pycharm
 Mark the `config`, and `plugins` folders as sources in Pycharm.
 

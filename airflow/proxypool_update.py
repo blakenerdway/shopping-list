@@ -3,13 +3,10 @@ from datetime import timedelta, datetime
 import socket, struct
 from six.moves.urllib.parse import quote_plus
 
-from airflow.contrib.operators.gcp_sql_operator import CloudSqlQueryOperator
-
 from proxy_dag_config import Config as config
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from airflow.utils.dates import days_ago
-import logging
 from proxypool_operator import ProxyPoolOperator
 from kafka import KafkaProducer
 import json
