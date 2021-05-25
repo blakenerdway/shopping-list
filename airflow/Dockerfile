@@ -1,6 +1,7 @@
-FROM apache/airflow:2.1.0
+FROM apache/airflow:master-python3.8
 
-USER airflow
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt
+
+RUN airflow info
