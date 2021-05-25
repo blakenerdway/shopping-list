@@ -1,6 +1,7 @@
 import functools
 import logging
 
+
 class RetryOnException:
     def __init__(self, retries):
         self._retries = retries

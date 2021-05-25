@@ -8,7 +8,6 @@ from airflow.models.baseoperator import BaseOperator
 from airflow.utils.decorators import apply_defaults
 
 
-
 class ProxyPoolOperator(BaseOperator):
 
     @apply_defaults

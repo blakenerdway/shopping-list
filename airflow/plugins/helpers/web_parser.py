@@ -3,7 +3,7 @@ import random
 from contextlib import closing
 import requests
 import logging
-from .random_headers import headers_list
+from helpers.random_headers import headers_list
 
 
 class WebParser:

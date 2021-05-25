@@ -21,11 +21,8 @@ conn = Connection(
         password='password!',
         port='3306'
     )
-session = settings.Session()
-conn_name = session\
-.query(Connection)\
-.filter(Connection.conn_id == conn.conn_id)\
-.first()
+session = settings.Session
+conn_name = session.query(Connection).filter(Connection.conn_id == conn.conn_id).first()
 
 if str(conn_name) == str(conn_id):
     logging.info(f"Connection {conn_id} already exists")
