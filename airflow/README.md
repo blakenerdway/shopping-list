@@ -2,12 +2,12 @@
 ## Setup
 ### Requirements
 - pip >= 21.1.2
+    - If get a cryptography package build error, try to run `easy_install -U pip`. The docker environment should not have this issue (Go Docker!).
 - Python >= 3.8.10
-### Notes
-Dockerfile sets up a connection for the local MySQL instance for storing data from airflow job outputs (proxies, etc.)
+
 
 ### Pycharm
-Mark the `config`, and `plugins` folders as sources in Pycharm.
+Mark the `dags`, and `plugins` folders as sources in Pycharm.
 
 ## Airflow
 ### Version
