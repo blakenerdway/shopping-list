@@ -28,13 +28,13 @@ class ProxyPoolScraper:
     def __init__(self, url, bs_parser="lxml"):
         self.parser = WebParser(url)
         self.bs_parser = bs_parser
-        self.logger = logging.getLogger(__name__)
 
     def get_proxy_stream(self, limit):
         raw_records = self.extract_table_raw_records()
         clean_records = list(map(self._clear_up_record, raw_records))
-        for record in clean_records[:limit]:
-            self.logger.info(f"Proxy record: {record}")
+        filtered_records = list(filter(lambda record_arr: "transparent" in record_arr or "anonymous" in record_arr, clean_records))
+        for record in filtered_records[:limit]:
+            logging.debug(f"Proxy record: {record}")
             if record:
                 yield ProxyRecord(*record)
 
@@ -44,7 +44,7 @@ class ProxyPoolScraper:
         return (
             soup_object
             .find(id="proxylisttable")
-            .find_all("tr")
+            .find("tbody")
         )
 
     def _clear_up_record(self, raw_record):

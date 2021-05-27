@@ -5,6 +5,9 @@
     - If get a cryptography package build error, try to run `easy_install -U pip`. The docker environment should not have this issue (Go Docker!).
 - Python >= 3.8.10
 
+### COnfiuration
+Set environment variables for the sql database so it is loaded at startup. Set `airflow.cfg` file using volume mounting in docker-compose.yml
+
 
 ### Pycharm
 Mark the `dags`, and `plugins` folders as sources in Pycharm.

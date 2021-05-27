@@ -2,35 +2,14 @@ import logging
 from datetime import timedelta, datetime
 import socket, struct
 
-
 from proxy_dag_config import Config as config
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.utils.dates import days_ago
 from airflow.providers.mysql.operators.mysql import MySqlOperator
 from proxypool_operator import ProxyPoolOperator
-from airflow import settings
-from airflow.models import Connection
+import os
 
-conn_id = 'shopping_list_db'
-conn = Connection(
-        conn_id=conn_id,
-        conn_type='mysql',
-        host='localhost',
-        login='root',
-        password='password!',
-        port='3306'
-    )
-session = settings.Session
-conn_name = session.query(Connection).filter(Connection.conn_id == conn.conn_id).first()
-
-if str(conn_name) == str(conn_id):
-    logging.info(f"Connection {conn_id} already exists")
-
-session.add(conn)
-session.commit()
-logging.info(Connection.log_info(conn))
-logging.info(f'Connection {conn_id} is created')
 
 
 default_args = {
@@ -57,6 +36,10 @@ default_args = {
     # 'trigger_rule': 'all_success'
 }
 
+dag_id = "proxy_update"
+folder = f'/opt/airflow/logs/{dag_id}'
+if not os.path.exists(folder):
+    os.makedirs(folder)
 
 def dummy_callable():
     return f"Attempting to find proxies"
@@ -73,9 +56,9 @@ def create_sql(**kwargs):
     kwargs['ti'].xcom_push(key='proxy_records', value=records)
 
 
-with DAG(dag_id="proxy_update",
+with DAG(dag_id=dag_id,
          description=f"Update latest proxy information",
-         schedule_interval=timedelta(hours=1),
+         schedule_interval=timedelta(minutes=5),
          start_date=datetime.now() - timedelta(hours=1),
          catchup=False,
          is_paused_upon_creation=False) as dag:
@@ -98,10 +81,10 @@ with DAG(dag_id="proxy_update",
         provide_context=True
     )
 
-    insert_records = MySqlOperator(
-        mysql_conn_id="shopping_list_db",
-        task_id="store_proxy_health",
-        sql="{{ ti.xcom_pull(key='proxy_records', task_ids='proxy_health_to_sql_transform') }}"
-    )
+    # insert_records = MySqlOperator(
+    #     mysql_conn_id="shopping_list_db",
+    #     task_id="store_proxy_health",
+    #     sql="{{ ti.xcom_pull(key='proxy_records', task_ids='proxy_health_to_sql_transform') }}"
+    # )
 
-    start >> proxypool >> create_inserts >> insert_records
+    start >> proxypool >> create_inserts

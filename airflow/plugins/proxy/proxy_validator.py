@@ -12,7 +12,6 @@ class ProxyStatus:
 
 class ProxyPoolValidator:
     def __init__(self, url, timeout=10, checks=3, sleep_interval=0.5):
-        self.logger = logging.getLogger(__name__)
         self.timeout = timeout
         self.checks = checks
         self.sleep_interval = sleep_interval
@@ -34,5 +33,5 @@ class ProxyPoolValidator:
             health=health,
             is_valid=health > 0.66
         )
-        self.logger.info(f"Proxy status: {proxy_status}")
+        logging.debug(f"Proxy status: {proxy_status}")
         return proxy_status
