@@ -35,6 +35,7 @@ Flask-Login==0.4.1
 Flask-OpenID==1.2.5
 Flask-SQLAlchemy==2.5.1
 Flask-WTF==0.14.3
+free-proxy==1.0.2
 graphviz==0.16
 greenlet==1.1.0
 gunicorn==20.1.0
