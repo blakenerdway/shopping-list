@@ -1,9 +1,12 @@
 from datetime import timedelta, datetime
+
+import requests
 from airflow import DAG
 from airflow.utils.dates import days_ago
 from airflow.operators.python import PythonOperator
 import os
 import json
+import logging
 
 default_args = {
     'owner': 'Blake Ordway',
@@ -17,11 +20,15 @@ default_args = {
 
 
 def target_request(items, stores):
-    pass
+    payload = {'product': items, 'store': stores}
+    print(payload)
+    requests.put("http://localhost:8480/target/products", params=payload)
 
 
 def walmart_request(items, stores):
-    pass
+    payload = {'product': items, 'store': stores}
+    print(payload)
+    requests.put("http://localhost:8480/walmart/products", params=payload)
 
 
 def create_dag(dag_id, grocery_type, search_items):
@@ -42,8 +49,7 @@ def create_dag(dag_id, grocery_type, search_items):
                                       op_kwargs={'items': search_items, 'stores': [1273, 686]})
         walmart_items = PythonOperator(task_id=f'{grocery_type}-Walmart',
                                        python_callable=walmart_request,
-                                       op_kwargs={'items': search_items, 'stores': [1746]}
-                                       )
+                                       op_kwargs={'items': search_items, 'stores': [1746]})
         [target_items, walmart_items]
 
     return dag
