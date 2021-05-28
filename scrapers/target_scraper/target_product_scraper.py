@@ -9,7 +9,7 @@ class TargetProductScraper(GroceryScraper):
     def __init__(self, kafka_producer):
         super().__init__(kafka_producer)
 
-    def __generate_request(self, store, product):
+    def _generate_request(self, store, product, ret_queue):
         params = {"key": "ff457966e64d5e877fdbad070f276d18ecec4a01",
                   "channel": "WEB",
                   "count": "10",
@@ -25,7 +25,17 @@ class TargetProductScraper(GroceryScraper):
 
         url = "https://redsky.target.com/redsky_aggregations/v1/web/plp_search_v1"
 
-        res = {product: run_request(url, headers, params)}
-        print(res)
-        self.kafka_producer.send('target_scraper.products', res)
-        self.kafka_producer.flush()
+        res = run_request(url, headers, params)
+        product_send = {product: res}
+        ret_val = 'OK'
+        if not res:
+            ret_val = 'ERROR'
+
+        self.kafka_producer.send('target_scraper.products', product_send)
+
+        if ret_queue is not None:
+            if store not in ret_queue:
+                ret_queue[store] = {}
+            ret_queue[store][product] = ret_val
+
+        return ret_val

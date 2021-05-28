@@ -1,11 +1,12 @@
 from multiprocessing.pool import Pool
+import multiprocessing
 
 
 class GroceryScraper:
     def __init__(self, kafka_producer):
         self.kafka_producer = kafka_producer
 
-    def __generate_request(self, store, product):
+    def _generate_request(self, store, product, ret_queue):
         pass
 
     """
@@ -17,15 +18,23 @@ class GroceryScraper:
         pool_size = int(len(stores) * len(products) / 50)
         if pool_size > 0:
             pool = Pool(pool_size)
+            queue = multiprocessing.Queue()
             for store in stores:
                 for product in products:
                     print(f'{store}: {product}')
-                    pool.apply_async(self.__generate_request, (store, product))
+                    pool.apply_async(self._generate_request, (store, product, queue))
             pool.close()
             pool.join()
+            ret_val = queue
         else:
+            ret_val = {}
             for store in stores:
                 for product in products:
-                    self.__generate_request(product, store)
+                    if store not in ret_val:
+                        ret_val[store] = {}
+                    result = self._generate_request(product, store, None)
+                    ret_val[store][product] = result
 
         self.kafka_producer.flush()
+
+        return ret_val

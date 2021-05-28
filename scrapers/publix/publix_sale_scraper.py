@@ -7,7 +7,7 @@ class PublixSaleScraper(GroceryScraper):
     def __init__(self, kafka_producer):
         super().__init__(kafka_producer)
 
-    def __generate_request(self, store, product=None):
+    def _generate_request(self, store, **kwargs):
         params = {"page": 1}
 
         headers = {"Accept": "application/json,text/plain,*/*",
