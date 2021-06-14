@@ -6,3 +6,7 @@ services:
       - "47279:47279"
     volumes:
       - .:/code
+networks:
+  default:
+    external: true
+    name: shopping-list-dev-net
