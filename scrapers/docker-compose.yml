@@ -6,8 +6,7 @@ services:
       - "8480:8480"
     volumes:
       - .:/code
-
 networks:
   default:
     external: true
-    name: shopping-list-net
+    name: shopping-list-dev-net

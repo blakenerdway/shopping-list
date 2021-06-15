@@ -16,4 +16,4 @@ services:
 networks:
   default:
     external: true
-    name: shopping-list-net
+    name: shopping-list-dev-net
