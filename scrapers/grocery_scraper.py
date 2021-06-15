@@ -33,7 +33,7 @@ class GroceryScraper:
                 for product in products:
                     if store not in ret_val:
                         ret_val[store] = {}
-                    result = self._generate_request(product, store, None)
+                    result = self._generate_request(store, product, None)
                     ret_val[store][product] = result
 
         self.kafka_producer.flush()

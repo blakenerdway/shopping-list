@@ -15,8 +15,8 @@ class TargetProductScraper(GroceryScraper):
                   "count": "10",
                   "keyword": product,
                   # Need non-null value here, but it should not matter what
-                  "page": " ",
-                  "pricing_store_id": store,
+                  "page": f"s/{product}",
+                  "pricing_store_id": int(store),
                   # use a randomized hexadecimal uppercase string as the visitor ID
                   "visitor_id": uuid.uuid1().hex.upper()}
 
