@@ -329,7 +329,7 @@
     "tapioca pearls",
     "vegetable protein"
   ],
-  "Beer & Wine": [
+  "Beer_Wine": [
     "beer",
     "wine",
     "champagne",
@@ -433,7 +433,7 @@
     "persian melon tea",
     "white peony tea"
   ],
-  "Condiments & sauces": [
+  "Condiments_Sauces": [
     "capers",
     "chile verde",
     "chutneys",
@@ -707,7 +707,7 @@
     "yogurt",
     "greek yogurt"
   ],
-  "Desserts & Treats": [
+  "Desserts_Treats": [
     "baklava",
     "brownies",
     "cake",
@@ -817,7 +817,7 @@
     "sugar paste",
     "whipped cream icing"
   ],
-  "Dry Goods": [
+  "Dry-Goods": [
     "acorns",
     "almonds",
     "brazil nuts",
@@ -913,7 +913,7 @@
     "vermicelli",
     "ziti"
   ],
-  "Fruits & vegetables": [
+  "Fruits_Vegetables": [
     "fruit",
     "apples",
     "empire apples",
@@ -1180,7 +1180,7 @@
     "yams",
     "zucchini"
   ],
-  "Meats & Seafood": [
+  "Meats_Seafood": [
     "caviar",
     "roe",
     "foie gras",
@@ -1310,7 +1310,7 @@
     "shrimp and prawns",
     "squid"
   ],
-  "Prepared foods": [
+  "Prepared-foods": [
     "baby food",
     "baby food biscuits and crackers",
     "teething biscuits",

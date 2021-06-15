@@ -20,7 +20,7 @@ default_args = {
     'email_on_failure': True,
     'email_on_retry': True,
     'retries': 1,
-    'retry_delay': timedelta(minutes=5),
+    # 'retry_delay': timedelta(minutes=5),
     # 'queue': 'bash_queue',
     # 'pool': 'backfill',
     # 'priority_weight': 10,
@@ -58,8 +58,8 @@ def create_sql(**kwargs):
 
 with DAG(dag_id=dag_id,
          description=f"Update latest proxy information",
-         schedule_interval=timedelta(minutes=5),
-         start_date=datetime.now() - timedelta(hours=1),
+         schedule_interval=timedelta(hours=5),
+         start_date=datetime.now(),
          catchup=False,
          is_paused_upon_creation=False) as dag:
     start = PythonOperator(

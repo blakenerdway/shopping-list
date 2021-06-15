@@ -3,6 +3,11 @@ services:
   scrapers:
     build: .
     ports:
-      - "47279:47279"
+      - "8480:8480"
     volumes:
       - .:/code
+
+networks:
+  default:
+    external: true
+    name: shopping-list-net

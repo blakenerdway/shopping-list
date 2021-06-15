@@ -7,7 +7,7 @@ class WalmartProductScraper(GroceryScraper):
     def __init__(self, kafka_producer):
         super().__init__(kafka_producer)
 
-    def _generate_request(self, store, product, ret_queue):
+    def _generate_request(self, store, product, ret_dict):
         params = {"count": 10,
                   "offset": 0,
                   "page": 1,
@@ -26,9 +26,9 @@ class WalmartProductScraper(GroceryScraper):
             ret_val = 'ERROR'
 
         self.kafka_producer.send('walmart.products', product_send)
-        if ret_queue is not None:
-            if store not in ret_queue:
-                ret_queue[store] = {}
-            ret_queue[store][product] = ret_val
+        if ret_dict is not None:
+            if store not in ret_dict:
+                ret_dict[store] = {}
+            ret_dict[store][product] = ret_val
 
         return ret_val

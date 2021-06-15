@@ -6,8 +6,10 @@ class GroceryScraper:
     def __init__(self, kafka_producer):
         self.kafka_producer = kafka_producer
 
-    def _generate_request(self, store, product, ret_queue):
+    def _generate_request(self, store, product, ret_dict):
         pass
+
+    def store_results
 
     """
     Get the products from a website. Use multiprocessing if the combination of stores * products is large enough.
@@ -18,14 +20,15 @@ class GroceryScraper:
         pool_size = int(len(stores) * len(products) / 50)
         if pool_size > 0:
             pool = Pool(pool_size)
-            queue = multiprocessing.Queue()
+            dict = multiprocessing.Manager().dict()
             for store in stores:
                 for product in products:
                     print(f'{store}: {product}')
-                    pool.apply_async(self._generate_request, (store, product, queue))
+                    pool.apply(self._generate_request, (store, product, dict))
             pool.close()
             pool.join()
-            ret_val = queue
+            ret_val = dict
+            print(ret_val)
         else:
             ret_val = {}
             for store in stores:
