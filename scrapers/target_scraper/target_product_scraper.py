@@ -20,8 +20,6 @@ class TargetProductScraper(GroceryScraper):
                   # use a randomized hexadecimal uppercase string as the visitor ID
                   "visitor_id": uuid.uuid1().hex.upper()}
 
-        print('HELLO??????????????')
-        # TODO: randomize the headers
         headers = {"Accept": "application/json", "Accept-Language": "en-US", "Connection": "keep-alive"}
 
         url = "https://redsky.target.com/redsky_aggregations/v1/web/plp_search_v1"
@@ -32,7 +30,7 @@ class TargetProductScraper(GroceryScraper):
         if not res:
             ret_val = 'ERROR'
 
-        self.kafka_producer.send('target_scraper.products', product_send)
+        self.kafka_producer.send('target.products', product_send)
 
         if ret_dict is not None:
             if store not in ret_dict:

@@ -9,8 +9,6 @@ class GroceryScraper:
     def _generate_request(self, store, product, ret_dict):
         pass
 
-    def store_results
-
     """
     Get the products from a website. Use multiprocessing if the combination of stores * products is large enough.
     50 items is the default before it starts using a pool. This is because pooling is not performant enough for small 

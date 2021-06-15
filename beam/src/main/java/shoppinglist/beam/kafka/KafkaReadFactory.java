@@ -32,7 +32,6 @@ public class KafkaReadFactory {
     * @param bootstrapServers Kafka servers to read from
     * @param topicsList       Kafka topics to read from
     * @param kafkaConfig      configuration for the Kafka consumer
-    * @param sslConfig        configuration for the SSL connection
     * @return configured reading from Kafka
     */
    public static PTransform<PBegin, PCollection<KV<String, String>>> readFromKafkaWithoutMetadata(
