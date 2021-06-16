@@ -22,12 +22,14 @@ import java.util.Map;
  * @author bordway@ihmc.us 6/14/2021
  */
 public class TargetParse {
-   public static void main(String[] args) {
+   public static void main(String[] args)
+   {
       ProductKafkaOptions options =
               PipelineOptionsFactory.fromArgs(args).withValidation().as(ProductKafkaOptions.class);
 
       run(options);
    }
+
    public static void run(ProductKafkaOptions options)
    {
       Pipeline pipeline = Pipeline.create(options);
@@ -52,13 +54,11 @@ public class TargetParse {
               }))
               .apply(JdbcIO.<TargetProduct>write()
                       .withDataSourceConfiguration(JdbcIO.DataSourceConfiguration.create(
-                              // TODO check port and database endpoint
-                              "com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/products")
-                              // TODO check username
-                              .withUsername("username")
+                              "com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/shopping_list")
+                              .withUsername("root")
                               .withPassword("password!"))
-                      // TODO fix this?
-                      .withStatement("insert into products values(?, ?)")
+                      // TODO fix this!!!!!!!!!
+                      .withStatement("insert into products (name, brand, size, price, store_id, supplier_name, url) values (?,?,?,?,?,?,?)")
                       .withPreparedStatementSetter(new JdbcIO.PreparedStatementSetter<TargetProduct>() {
                          @Override
                          public void setParameters(TargetProduct element, @UnknownKeyFor @NonNull @Initialized PreparedStatement query) throws Exception
