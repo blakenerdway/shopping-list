@@ -33,8 +33,8 @@ public class WalmartParse {
       kafkaConfig.put("group.id", "beam-walmart");
       // Create topics to listen to just in case they haven't been created already yet
       kafkaConfig.put("auto.create.topics.enable", true);
-      _logger.info("Starting Kafka-To-PubSub pipeline with parameters bootstrap servers: {} input topics: {} output topics: {}",
-              options.getBootstrapServers(), options.getInputTopics(), options.getOutputTopic());
+      _logger.info("Starting Kafka-To-PubSub pipeline with parameters bootstrap servers: {} input topics: {}",
+              options.getBootstrapServers(), options.getInputTopics());
       pipeline.apply(KafkaReadFactory.readFromKafkaWithoutMetadata(options.getBootstrapServers(), Arrays.asList(options.getInputTopics().split(",")), kafkaConfig))
               .apply("createValues", Values.create())
               .apply(MapElements.via(new SimpleFunction<String, String>() {

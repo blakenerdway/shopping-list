@@ -21,10 +21,4 @@ public interface ProductKafkaOptions extends PipelineOptions {
    String getInputTopics();
 
    void setInputTopics(String value);
-
-   @Description("The topic to publish to.")
-   @Validation.Required
-   String getOutputTopic();
-
-   void setOutputTopic(String outputTopic);
 }

@@ -25,7 +25,7 @@ class TargetProductScraper(GroceryScraper):
         url = "https://redsky.target.com/redsky_aggregations/v1/web/plp_search_v1"
 
         res = run_request(url, headers, params)
-        product_send = {product: res}
+        product_send = {"store": store, "product": product, "result": res}
         ret_val = 'OK'
         if not res:
             ret_val = 'ERROR'

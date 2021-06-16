@@ -6,7 +6,14 @@ Beam provides a portable framework that can be used on top of multiple different
 on top of Apache Flink.
 
 ## Starting
-Do some stuff here I guess
+### VM Parameters
+Set VM arguments: `-Djava.util.logging.config.file=logging.properties`
+
+### Runtime parameters
+
+**Target Parse** - `--bootstrapServers=localhost:9092 --inputTopics=target.products`
+- Bootstrap server should be set to kafka:9093 if inside a container/network 
+
 
 ## Monitoring
 Pipeline runs can be monitored via the Apache Flink console on `localhost:8081`. 

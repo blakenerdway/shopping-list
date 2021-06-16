@@ -20,7 +20,8 @@ class WalmartProductScraper(GroceryScraper):
         url = "https://www.walmart.com/grocery/v4/api/products/search"
 
         res = run_request(url, headers, params)
-        product_send = {product: res}
+        product_send = {"store": store, "product": product, "result": res}
+
         ret_val = 'OK'
         if not res:
             ret_val = 'ERROR'
