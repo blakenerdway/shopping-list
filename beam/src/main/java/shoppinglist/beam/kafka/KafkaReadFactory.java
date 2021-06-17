@@ -8,6 +8,7 @@ import org.apache.beam.sdk.values.KV;
 import org.apache.beam.sdk.values.PBegin;
 import org.apache.beam.sdk.values.PCollection;
 import org.apache.kafka.common.serialization.StringDeserializer;
+import org.joda.time.Duration;
 
 
 /**
@@ -45,7 +46,7 @@ public class KafkaReadFactory {
               // set event times and watermark based on 'LogAppendTime'. To provide a custom
               // policy see withTimestampPolicyFactory(). withProcessingTime() is the default.
               // Use withCreateTime() with topics that have 'CreateTime' timestamps.
-              .withLogAppendTime()
+              .withCreateTime(Duration.millis(1000))
 
               // restrict reader to committed messages on Kafka (see method documentation).
               .withReadCommitted()

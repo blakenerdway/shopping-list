@@ -1,14 +1,18 @@
 
 package shoppinglist.beam.products.pojos.targetjson;
 
+import java.io.Serializable;
 import java.util.List;
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import org.apache.beam.sdk.schemas.JavaBeanSchema;
+import org.apache.beam.sdk.schemas.annotations.DefaultSchema;
 
 @Generated("net.hexar.json2pojo")
 @SuppressWarnings("unused")
-public class ProductDescription {
+@DefaultSchema(JavaBeanSchema.class)
+public class ProductDescription implements Serializable {
 
     @SerializedName("bullet_descriptions")
     private List<String> bulletDescriptions;

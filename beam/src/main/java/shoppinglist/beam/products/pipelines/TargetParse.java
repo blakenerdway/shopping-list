@@ -5,17 +5,21 @@ import org.apache.beam.sdk.Pipeline;
 import org.apache.beam.sdk.io.jdbc.JdbcIO;
 import org.apache.beam.sdk.options.PipelineOptionsFactory;
 import org.apache.beam.sdk.transforms.*;
+import org.apache.beam.sdk.transforms.windowing.FixedWindows;
+import org.apache.beam.sdk.transforms.windowing.Window;
 import org.apache.beam.sdk.values.KV;
 import org.apache.beam.sdk.values.PCollection;
 import org.checkerframework.checker.initialization.qual.Initialized;
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.checkerframework.checker.nullness.qual.UnknownKeyFor;
+import org.joda.time.Duration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import shoppinglist.beam.kafka.KafkaReadFactory;
 import shoppinglist.beam.products.pojos.targetjson.Product;
 import shoppinglist.beam.products.pojos.targetjson.TargetProduct;
 import org.apache.beam.sdk.transforms.DoFn;
+import shoppinglist.beam.products.transforms.DistinctBrands;
 
 import java.sql.PreparedStatement;
 import java.util.Arrays;
@@ -27,8 +31,6 @@ import java.util.Map;
  * @author bordway@ihmc.us 6/14/2021
  */
 public class TargetParse {
-   private static final Logger _logger = LoggerFactory.getLogger(TargetParse.class);
-
    public static void main(String[] args)
    {
       ProductKafkaOptions options =
@@ -49,7 +51,7 @@ public class TargetParse {
               .apply("createValues", Values.create())
               .apply("createPojo", ParDo.of(new DoFn<String, KV<String, Product>>() {
                  @ProcessElement
-                 public void processElement (ProcessContext c)
+                 public void processElement(ProcessContext c)
                  {
                     String input = c.element();
                     TargetProduct productPojo = new Gson().fromJson(input, TargetProduct.class);
@@ -60,24 +62,30 @@ public class TargetParse {
                     }
                  }
               }));
-
-      products.apply("brand update", JdbcIO.<KV<String, Product>>write()
-              .withDataSourceConfiguration(JdbcIO.DataSourceConfiguration.create(
-                      "com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/shopping_list")
-                      .withUsername("root")
-                      .withPassword("password!"))
-              // Insert into table only if the brand doesn't exist already
-              .withStatement("INSERT INTO brands(name)" +
-                      "SELECT ? FROM DUAL WHERE NOT EXISTS (SELECT * FROM brands WHERE name=? LIMIT 1)")
-              .withPreparedStatementSetter(new JdbcIO.PreparedStatementSetter<KV<String, Product>>() {
+      // Get a List of distinct brands from the product results
+      products.apply("Windowing", Window.into(FixedWindows.of(Duration.millis(200))))
+              .apply("Distinct Brands", DistinctBrands.create())
+              .apply("print", MapElements.via(new SimpleFunction<String, String>() {
                  @Override
-                 public void setParameters(KV<String, Product> element, @UnknownKeyFor @NonNull @Initialized PreparedStatement query) throws Exception
+                 public String apply(String input)
                  {
-                    // Update brands in the database
-                    query.setString(1, element.getValue().getItem().getPrimaryBrand().getName());
-                    query.setString(2, element.getValue().getItem().getPrimaryBrand().getName());
+                    _logger.error(input);
+                    return input;
                  }
-              }));
+              }))
+              .apply("DB Brand", JdbcIO.<String>write()
+                      .withDataSourceConfiguration(JdbcIO.DataSourceConfiguration.create(
+                              "com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/shopping_list")
+                              .withUsername("root")
+                              .withPassword("password!"))
+                      // Insert into table only if the brand doesn't exist already
+                      .withStatement("INSERT INTO brands(name)" +
+                              "SELECT ? FROM DUAL WHERE NOT EXISTS (SELECT * FROM brands WHERE name=? LIMIT 1)")
+                      .withPreparedStatementSetter((JdbcIO.PreparedStatementSetter<String>) (element, query) -> {
+                         // Update brands in the database
+                         query.setString(1, element);
+                         query.setString(2, element);
+                      }));
 
 //      products.apply("product update", JdbcIO.<KV<String, Product>>write()
 //              .withDataSourceConfiguration(JdbcIO.DataSourceConfiguration.create(
@@ -98,4 +106,6 @@ public class TargetParse {
 
       pipeline.run().waitUntilFinish();
    }
+
+   private static final Logger _logger = LoggerFactory.getLogger(TargetParse.class);
 }

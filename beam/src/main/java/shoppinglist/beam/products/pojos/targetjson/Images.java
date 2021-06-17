@@ -1,13 +1,17 @@
 
 package shoppinglist.beam.products.pojos.targetjson;
 
+import java.io.Serializable;
 import java.util.List;
 import javax.annotation.Generated;
 import com.google.gson.annotations.SerializedName;
+import org.apache.beam.sdk.schemas.JavaBeanSchema;
+import org.apache.beam.sdk.schemas.annotations.DefaultSchema;
 
 @Generated("net.hexar.json2pojo")
 @SuppressWarnings("unused")
-public class Images {
+@DefaultSchema(JavaBeanSchema.class)
+public class Images implements Serializable {
 
     @SerializedName("alternate_image_urls")
     private List<String> alternateImageUrls;

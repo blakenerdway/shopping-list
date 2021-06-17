@@ -4,10 +4,15 @@ package shoppinglist.beam.products.pojos.targetjson;
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import org.apache.beam.sdk.schemas.JavaBeanSchema;
+import org.apache.beam.sdk.schemas.annotations.DefaultSchema;
+
+import java.io.Serializable;
 
 @Generated("net.hexar.json2pojo")
 @SuppressWarnings("unused")
-public class ProductVendor {
+@DefaultSchema(JavaBeanSchema.class)
+public class ProductVendor implements Serializable {
 
     @Expose
     private String id;

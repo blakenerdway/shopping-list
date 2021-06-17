@@ -1,84 +1,137 @@
-
 package shoppinglist.beam.products.pojos.targetjson;
 
+import java.io.Serializable;
 import java.util.List;
 import javax.annotation.Generated;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import org.apache.beam.sdk.schemas.JavaBeanSchema;
+import org.apache.beam.sdk.schemas.annotations.DefaultSchema;
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 @Generated("net.hexar.json2pojo")
+@DefaultSchema(JavaBeanSchema.class)
 @SuppressWarnings("unused")
-public class Product {
+public class Product implements Serializable {
 
-    @SerializedName("__typename")
-    private String typename;
-    @Expose
-    private Item item;
-    @SerializedName("original_tcin")
-    private String originalTcin;
-    @Expose
-    private Price price;
-    @Expose
-    private List<Object> promotions;
-    @SerializedName("ratings_and_reviews")
-    private RatingsAndReviews ratingsAndReviews;
-    @Expose
-    private String tcin;
+   public String get_Typename()
+   {
+      return typename;
+   }
 
-    public String get_Typename() {
-        return typename;
-    }
+   public void set_Typename(String _Typename)
+   {
+      this.typename = _Typename;
+   }
 
-    public void set_Typename(String _Typename) {
-        this.typename = _Typename;
-    }
+   @Override
+   public int hashCode()
+   {
+      return new HashCodeBuilder(17, 37)
+              .append(typename)
+              .append(item)
+              .append(originalTcin)
+              .append(price)
+              .append(promotions)
+              .append(ratingsAndReviews)
+              .append(tcin)
+              .toHashCode();
+   }
 
-    public Item getItem() {
-        return item;
-    }
+   @Override
+   public boolean equals(Object o)
+   {
+      if (this == o) return true;
 
-    public void setItem(Item item) {
-        this.item = item;
-    }
+      if (o == null || getClass() != o.getClass()) return false;
 
-    public String getOriginalTcin() {
-        return originalTcin;
-    }
+      Product product = (Product) o;
 
-    public void setOriginalTcin(String originalTcin) {
-        this.originalTcin = originalTcin;
-    }
+      return new EqualsBuilder()
+              .append(typename, product.typename)
+              .append(item, product.item)
+              .append(originalTcin, product.originalTcin)
+              .append(price, product.price)
+              .append(promotions, product.promotions)
+              .append(ratingsAndReviews, product.ratingsAndReviews)
+              .append(tcin, product.tcin)
+              .isEquals();
+   }
 
-    public Price getPrice() {
-        return price;
-    }
+   public Item getItem()
+   {
+      return item;
+   }
 
-    public void setPrice(Price price) {
-        this.price = price;
-    }
+   public void setItem(Item item)
+   {
+      this.item = item;
+   }
 
-    public List<Object> getPromotions() {
-        return promotions;
-    }
+   public String getOriginalTcin()
+   {
+      return originalTcin;
+   }
 
-    public void setPromotions(List<Object> promotions) {
-        this.promotions = promotions;
-    }
+   public void setOriginalTcin(String originalTcin)
+   {
+      this.originalTcin = originalTcin;
+   }
 
-    public RatingsAndReviews getRatingsAndReviews() {
-        return ratingsAndReviews;
-    }
+   public Price getPrice()
+   {
+      return price;
+   }
 
-    public void setRatingsAndReviews(RatingsAndReviews ratingsAndReviews) {
-        this.ratingsAndReviews = ratingsAndReviews;
-    }
+   public void setPrice(Price price)
+   {
+      this.price = price;
+   }
 
-    public String getTcin() {
-        return tcin;
-    }
+   public List<Object> getPromotions()
+   {
+      return promotions;
+   }
 
-    public void setTcin(String tcin) {
-        this.tcin = tcin;
-    }
+   public void setPromotions(List<Object> promotions)
+   {
+      this.promotions = promotions;
+   }
+
+   public RatingsAndReviews getRatingsAndReviews()
+   {
+      return ratingsAndReviews;
+   }
+
+   public void setRatingsAndReviews(RatingsAndReviews ratingsAndReviews)
+   {
+      this.ratingsAndReviews = ratingsAndReviews;
+   }
+
+   public String getTcin()
+   {
+      return tcin;
+   }
+
+   public void setTcin(String tcin)
+   {
+      this.tcin = tcin;
+   }
+   @SerializedName("__typename")
+   private String typename;
+   @Expose
+   private Item item;
+   @SerializedName("original_tcin")
+   private String originalTcin;
+   @Expose
+   private Price price;
+   @Expose
+   private List<Object> promotions;
+   @SerializedName("ratings_and_reviews")
+   private RatingsAndReviews ratingsAndReviews;
+   @Expose
+   private String tcin;
 
 }
