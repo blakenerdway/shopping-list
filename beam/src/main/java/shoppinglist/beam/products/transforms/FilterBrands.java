@@ -11,29 +11,24 @@ import shoppinglist.beam.products.pojos.targetjson.Product;
  * Take in a PCollection KV String, Product and find the brands associated with the product results.
  * @author bordway@ihmc.us 6/17/2021
  */
-public class FilterBrands extends PTransform<PCollection<KV<String, Product>>, PCollection<String>> {
+public class FilterBrands extends SimpleFunction<KV<String, Product>, String> {
    public static FilterBrands create() {
       return new FilterBrands();
    }
 
    @Override
-   public PCollection<String> expand(PCollection<KV<String, Product>> in)
+   public String apply(KV<String, Product> input)
    {
-      return in.apply("Key by brands", MapElements.via(new SimpleFunction<KV<String, Product>, String>() {
-         @Override
-         public String apply(KV<String, Product> input)
-         {
-            String brand = "UNKNOWN";
-            try{
-               brand = input.getValue().getItem().getPrimaryBrand().getName();
+      String brand = "UNKNOWN";
+      try {
+         brand = input.getValue().getItem().getPrimaryBrand().getName();
 
-            }
-            catch(NullPointerException e){
+      } catch (NullPointerException e) {
 
-            }
-            return brand;
-         }
-      }));
+      }
+      return brand;
+
    }
+
    private static final Logger _logger = LoggerFactory.getLogger(FilterBrands.class);
 }
