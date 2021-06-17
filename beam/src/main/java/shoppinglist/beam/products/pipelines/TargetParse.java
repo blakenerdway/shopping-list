@@ -2,16 +2,12 @@ package shoppinglist.beam.products.pipelines;
 
 import com.google.gson.Gson;
 import org.apache.beam.sdk.Pipeline;
-import org.apache.beam.sdk.io.jdbc.JdbcIO;
 import org.apache.beam.sdk.options.PipelineOptionsFactory;
 import org.apache.beam.sdk.transforms.*;
 import org.apache.beam.sdk.transforms.windowing.FixedWindows;
 import org.apache.beam.sdk.transforms.windowing.Window;
 import org.apache.beam.sdk.values.KV;
 import org.apache.beam.sdk.values.PCollection;
-import org.checkerframework.checker.initialization.qual.Initialized;
-import org.checkerframework.checker.nullness.qual.NonNull;
-import org.checkerframework.checker.nullness.qual.UnknownKeyFor;
 import org.joda.time.Duration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,9 +15,8 @@ import shoppinglist.beam.kafka.KafkaReadFactory;
 import shoppinglist.beam.products.pojos.targetjson.Product;
 import shoppinglist.beam.products.pojos.targetjson.TargetProduct;
 import org.apache.beam.sdk.transforms.DoFn;
-import shoppinglist.beam.products.transforms.DistinctBrands;
+import shoppinglist.beam.products.transforms.FilterBrands;
 
-import java.sql.PreparedStatement;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -63,8 +58,9 @@ public class TargetParse {
                  }
               }));
       // Get a List of distinct brands from the product results
-      products.apply("Windowing", Window.into(FixedWindows.of(Duration.millis(200))))
-              .apply("Distinct Brands", DistinctBrands.create())
+      products.apply("Windowing", Window.into(FixedWindows.of(Duration.millis(500))))
+              .apply("Filter Brands", FilterBrands.create())
+              .apply("Distincts", Distinct.create())
               .apply("print", MapElements.via(new SimpleFunction<String, String>() {
                  @Override
                  public String apply(String input)
@@ -72,20 +68,20 @@ public class TargetParse {
                     _logger.error(input);
                     return input;
                  }
-              }))
-              .apply("DB Brand", JdbcIO.<String>write()
-                      .withDataSourceConfiguration(JdbcIO.DataSourceConfiguration.create(
-                              "com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/shopping_list")
-                              .withUsername("root")
-                              .withPassword("password!"))
-                      // Insert into table only if the brand doesn't exist already
-                      .withStatement("INSERT INTO brands(name)" +
-                              "SELECT ? FROM DUAL WHERE NOT EXISTS (SELECT * FROM brands WHERE name=? LIMIT 1)")
-                      .withPreparedStatementSetter((JdbcIO.PreparedStatementSetter<String>) (element, query) -> {
-                         // Update brands in the database
-                         query.setString(1, element);
-                         query.setString(2, element);
-                      }));
+              }));
+//              .apply("DB Brand", JdbcIO.<String>write()
+//                      .withDataSourceConfiguration(JdbcIO.DataSourceConfiguration.create(
+//                              "com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/shopping_list")
+//                              .withUsername("root")
+//                              .withPassword("password!"))
+//                      // Insert into table only if the brand doesn't exist already
+//                      .withStatement("INSERT INTO brands(name)" +
+//                              "SELECT ? FROM DUAL WHERE NOT EXISTS (SELECT * FROM brands WHERE name=? LIMIT 1)")
+//                      .withPreparedStatementSetter((JdbcIO.PreparedStatementSetter<String>) (element, query) -> {
+//                         // Update brands in the database
+//                         query.setString(1, element);
+//                         query.setString(2, element);
+//                      }));
 
 //      products.apply("product update", JdbcIO.<KV<String, Product>>write()
 //              .withDataSourceConfiguration(JdbcIO.DataSourceConfiguration.create(
