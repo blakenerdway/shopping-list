@@ -43,9 +43,9 @@ public class TargetParse {
       // Create topics to listen to just in case they haven't been created already yet
       _logger.error("Starting Kafka-To-PubSub pipeline with parameters bootstrap servers: {} input topics: {}",
               options.getBootstrapServers(), options.getInputTopics());
-      PCollection<KV<String, Product>> products = pipeline.apply(KafkaReadFactory.readFromKafkaWithoutMetadata(options.getBootstrapServers(), Arrays.asList(options.getInputTopics().split(",")), kafkaConfig))
-              .apply("createValues", Values.create())
-              .apply("createPojo", ParDo.of(new DoFn<String, KV<String, Product>>() {
+      PCollection<KV<String, KV<String, Product>>> products = pipeline.apply(KafkaReadFactory.readFromKafkaWithoutMetadata(options.getBootstrapServers(), Arrays.asList(options.getInputTopics().split(",")), kafkaConfig))
+              .apply("From values", Values.create())
+              .apply("As pojo", ParDo.of(new DoFn<String, KV<String, KV<String, Product>>>() {
                  @ProcessElement
                  public void processElement(ProcessContext c)
                  {
@@ -54,35 +54,63 @@ public class TargetParse {
                     List<Product> product = productPojo.getResult().getData().getSearch().getProducts();
                     _logger.error(input);
                     for (Product product1 : product) {
-                       c.output(KV.of(productPojo.getProduct(), product1));
+                       c.output(KV.of(productPojo.getStore(), KV.of(productPojo.getProduct(), product1)));
                     }
                  }
               }));
-      // Get a List of distinct brands from the product results
-      products.apply("Windowing", Window.into(FixedWindows.of(Duration.millis(500))))
-              .apply("Brands--Filter", MapElements.via(FilterBrands.create()))
-              .apply("Brands--Distincts", Distinct.create())
-              .apply("print", MapElements.via(new SimpleFunction<String, String>() {
-                 @Override
-                 public String apply(String input)
-                 {
-                    _logger.error(input);
-                    return input;
-                 }
-              }))
-              .apply("DB Brand", JdbcIO.<String>write()
+      products.apply("Product stored proc", JdbcIO.<KV<String, KV<String, Product>>>write()
                       .withDataSourceConfiguration(JdbcIO.DataSourceConfiguration.create(
                               "com.mysql.cj.jdbc.Driver", "jdbc:mysql://localhost:3306/shopping_list")
                               .withUsername("root")
                               .withPassword("password!"))
                       // Insert into table only if the brand doesn't exist already
-                      .withStatement("INSERT INTO brands(name)" +
-                              "SELECT ? FROM DUAL WHERE NOT EXISTS (SELECT * FROM brands WHERE name=? LIMIT 1)")
-                      .withPreparedStatementSetter((JdbcIO.PreparedStatementSetter<String>) (element, query) -> {
+                      .withStatement("Call insert_productinfo(?, ?, ?, ?, ?, ?)")
+                      .withPreparedStatementSetter((JdbcIO.PreparedStatementSetter<KV<String, KV<String, Product>>>) (element, query) -> {
+                         String storeID = element.getKey();
+                         String searchTerm = element.getValue().getKey();
+                         query.setString(1, searchTerm);
+                         query.setString(2, storeID);
+
+                         Product result = element.getValue().getValue();
+                         String productName = result.getItem().getProductDescription().getTitle();
+                         String productID = result.getTcin();
+                         String supplier = "Target";
+                         double price = result.getPrice().getCurrentRetail();
+
+
+
+                         query.setString(3, productName);
+                         query.setString(4, productID);
+                         query.setString(5, supplier);
+                         query.setDouble(6, price);
                          // Update brands in the database
-                         query.setString(1, element);
-                         query.setString(2, element);
                       }));
+
+      // Get a List of distinct brands from the product results
+//      products.apply("Brands--Windowing", Window.into(FixedWindows.of(Duration.millis(500))))
+//              .apply("Brands--Filter", MapElements.via(FilterBrands.create()))
+//              .apply("Brands--Distincts", Distinct.create())
+//              .apply("print", MapElements.via(new SimpleFunction<String, String>() {
+//                 @Override
+//                 public String apply(String input)
+//                 {
+//                    _logger.error(input);
+//                    return input;
+//                 }
+//              }))
+//              .apply("Brands--Write to db", JdbcIO.<String>write()
+//                      .withDataSourceConfiguration(JdbcIO.DataSourceConfiguration.create(
+//                              "com.mysql.cj.jdbc.Driver", "jdbc:mysql://localhost:3306/shopping_list")
+//                              .withUsername("root")
+//                              .withPassword("password!"))
+//                      // Insert into table only if the brand doesn't exist already
+//                      .withStatement("INSERT INTO brands(name)" +
+//                              "SELECT ? FROM DUAL WHERE NOT EXISTS (SELECT * FROM brands WHERE name=? LIMIT 1)")
+//                      .withPreparedStatementSetter((JdbcIO.PreparedStatementSetter<String>) (element, query) -> {
+//                         // Update brands in the database
+//                         query.setString(1, element);
+//                         query.setString(2, element);
+//                      }));
 
 //      products.apply("product update", JdbcIO.<KV<String, Product>>write()
 //              .withDataSourceConfiguration(JdbcIO.DataSourceConfiguration.create(

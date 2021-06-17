@@ -24,7 +24,7 @@ public class FilterBrands extends SimpleFunction<KV<String, Product>, String> {
          brand = input.getValue().getItem().getPrimaryBrand().getName();
 
       } catch (NullPointerException e) {
-
+         _logger.debug("Unknown brand for product name: {}", input.getValue().getItem().getProductDescription().getTitle());
       }
       return brand;
 
