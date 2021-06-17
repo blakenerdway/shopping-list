@@ -17,3 +17,7 @@ Set VM arguments: `-Djava.util.logging.config.file=logging.properties`
 
 ## Monitoring
 Pipeline runs can be monitored via the Apache Flink console on `localhost:8081`. 
+
+
+## Notes
+Use `UPSERT` for database instead of `INSERT`. Beam may duplicate records due to the parallelization

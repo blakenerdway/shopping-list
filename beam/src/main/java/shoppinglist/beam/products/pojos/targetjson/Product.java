@@ -11,7 +11,7 @@ import com.google.gson.annotations.SerializedName;
 public class Product {
 
     @SerializedName("__typename")
-    private String _Typename;
+    private String typename;
     @Expose
     private Item item;
     @SerializedName("original_tcin")
@@ -26,11 +26,11 @@ public class Product {
     private String tcin;
 
     public String get_Typename() {
-        return _Typename;
+        return typename;
     }
 
     public void set_Typename(String _Typename) {
-        this._Typename = _Typename;
+        this.typename = _Typename;
     }
 
     public Item getItem() {
