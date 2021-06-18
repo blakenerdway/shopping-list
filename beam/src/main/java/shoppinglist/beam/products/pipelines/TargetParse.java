@@ -69,21 +69,27 @@ public class TargetParse {
                          String storeID = element.getKey();
                          String searchTerm = element.getValue().getKey();
                          query.setString(1, searchTerm);
-                         query.setString(2, storeID);
+                         query.setInt(2, Integer.parseInt(storeID));
 
                          Product result = element.getValue().getValue();
                          String productName = result.getItem().getProductDescription().getTitle();
                          String productID = result.getTcin();
                          String supplier = "Target";
+                         String brand = "UNKNOWN";
+                         try {
+                            brand = result.getItem().getPrimaryBrand().getName();
+
+                         } catch (NullPointerException e) {
+                            _logger.debug("Unknown brand for product name: {}", result.getItem().getProductDescription().getTitle());
+                         }
                          double price = result.getPrice().getCurrentRetail();
 
 
-
                          query.setString(3, productName);
-                         query.setString(4, productID);
+                         query.setString(4, brand);
                          query.setString(5, supplier);
-                         query.setDouble(6, price);
-                         // Update brands in the database
+                         query.setFloat(6, (float)price);
+
                       }));
 
       // Get a List of distinct brands from the product results

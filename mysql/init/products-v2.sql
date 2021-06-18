@@ -47,7 +47,6 @@ CREATE TABLE product_info
     product_id    int,
     store_id      int,
     supplier_name varchar(255),
-    size          varchar(255),
     price         float,
     note_id       int,
     created_time  TIMESTAMP default NOW(),
