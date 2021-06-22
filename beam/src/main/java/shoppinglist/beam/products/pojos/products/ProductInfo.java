@@ -5,6 +5,18 @@ import org.apache.beam.sdk.schemas.annotations.DefaultSchema;
 
 @DefaultSchema(JavaBeanSchema.class)
 public class ProductInfo {
+   @Override
+   public String toString () {
+      return "ProductInfo{" +
+              "storeID='" + _storeID + '\'' +
+              ", supplier='" + _supplier + '\'' +
+              ", productName='" + _productName + '\'' +
+              ", brand='" + _brand + '\'' +
+              ", searchTerm='" + _searchTerm + '\'' +
+              ", price=" + _price +
+              '}';
+   }
+
    private String _storeID;
    private String _supplier;
    private String _productName;

@@ -1,3 +1,2536 @@
-[{"store": "3785", "product": "ice cream", "result": {"products": [{"USItemId": "12329735", "offerId": "3DC7B068E3FE46B488398984D50CE377", "sku": "1016404", "basic": {"salesUnit": "Each", "name": "Great Value Cookies & Cream Ice Cream, 48 fl oz", "image": {"thumbnail": "https://i5.walmartimages.com/asr/f578c656-3d1f-4f22-827f-4fbc254e71e1_1.a318fd569aa768a5b9d99d694c9fa336.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Great-Value-Cookies-Cream-Ice-Cream-48-fl-oz/12329735", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.7, "reviewsCount": 211}, "store": {"isOutOfStock": false, "price": {"list": 2.97, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 48, "displayCondition": null, "displayPrice": 2.97, "displayUnitPrice": "(6.2 \u00a2/fl oz)", "isClearance": false, "isRollback": false, "unit": 0.062}}}, {"USItemId": "12329733", "offerId": "D969EBF39E794F34B4DB20DD50E952CB", "sku": "1016408", "basic": {"salesUnit": "Each", "name": "Great Value Vanilla Bean Ice Cream, 48 fl oz", "image": {"thumbnail": "https://i5.walmartimages.com/asr/4d4e9f81-4fdf-4312-8675-6e3a2e135066_1.06e7353135dacdc62899dc38d84344e4.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Great-Value-Vanilla-Bean-Ice-Cream-48-fl-oz/12329733", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4, "reviewsCount": 94}, "store": {"isOutOfStock": false, "price": {"list": 2.97, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 48, "displayCondition": null, "displayPrice": 2.97, "displayUnitPrice": "(6.2 \u00a2/fl oz)", "isClearance": false, "isRollback": false, "unit": 0.062}}}, {"USItemId": "11047625", "offerId": "6D01B06385A9423C918E79802F4246AA", "sku": "1017152", "basic": {"salesUnit": "Each", "name": "Great Value Vanilla Flavored Ice Cream Sandwiches, 42 oz, 12 Count", "image": {"thumbnail": "https://i5.walmartimages.com/asr/31571415-5c7b-4ac9-878d-6bcf1f169588_1.c0afc49d3888ec602ec99eb8da1fcbd2.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Great-Value-Vanilla-Flavored-Ice-Cream-Sandwiches-42-oz-12-Count/11047625", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4, "reviewsCount": 405}, "store": {"isOutOfStock": false, "price": {"list": 2.56, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 42, "displayCondition": null, "displayPrice": 2.56, "displayUnitPrice": "(6.1 \u00a2/fl oz)", "isClearance": false, "isRollback": false, "unit": 0.061}}}, {"USItemId": "44391090", "offerId": "1D2650E3D3BF48D08AD9D1364909557C", "sku": "3000153117", "basic": {"salesUnit": "Each", "name": "Blue Bell Gold Rim, Homemade Vanilla Ice Cream, 64 oz", "image": {"thumbnail": "https://i5.walmartimages.com/asr/2a1b2fbf-e3c8-4a77-bc55-6fc6aa176a20.b26321dfe99ba21e652be76742c8ebe5.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Blue-Bell-Gold-Rim-Homemade-Vanilla-Ice-Cream-64-oz/44391090", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.7, "reviewsCount": 75}, "store": {"isOutOfStock": false, "price": {"list": 6.97, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 64, "displayCondition": null, "displayPrice": 6.97, "displayUnitPrice": "(10.9 \u00a2/fl oz)", "isClearance": false, "isRollback": false, "unit": 0.109}}}, {"USItemId": "20525252", "offerId": "F814C51E5C58453A8B80C832AFA88B72", "sku": "3000140660", "basic": {"salesUnit": "Each", "name": "Great Value Homestyle Vanilla Ice Cream, 48 fl oz", "image": {"thumbnail": "https://i5.walmartimages.com/asr/e580006b-13c7-4ecb-8aa5-c81e6f473357_1.29e4c8f80548eed9bf9bafeabc0f4011.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Great-Value-Homestyle-Vanilla-Ice-Cream-48-fl-oz/20525252", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.5, "reviewsCount": 338}, "store": {"isOutOfStock": false, "price": {"list": 2.97, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 48, "displayCondition": null, "displayPrice": 2.97, "displayUnitPrice": "(6.2 \u00a2/fl oz)", "isClearance": false, "isRollback": false, "unit": 0.062}}}, {"USItemId": "12329744", "offerId": "FEA6B40EC251496FB3881B5100D4095F", "sku": "1016406", "basic": {"salesUnit": "Each", "name": "Great Value Chocolate Chip Cookie Dough Ice Cream, 48 fl oz", "image": {"thumbnail": "https://i5.walmartimages.com/asr/9acc6613-b3cc-4a24-ad74-4ebcb0324b9f_1.9fbc58349253b51808ce899637f3fb95.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Great-Value-Chocolate-Chip-Cookie-Dough-Ice-Cream-48-fl-oz/12329744", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 3.7, "reviewsCount": 86}, "store": {"isOutOfStock": false, "price": {"list": 2.97, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 48, "displayCondition": null, "displayPrice": 2.97, "displayUnitPrice": "(6.2 \u00a2/fl oz)", "isClearance": false, "isRollback": false, "unit": 0.062}}}, {"USItemId": "12329734", "offerId": "95D8140A26B442AE87C676406FFA6985", "sku": "1016400", "basic": {"salesUnit": "Each", "name": "Great Value Ice Cream, Chocolate, 48 Fl Oz", "image": {"thumbnail": "https://i5.walmartimages.com/asr/3e6d6d0b-1f16-428d-a22e-0754ec3f9a9f_1.7f2023d79c221d4cf60c55faf1e0e1a2.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Great-Value-Ice-Cream-Chocolate-48-Fl-Oz/12329734", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.4, "reviewsCount": 39}, "store": {"isOutOfStock": false, "price": {"list": 2.97, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 48, "displayCondition": null, "displayPrice": 2.97, "displayUnitPrice": "(6.2 \u00a2/fl oz)", "isClearance": false, "isRollback": false, "unit": 0.062}}}, {"USItemId": "12329737", "offerId": "5E3D6F04EEDF45C8AC9E2A86DDF0529D", "sku": "1016402", "basic": {"salesUnit": "Each", "name": "Great Value Butter Pecan Ice Cream, 48 fl oz", "image": {"thumbnail": "https://i5.walmartimages.com/asr/13b4c39b-2e3f-4163-84e2-3207d6acaac5_1.c66cdb918e8d755fdb5d4cb8fcf1c212.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Great-Value-Butter-Pecan-Ice-Cream-48-fl-oz/12329737", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.3, "reviewsCount": 100}, "store": {"isOutOfStock": false, "price": {"list": 2.97, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 48, "displayCondition": null, "displayPrice": 2.97, "displayUnitPrice": "(6.2 \u00a2/fl oz)", "isClearance": false, "isRollback": false, "unit": 0.062}}}, {"USItemId": "12329742", "offerId": "0AEC9B3D42754D6C97B53C7C98804374", "sku": "1016397", "basic": {"salesUnit": "Each", "name": "Great Value Rocky Road Ice Cream, 48 oz", "image": {"thumbnail": "https://i5.walmartimages.com/asr/62411116-5773-4ef5-9e7c-75248839cc6e_1.b5e9e0bddbd6d121422f9507e64c8d44.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Great-Value-Rocky-Road-Ice-Cream-48-oz/12329742", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 3.7, "reviewsCount": 177}, "store": {"isOutOfStock": false, "price": {"list": 2.97, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 48, "displayCondition": null, "displayPrice": 2.97, "displayUnitPrice": "(6.2 \u00a2/fl oz)", "isClearance": false, "isRollback": false, "unit": 0.062}}}, {"USItemId": "20441644", "offerId": "55BB44A35B0C46D288AAD103F80900CE", "sku": "3000146020", "basic": {"salesUnit": "Each", "name": "Great Value Peanut Butter Cup Ice Cream, 48 fl oz", "image": {"thumbnail": "https://i5.walmartimages.com/asr/90b1bd4c-fc07-4367-8bfe-148cc102939c_1.80ad4625774914103c69e84047e0c0e4.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Great-Value-Peanut-Butter-Cup-Ice-Cream-48-fl-oz/20441644", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.5, "reviewsCount": 61}, "store": {"isOutOfStock": false, "price": {"list": 2.97, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 48, "displayCondition": null, "displayPrice": 2.97, "displayUnitPrice": "(6.2 \u00a2/fl oz)", "isClearance": false, "isRollback": false, "unit": 0.062}}}], "totalCount": 618, "filters": {"categories": [{"name": "Departments", "values": [{"id": "1255027787071", "name": "Frozen", "count": 547, "queryParam": "cat_id~1255027787071", "values": [{"id": "1255027787071_1255027788456", "name": "Ice Cream", "count": 512, "queryParam": "cat_id~1255027787071_1255027788456", "values": []}, {"id": "1255027787071_1255027788061", "name": "Frozen Desserts", "count": 76, "queryParam": "cat_id~1255027787071_1255027788061", "values": []}, {"id": "1255027787071_1255027788141", "name": "Frozen Beverages & Ice", "count": 2, "queryParam": "cat_id~1255027787071_1255027788141"}, {"id": "1255027787071_1256653759086", "name": "Frozen Bread & Potatoes", "count": 1, "queryParam": "cat_id~1255027787071_1256653759086"}, {"id": "1255027787071_1256653759092", "name": "Frozen Breakfast", "count": 1, "queryParam": "cat_id~1255027787071_1256653759092"}, {"id": "1255027787071_1255027788081", "name": "Frozen Family Meals", "count": 4, "queryParam": "cat_id~1255027787071_1255027788081"}, {"id": "1255027787071_5238483676", "name": "Frozen Favorites", "count": 5, "queryParam": "cat_id~1255027787071_5238483676"}, {"id": "1255027787071_1255027788121", "name": "Frozen Fruits & Vegetables", "count": 3, "queryParam": "cat_id~1255027787071_1255027788121"}, {"id": "1255027787071_1255027788021", "name": "Frozen Snacks & Appetizers", "count": 9, "queryParam": "cat_id~1255027787071_1255027788021"}, {"id": "1255027787071_3778029360", "name": "Holiday Frozen Treats", "count": 2, "queryParam": "cat_id~1255027787071_3778029360"}, {"id": "1255027787071_7962904531", "name": "New In Frozen", "count": 3, "queryParam": "cat_id~1255027787071_7962904531"}]}, {"id": "1256653758166", "name": "Special Diets", "count": 1, "queryParam": "cat_id~1256653758166"}, {"id": "1256653758048", "name": "Featured Products", "count": 11, "queryParam": "cat_id~1256653758048", "values": [{"id": "1256653758048_0814626053", "name": "Basket Starters", "count": 2, "queryParam": "cat_id~1256653758048_0814626053"}, {"id": "1256653758048_5594694329", "name": "Celebrando", "count": 1, "queryParam": "cat_id~1256653758048_5594694329"}, {"id": "1256653758048_6672403104", "name": "S'Mores", "count": 1, "queryParam": "cat_id~1256653758048_6672403104"}, {"id": "1256653758048_1256653759172", "name": "Weekly Ad Feature Items", "count": 8, "queryParam": "cat_id~1256653758048_1256653759172"}]}, {"id": "1255142220583", "name": "Home, Kitchen & Dine", "count": 1, "queryParam": "cat_id~1255142220583", "values": [{"id": "1255142220583_0104326710", "name": "Kitchen", "count": 1, "queryParam": "cat_id~1255142220583_0104326710"}, {"id": "1255142220583_1256653760026", "name": "Kitchen Tools & Gadgets", "count": 1, "queryParam": "cat_id~1255142220583_1256653760026"}]}, {"id": "1805926255", "name": "Halloween Shop", "count": 2, "queryParam": "cat_id~1805926255"}, {"id": "1255027787041", "name": "Beverages", "count": 3, "queryParam": "cat_id~1255027787041", "values": [{"id": "1255027787041_1255027788416", "name": "Ice", "count": 2, "queryParam": "cat_id~1255027787041_1255027788416"}, {"id": "1255027787041_1255027789253", "name": "Soft Drinks", "count": 1, "queryParam": "cat_id~1255027787041_1255027789253"}, {"id": "1255027787041_1255027788381", "name": "Tea & Hot Chocolate", "count": 1, "queryParam": "cat_id~1255027787041_1255027788381"}]}, {"id": "1255027787051", "name": "Snacks & Candy", "count": 25, "queryParam": "cat_id~1255027787051", "values": [{"id": "1255027787051_1255027787541", "name": "Chips & Dip", "count": 1, "queryParam": "cat_id~1255027787051_1255027787541"}, {"id": "1255027787051_1255027787421", "name": "Chocolate, Candy & Gum", "count": 20, "queryParam": "cat_id~1255027787051_1255027787421"}, {"id": "1255027787051_1255027787661", "name": "Cookies & Crackers", "count": 1, "queryParam": "cat_id~1255027787051_1255027787661"}, {"id": "1255027787051_1256653758414", "name": "Fruit Snacks", "count": 3, "queryParam": "cat_id~1255027787051_1256653758414"}, {"id": "1255027787051_3019008069", "name": "On-the-Go", "count": 5, "queryParam": "cat_id~1255027787051_3019008069"}]}, {"id": "2393438169", "name": "Easter Meal", "count": 8, "queryParam": "cat_id~2393438169", "values": [{"id": "2393438169_1160881694", "name": "Dessert", "count": 6, "queryParam": "cat_id~2393438169_1160881694"}, {"id": "2393438169_6214936661", "name": "Sides", "count": 2, "queryParam": "cat_id~2393438169_6214936661"}]}, {"id": "1255064354809", "name": "Deli", "count": 7, "queryParam": "cat_id~1255064354809", "values": [{"id": "1255064354809_1288136101", "name": "Grab & Go Sandwiches, Salads & Snack Packs", "count": 1, "queryParam": "cat_id~1255064354809_1288136101"}, {"id": "1255064354809_2075111189", "name": "Hummus, Dips & Salsa", "count": 2, "queryParam": "cat_id~1255064354809_2075111189"}, {"id": "1255064354809_1279376900", "name": "Meals & Sides", "count": 3, "queryParam": "cat_id~1255064354809_1279376900"}, {"id": "1255064354809_2644613234", "name": "Prepared Meals & Sides", "count": 3, "queryParam": "cat_id~1255064354809_2644613234"}, {"id": "1255064354809_1137667114", "name": "Snacks & Fresh Sandwiches", "count": 2, "queryParam": "cat_id~1255064354809_1137667114"}]}, {"id": "1255027787061", "name": "Eggs & Dairy", "count": 12, "queryParam": "cat_id~1255027787061", "values": [{"id": "1255027787061_1255027788917", "name": "Biscuits, Cookies, Doughs & Crusts", "count": 3, "queryParam": "cat_id~1255027787061_1255027788917"}, {"id": "1255027787061_1255027787401", "name": "Butter & Margarine", "count": 2, "queryParam": "cat_id~1255027787061_1255027787401"}, {"id": "1255027787061_1255027787521", "name": "Cheese", "count": 5, "queryParam": "cat_id~1255027787061_1255027787521"}, {"id": "1255027787061_1255027788656", "name": "Milk", "count": 1, "queryParam": "cat_id~1255027787061_1255027788656"}, {"id": "1255027787061_1255027788897", "name": "Puddings, Gelatins & Desserts", "count": 2, "queryParam": "cat_id~1255027787061_1255027788897"}, {"id": "1255027787061_1255027789293", "name": "Sour Cream, Dips & Sauces", "count": 1, "queryParam": "cat_id~1255027787061_1255027789293"}]}, {"id": "1256653760657", "name": "Kid Friendly Foods", "count": 2, "queryParam": "cat_id~1256653760657", "values": [{"id": "1256653760657_0901101881", "name": "Lunchbox Top Picks", "count": 2, "queryParam": "cat_id~1256653760657_0901101881"}, {"id": "1256653760657_1104974483", "name": "School Lunch Top Picks", "count": 1, "queryParam": "cat_id~1256653760657_1104974483"}]}, {"id": "1255027787111", "name": "Pantry", "count": 26, "queryParam": "cat_id~1255027787111", "values": [{"id": "1255027787111_1255027787261", "name": "Baking", "count": 7, "queryParam": "cat_id~1255027787111_1255027787261"}, {"id": "1255027787111_1256653759416", "name": "Boxed Dinners", "count": 7, "queryParam": "cat_id~1255027787111_1256653759416"}, {"id": "1255027787111_1255027789273", "name": "Canned Goods", "count": 3, "queryParam": "cat_id~1255027787111_1255027789273"}, {"id": "1255027787111_1255027787501", "name": "Cereal & Breakfast Food", "count": 4, "queryParam": "cat_id~1255027787111_1255027787501"}, {"id": "1255027787111_1255027787641", "name": "Condiments", "count": 2, "queryParam": "cat_id~1255027787111_1255027787641"}, {"id": "1255027787111_1255027788476", "name": "International Foods", "count": 5, "queryParam": "cat_id~1255027787111_1255027788476"}, {"id": "1255027787111_1256653759420", "name": "Potatoes & Stuffing", "count": 4, "queryParam": "cat_id~1255027787111_1256653759420"}]}, {"id": "1256653758570", "name": "Easy Meal Solutions", "count": 2, "queryParam": "cat_id~1256653758570"}, {"id": "1255027787131", "name": "Fruits & Vegetables", "count": 6, "queryParam": "cat_id~1255027787131", "values": [{"id": "1255027787131_4364938242", "name": "Fresh Prepared Produce", "count": 2, "queryParam": "cat_id~1255027787131_4364938242"}, {"id": "1255027787131_1255027789453", "name": "Fresh Vegetables", "count": 4, "queryParam": "cat_id~1255027787131_1255027789453"}]}, {"id": "9576778812", "name": "Fall Shop", "count": 7, "queryParam": "cat_id~9576778812"}, {"id": "1255027787031", "name": "Bread & Bakery", "count": 33, "queryParam": "cat_id~1255027787031", "values": [{"id": "1255027787031_3922724659", "name": "Cakes & Cupcakes", "count": 5, "queryParam": "cat_id~1255027787031_3922724659"}, {"id": "1255027787031_6408021135", "name": "Cookies & Brownies", "count": 4, "queryParam": "cat_id~1255027787031_6408021135"}, {"id": "1255027787031_2108441412", "name": "Fresh Bakery Breads", "count": 1, "queryParam": "cat_id~1255027787031_2108441412"}, {"id": "1255027787031_0460900950", "name": "From Our Bakery", "count": 20, "queryParam": "cat_id~1255027787031_0460900950"}, {"id": "1255027787031_8591128458", "name": "Pies", "count": 17, "queryParam": "cat_id~1255027787031_8591128458"}, {"id": "1255027787031_1255027788957", "name": "Rolls & Buns", "count": 1, "queryParam": "cat_id~1255027787031_1255027788957"}, {"id": "1255027787031_1256653759406", "name": "Sweet Treats", "count": 7, "queryParam": "cat_id~1255027787031_1256653759406"}]}, {"id": "7781871085", "name": "Fall Comfort Food", "count": 4, "queryParam": "cat_id~7781871085"}, {"id": "1255027787101", "name": "Meat", "count": 1, "queryParam": "cat_id~1255027787101"}, {"id": "5621371366", "name": "Holiday Meal", "count": 2, "queryParam": "cat_id~5621371366"}, {"id": "3189470147", "name": "Summer Flavors", "count": 1, "queryParam": "cat_id~3189470147"}]}], "others": [{"name": "Special Offer", "values": [{"name": "Rollback", "count": 85, "queryParam": "special_offers~Rollback"}]}, {"name": "Price"}, {"name": "Brand", "values": [{"name": "Great Value", "count": 59, "queryParam": "ghs_brand~Great Value"}, {"name": "Blue Bunny", "count": 8, "queryParam": "ghs_brand~Blue Bunny"}, {"name": "Breyers", "count": 31, "queryParam": "ghs_brand~Breyers"}, {"name": "Ben & Jerry's", "count": 38, "queryParam": "ghs_brand~Ben & Jerry's"}, {"name": "Blue Bell", "count": 20, "queryParam": "ghs_brand~Blue Bell"}, {"name": "Klondike", "count": 10, "queryParam": "ghs_brand~Klondike"}, {"name": "H\u00e4agen-Dazs", "count": 41, "queryParam": "ghs_brand~H\u00e4agen-Dazs"}, {"name": "Dreyer's/Edy's", "count": 36, "queryParam": "ghs_brand~Dreyer's/Edy's"}, {"name": "PRODUCE UNBRANDED", "count": 4, "queryParam": "ghs_brand~PRODUCE UNBRANDED"}, {"name": "Blue Ribbon Classics", "count": 9, "queryParam": "ghs_brand~Blue Ribbon Classics"}, {"name": "Marketside", "count": 8, "queryParam": "ghs_brand~Marketside"}, {"name": "Drumstick", "count": 13, "queryParam": "ghs_brand~Drumstick"}, {"name": "Snickers", "count": 3, "queryParam": "ghs_brand~Snickers"}, {"name": "Good Humor", "count": 4, "queryParam": "ghs_brand~Good Humor"}, {"name": "Freshness Guaranteed", "count": 12, "queryParam": "ghs_brand~Freshness Guaranteed"}, {"name": "Magnum", "count": 4, "queryParam": "ghs_brand~Magnum"}, {"name": "M&M'S", "count": 3, "queryParam": "ghs_brand~M&M'S"}, {"name": "Halo Top", "count": 14, "queryParam": "ghs_brand~Halo Top"}, {"name": "Mayfield", "count": 49, "queryParam": "ghs_brand~Mayfield"}, {"name": "Talenti", "count": 16, "queryParam": "ghs_brand~Talenti"}, {"name": "Hershey's", "count": 17, "queryParam": "ghs_brand~Hershey's"}, {"name": "Kemps", "count": 1, "queryParam": "ghs_brand~Kemps"}, {"name": "Popsicle", "count": 13, "queryParam": "ghs_brand~Popsicle"}, {"name": "Pillsbury", "count": 3, "queryParam": "ghs_brand~Pillsbury"}, {"name": "Little Debbie", "count": 3, "queryParam": "ghs_brand~Little Debbie"}, {"name": "Kraft", "count": 1, "queryParam": "ghs_brand~Kraft"}, {"name": "Smucker's", "count": 6, "queryParam": "ghs_brand~Smucker's"}, {"name": "Keebler", "count": 3, "queryParam": "ghs_brand~Keebler"}, {"name": "Helados Mexico", "count": 3, "queryParam": "ghs_brand~Helados Mexico"}, {"name": "Friendly's", "count": 2, "queryParam": "ghs_brand~Friendly's"}, {"name": "Outshine", "count": 17, "queryParam": "ghs_brand~Outshine"}, {"name": "Skinny Cow", "count": 2, "queryParam": "ghs_brand~Skinny Cow"}, {"name": "IttiBitz", "count": 1, "queryParam": "ghs_brand~IttiBitz"}, {"name": "So Delicious", "count": 9, "queryParam": "ghs_brand~So Delicious"}, {"name": "Marie Callender's", "count": 6, "queryParam": "ghs_brand~Marie Callender's"}, {"name": "Bomb Pop", "count": 5, "queryParam": "ghs_brand~Bomb Pop"}, {"name": "Betty Crocker", "count": 1, "queryParam": "ghs_brand~Betty Crocker"}, {"name": "Hormel", "count": 2, "queryParam": "ghs_brand~Hormel"}, {"name": "Budget Saver", "count": 6, "queryParam": "ghs_brand~Budget Saver"}, {"name": "Nestl\u00e9 Toll House", "count": 1, "queryParam": "ghs_brand~Nestl\u00e9 Toll House"}, {"name": "TWIX", "count": 4, "queryParam": "ghs_brand~TWIX"}, {"name": "Wal-Mart Bakery", "count": 3, "queryParam": "ghs_brand~Wal-Mart Bakery"}, {"name": "Reese's", "count": 2, "queryParam": "ghs_brand~Reese's"}, {"name": "Cheez-It", "count": 1, "queryParam": "ghs_brand~Cheez-It"}, {"name": "Luigi's", "count": 2, "queryParam": "ghs_brand~Luigi's"}]}, {"name": "Type", "values": [{"name": "Bars & Popsicles", "count": 6, "queryParam": "ghs_type~Bars & Popsicles"}, {"name": "Cups", "count": 4, "queryParam": "ghs_type~Cups"}, {"name": "Tubs", "count": 7, "queryParam": "ghs_type~Tubs"}, {"name": "Cones", "count": 3, "queryParam": "ghs_type~Cones"}, {"name": "Sandwiches", "count": 2, "queryParam": "ghs_type~Sandwiches"}, {"name": "Flavored Ice", "count": 1, "queryParam": "ghs_type~Flavored Ice"}, {"name": "Cheesecakes", "count": 1, "queryParam": "ghs_type~Cheesecakes"}, {"name": "Corn", "count": 1, "queryParam": "ghs_type~Corn"}, {"name": "Pies & Pastries", "count": 2, "queryParam": "ghs_type~Pies & Pastries"}]}]}, "breadcrumbs": [{"id": "0", "name": "All Departments", "cat_level": 0, "queryParam": "cat_id~0"}], "sortOptions": [{"sortId": "best_match", "sortName": "Best match", "isDefault": true}, {"sortId": "best_seller", "sortName": "Best sellers", "isDefault": false}, {"sortId": "price_low", "sortName": "Price: low to high", "isDefault": false}, {"sortId": "price_high", "sortName": "Price: high to low", "isDefault": false}], "errors": [], "searchMatchType": "{\"dept\":\"/1255027787071/1255027788456/1255027791823\",\"ba_pre\":\"0\",\"id\":\"1624155376362:mglider-902387447-17-1101347048:25954:kpeftsw3:66266\",\"req\":\"A\",\"A\":\"NoAds\",\"B\":\"0,23,24,\",\"css\":\"0|0|0|0\",\"ba_post\":\"0\",\"cs\":false}", "wpaBeacon": {"moduleData": {"adUuid": "1624155376362:mglider-902387447-17-1", "pageBeacons": {}, "moduleInfo": "{\"adUuid\":\"1624155376362:mglider-902387447-17-1\",\"tenant\":\"GR\",\"storeId\":\"3785\",\"platform\":\"desktop\",\"pageType\":\"search\",\"pageId\":\"ice cream\",\"placementId\":\"1145x345_T-C-IG_TI_1-2_gr-search-ingrid-desktop\",\"normQuery\":\"ice cream\",\"mloc\":\"middle\"}"}}}},
-  {"store": "3785", "product": "red apples", "result": {"products": [{"USItemId": "45912954", "offerId": "68261FCF64D3433EA1F4964CBF91CFD7", "sku": "1022625", "basic": {"salesUnit": "Each_Weight", "name": "Red Delicious Apples, each", "image": {"thumbnail": "https://i5.walmartimages.com/asr/7320e63a-de46-4a16-9b8c-526e15219a12_3.e557c1ad9973e1f76f512b34950243a3.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": 0.6, "maxAllowed": 12, "productUrl": "/ip/Red-Delicious-Apples-each/45912954", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.5, "reviewsCount": 17}, "store": {"isOutOfStock": false, "price": {"list": 1.28, "previousPrice": 0, "priceUnitOfMeasure": "lb", "salesUnitOfMeasure": "lb", "salesQuantity": 1, "displayCondition": "each", "displayPrice": 0.77, "displayUnitPrice": "($1.28/lb)", "isClearance": false, "isRollback": false, "unit": 1.28}}}, {"USItemId": "363800188", "offerId": "568010D2D7B549E7AF88C06BD99549C4", "sku": "3000040137", "basic": {"salesUnit": "Each", "name": "Red Delicious Apples, 5 lb Bag", "image": {"thumbnail": "https://i5.walmartimages.com/asr/da655f92-7aee-462c-bd7c-542266e8f40c_6.044446c4c25d760a1518740a29684053.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Red-Delicious-Apples-5-lb-Bag/363800188", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.7, "reviewsCount": 24}, "store": {"isOutOfStock": false, "price": {"list": 6.27, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 5, "displayCondition": null, "displayPrice": 6.27, "displayUnitPrice": "($1.25/ea)", "isClearance": false, "isRollback": false, "unit": 1.25}}}, {"USItemId": "44390958", "offerId": "56CFAE25F3F3456DB82EE185354A6956", "sku": "3000039639", "basic": {"salesUnit": "Each", "name": "Gala Apples, 3 lb Bag", "image": {"thumbnail": "https://i5.walmartimages.com/asr/e97d7a3f-ed34-4801-aafd-a7008550d36b_2.876fc609cfa3a382b2c033a63d49c14b.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Gala-Apples-3-lb-Bag/44390958", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.4, "reviewsCount": 145}, "store": {"isOutOfStock": false, "price": {"list": 3.74, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 3, "displayCondition": null, "displayPrice": 3.74, "displayUnitPrice": "($1.25/lb)", "isClearance": false, "isRollback": false, "unit": 1.25}}}, {"USItemId": "44390953", "offerId": "F98DDB483D9B4395820E03A065732EA9", "sku": "1022608", "basic": {"salesUnit": "Each_Weight", "name": "Gala Apples, each", "image": {"thumbnail": "https://i5.walmartimages.com/asr/f46d4fa7-6108-4450-a610-cc95a1ca28c5_3.38c2c5b2f003a0aafa618f3b4dc3cbbd.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": 0.5, "maxAllowed": 12, "productUrl": "/ip/Gala-Apples-each/44390953", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.5, "reviewsCount": 28}, "store": {"isOutOfStock": false, "price": {"list": 1.34, "previousPrice": 0, "priceUnitOfMeasure": "lb", "salesUnitOfMeasure": "lb", "salesQuantity": 1, "displayCondition": "each", "displayPrice": 0.67, "displayUnitPrice": "($1.34/lb)", "isClearance": false, "isRollback": false, "unit": 1.34}}}, {"USItemId": "44391639", "offerId": "AA321511C4A84F9AA33345FDB926F26F", "sku": "3000039631", "basic": {"salesUnit": "Each", "name": "Fuji Apples, 3 lb Bag", "image": {"thumbnail": "https://i5.walmartimages.com/asr/aa8fba7c-7f08-499a-91e9-2a6ec3f59519_3.e5415b1154aad1108196fe24fab9798a.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Fuji-Apples-3-lb-Bag/44391639", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 3.5, "reviewsCount": 24}, "store": {"isOutOfStock": false, "price": {"list": 4.13, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 48, "displayCondition": null, "displayPrice": 4.13, "displayUnitPrice": "($1.38/lb)", "isClearance": false, "isRollback": false, "unit": 1.38}}}, {"USItemId": "44390950", "offerId": "EDCCCD78FC5C4552BBF951E4EFC27456", "sku": "1022616", "basic": {"salesUnit": "Each_Weight", "name": "Honeycrisp Apples Bulk", "image": {"thumbnail": "https://i5.walmartimages.com/asr/fdffb720-8b75-43df-bffe-4ffc4e9369d8_3.d4460fa9146eb9716b5804d61d4b26b9.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": 0.6, "maxAllowed": 12, "productUrl": "/ip/Honeycrisp-Apples-Bulk/44390950", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.7, "reviewsCount": 16}, "store": {"isOutOfStock": false, "price": {"list": 2.4, "previousPrice": 0, "priceUnitOfMeasure": "lb", "salesUnitOfMeasure": "lb", "salesQuantity": 1, "displayCondition": "each", "displayPrice": 1.44, "displayUnitPrice": "($2.40/lb)", "isClearance": false, "isRollback": false, "unit": 2.4}}}, {"USItemId": "51259197", "offerId": "208A545377C641589AF15AD1F59695E7", "sku": "3000019279", "basic": {"salesUnit": "Each_Weight", "name": "Granny Smith Apples, Each", "image": {"thumbnail": "https://i5.walmartimages.com/asr/bf2ec88a-2f36-41f2-93d3-c3161772733d_1.cdc913433c6acc6bf9201dc1fa86bac9.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": 0.6, "maxAllowed": 12, "productUrl": "/ip/Granny-Smith-Apples-Each/51259197", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.5, "reviewsCount": 15}, "store": {"isOutOfStock": false, "price": {"list": 1.56, "previousPrice": 0, "priceUnitOfMeasure": "lb", "salesUnitOfMeasure": "lb", "salesQuantity": 1, "displayCondition": "each", "displayPrice": 0.94, "displayUnitPrice": "($1.56/lb)", "isClearance": false, "isRollback": false, "unit": 1.56}}}, {"USItemId": "151762086", "offerId": "293C45435D9F48E7A6A3B700B50AB7C1", "sku": "3000588669", "basic": {"salesUnit": "Each", "name": "Honeycrisp Apples, 3 lb bag", "image": {"thumbnail": "https://i5.walmartimages.com/asr/723b6688-38d2-4113-a788-894cc1905d82_2.6e8c32faa8bbb7fb35697f4508a7205c.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Honeycrisp-Apples-3-lb-bag/151762086", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.5, "reviewsCount": 17}, "store": {"isOutOfStock": false, "price": {"list": 5.64, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 32, "displayCondition": null, "displayPrice": 5.64, "displayUnitPrice": "($1.88/lb)", "isClearance": false, "isRollback": false, "unit": 1.88}}}, {"USItemId": "43923182", "offerId": "452CA5ED0C884C8CAC5EDF4BF8226719", "sku": "1022606", "basic": {"salesUnit": "Each_Weight", "name": "Fuji Apples, each", "image": {"thumbnail": "https://i5.walmartimages.com/asr/3ec17a04-0333-424f-8076-e2414e013cbd_1.b3e1ec5d2514a86e0492ce1d5d6bb353.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": 0.6, "maxAllowed": 12, "productUrl": "/ip/Fuji-Apples-each/43923182", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.1, "reviewsCount": 14}, "store": {"isOutOfStock": false, "price": {"list": 1.37, "previousPrice": 0, "priceUnitOfMeasure": "lb", "salesUnitOfMeasure": "lb", "salesQuantity": 1, "displayCondition": "each", "displayPrice": 0.82, "displayUnitPrice": "($1.37/lb)", "isClearance": false, "isRollback": false, "unit": 1.37}}}, {"USItemId": "44390991", "offerId": "00ED8EC57CB24E4FA93B8C047905455D", "sku": "3000028450", "basic": {"salesUnit": "Each", "name": "Granny Smith Apples, 3 Lb Bag", "image": {"thumbnail": "https://i5.walmartimages.com/asr/a498cbe5-c73c-4f94-ae46-39f3e04264aa_1.c70d343bd6765c6a87a00f02d589ecaf.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Granny-Smith-Apples-3-Lb-Bag/44390991", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.9, "reviewsCount": 12}, "store": {"isOutOfStock": false, "price": {"list": 5.28, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 3, "displayCondition": null, "displayPrice": 5.28, "displayUnitPrice": "($1.76/lb)", "isClearance": false, "isRollback": false, "unit": 1.76}}}], "totalCount": 42, "filters": {"categories": [{"name": "Departments", "values": [{"id": "1255027787131", "name": "Fruits & Vegetables", "count": 37, "queryParam": "cat_id~1255027787131", "values": [{"id": "1255027787131_1255027788181", "name": "Fresh Fruit", "count": 37, "queryParam": "cat_id~1255027787131_1255027788181", "values": []}, {"id": "1255027787131_4364938242", "name": "Fresh Prepared Produce", "count": 4, "queryParam": "cat_id~1255027787131_4364938242"}, {"id": "1255027787131_4585348430", "name": "Healthy Snacking", "count": 4, "queryParam": "cat_id~1255027787131_4585348430"}, {"id": "1255027787131_3518708856", "name": "Nuts, Dried Fruit, & Healthy Snacks", "count": 1, "queryParam": "cat_id~1255027787131_3518708856"}, {"id": "1255027787131_1255200063365", "name": "Organic Produce", "count": 6, "queryParam": "cat_id~1255027787131_1255200063365"}]}, {"id": "1256653758154", "name": "Organic Shop", "count": 5, "queryParam": "cat_id~1256653758154"}, {"id": "1256653758048", "name": "Featured Products", "count": 6, "queryParam": "cat_id~1256653758048", "values": [{"id": "1256653758048_0814626053", "name": "Basket Starters", "count": 5, "queryParam": "cat_id~1256653758048_0814626053"}, {"id": "1256653758048_0648624347", "name": "Our Best Rollbacks", "count": 1, "queryParam": "cat_id~1256653758048_0648624347"}]}, {"id": "1255142220573", "name": "Office & Electronics", "count": 1, "queryParam": "cat_id~1255142220573"}, {"id": "1256653759248", "name": "Party Supplies & Crafts", "count": 1, "queryParam": "cat_id~1256653759248"}, {"id": "1255027787041", "name": "Beverages", "count": 1, "queryParam": "cat_id~1255027787041"}, {"id": "1256653760657", "name": "Kid Friendly Foods", "count": 1, "queryParam": "cat_id~1256653760657"}, {"id": "1255027787071", "name": "Frozen", "count": 1, "queryParam": "cat_id~1255027787071"}, {"id": "1255027787111", "name": "Pantry", "count": 2, "queryParam": "cat_id~1255027787111"}, {"id": "9576778812", "name": "Fall Shop", "count": 2, "queryParam": "cat_id~9576778812"}]}], "others": [{"name": "Brand", "values": [{"name": "PRODUCE UNBRANDED", "count": 23, "queryParam": "ghs_brand~PRODUCE UNBRANDED"}, {"name": "Marketside", "count": 4, "queryParam": "ghs_brand~Marketside"}, {"name": "Freshness Guaranteed", "count": 2, "queryParam": "ghs_brand~Freshness Guaranteed"}, {"name": "Jazz", "count": 1, "queryParam": "ghs_brand~Jazz"}, {"name": "Dole", "count": 1, "queryParam": "ghs_brand~Dole"}]}, {"name": "Price"}]}, "breadcrumbs": [{"id": "0", "name": "All Departments", "cat_level": 0, "queryParam": "cat_id~0"}], "sortOptions": [{"sortId": "best_match", "sortName": "Best match", "isDefault": true}, {"sortId": "best_seller", "sortName": "Best sellers", "isDefault": false}, {"sortId": "price_low", "sortName": "Price: low to high", "isDefault": false}, {"sortId": "price_high", "sortName": "Price: high to low", "isDefault": false}], "errors": [], "searchMatchType": "{\"dept\":\"/1255027787131/1255027788181/1255027790251\",\"ba_pre\":\"0\",\"id\":\"1624155377448:mglider-902387447-31-1101347090:22839:kpeftoyv:64842\",\"req\":\"A\",\"A\":\"NoAds\",\"B\":\"0,1,12,14,\",\"css\":\"0|0|0|0\",\"ba_post\":\"0\",\"cs\":false}", "wpaBeacon": {"moduleData": {"adUuid": "1624155377448:mglider-902387447-31-1", "pageBeacons": {}, "moduleInfo": "{\"adUuid\":\"1624155377448:mglider-902387447-31-1\",\"tenant\":\"GR\",\"storeId\":\"3785\",\"platform\":\"desktop\",\"pageType\":\"search\",\"pageId\":\"red apples\",\"placementId\":\"1145x345_T-C-IG_TI_1-2_gr-search-ingrid-desktop\",\"normQuery\":\"red apples\",\"mloc\":\"middle\"}"}}}},
-  {"store": "3785", "product": "oranges", "result": {"products": [{"USItemId": "11025598", "offerId": "921BB9EA5D8F450EA812370E99DE0324", "sku": "3000674154", "basic": {"salesUnit": "Each", "name": "Clementines, 3lb bag", "image": {"thumbnail": "https://i5.walmartimages.com/asr/33ea1138-975e-47a4-81ff-62d88546df67.419bf6bc44206b42dccd3becbd04f4a4.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Clementines-3lb-bag/11025598", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 3.4, "reviewsCount": 182}, "store": {"isOutOfStock": false, "price": {"list": 3.78, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 3, "displayCondition": null, "displayPrice": 3.78, "displayUnitPrice": "($1.26/lb)", "isClearance": false, "isRollback": false, "unit": 1.26}}}, {"USItemId": "44391012", "offerId": "E4FA20C50D904FEDAC91238C6581D441", "sku": "3000054051", "basic": {"salesUnit": "Each", "name": "Navel Oranges, 4 lb Bag", "image": {"thumbnail": "https://i5.walmartimages.com/asr/5fa99ca0-ae7b-4030-ae4e-8ac4e1621eb3_1.d784bf085b7b2b98c065fded42d727f1.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 10, "productUrl": "/ip/Navel-Oranges-4-lb-Bag/44391012", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.4, "reviewsCount": 25}, "store": {"isOutOfStock": false, "price": {"list": 3.94, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 3, "displayCondition": null, "displayPrice": 3.94, "displayUnitPrice": "($1.31/lb)", "isClearance": false, "isRollback": false, "unit": 1.31}}}, {"USItemId": "162577028", "offerId": "508D671A070B4235A40FA262453AAB26", "sku": "1022700", "basic": {"salesUnit": "Each", "name": "Navel Oranges, each", "image": {"thumbnail": "https://i5.walmartimages.com/asr/9a23bac1-8817-4845-b235-36e306bd76a1_1.2f100cb67c81b17a44fedcf1f5d9f9da.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Navel-Oranges-each/162577028", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.3, "reviewsCount": 26}, "store": {"isOutOfStock": false, "price": {"list": 0.64, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 1, "displayCondition": null, "displayPrice": 0.64, "displayUnitPrice": null, "isClearance": false, "isRollback": false, "unit": 0.64}}}, {"USItemId": "44391069", "offerId": "FBAF3BC0172B499B8BF161DD0E5E60C1", "sku": "3001155726", "basic": {"salesUnit": "Each", "name": "Navel Oranges, 8 lb Bag", "image": {"thumbnail": "https://i5.walmartimages.com/asr/35e5e43b-d7f7-4c05-ad55-d2df5404c1cd_1.8a8b9be88694f526967d6d5b24c78bae.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Navel-Oranges-8-lb-Bag/44391069", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 2.8, "reviewsCount": 44}, "store": {"isOutOfStock": false, "price": {"list": 6.3, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 5, "displayCondition": null, "displayPrice": 6.3, "displayUnitPrice": "($1.26/lb)", "isClearance": false, "isRollback": false, "unit": 1.26}}}, {"USItemId": "147204902", "offerId": "53B0F5C46F38438C988FFBEEA34192E6", "sku": "3000056923", "basic": {"salesUnit": "Each", "name": "Marketside Organic Oranges, 4 lb Bag", "image": {"thumbnail": "https://i5.walmartimages.com/asr/9475bd9d-1617-43cb-bddb-5f8c1c6ae232_1.454586d4dd01778f60e10249888bbafc.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Marketside-Organic-Oranges-4-lb-Bag/147204902", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 3.3, "reviewsCount": 4}, "store": {"isOutOfStock": false, "price": {"list": 4.92, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 48, "displayCondition": null, "displayPrice": 4.92, "displayUnitPrice": "(10.3 \u00a2/oz)", "isClearance": false, "isRollback": false, "unit": 0.103}}}, {"USItemId": "994998279", "offerId": "9526914DF185481AB0E0B11559A15234", "sku": "1022885", "basic": {"salesUnit": "Each", "name": "Mango, 1 Each", "image": {"thumbnail": "https://i5.walmartimages.com/asr/3d15ee0d-110f-4043-8ad1-738a9a32859e_3.f00a50c3a83d24ea44407bc0d18e4a62.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Mango-1-Each/994998279", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 3.9, "reviewsCount": 23}, "store": {"isOutOfStock": false, "price": {"list": 0.86, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 1, "displayCondition": null, "displayPrice": 0.86, "displayUnitPrice": null, "isClearance": false, "isRollback": false, "unit": 0.86}}}, {"USItemId": "13424464", "offerId": "58DDD6A5B04D4A37BAFC66BDD38CD2B1", "sku": "3000089252", "basic": {"salesUnit": "Each", "name": "Valencia Juicing Oranges, 4 lb Bag", "image": {"thumbnail": "https://i5.walmartimages.com/asr/720bb11c-7f38-410f-a773-6530c81a46af_1.06388963ccdbc1be55d36961ccf3d16c.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Valencia-Juicing-Oranges-4-lb-Bag/13424464", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 3.3, "reviewsCount": 7}, "store": {"isOutOfStock": false, "price": {"list": 4.98, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 4, "displayCondition": null, "displayPrice": 4.98, "displayUnitPrice": "($1.25/lb)", "isClearance": false, "isRollback": false, "unit": 1.25}}}, {"USItemId": "959033640", "offerId": "6C91DA3E97B74A6DAC785AF1EEE4AFC3", "sku": "3101005861", "basic": {"salesUnit": "Each", "name": "Simply Orange Pulp Free Orange Juice, 52 fl oz", "image": {"thumbnail": "https://i5.walmartimages.com/asr/1a26c059-839d-42f0-9e04-18e82440b021.9b6300ef6b93f44bfd3342714909fb7f.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Simply-Orange-Pulp-Free-Orange-Juice-52-fl-oz/959033640", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.8, "reviewsCount": 374}, "store": {"isOutOfStock": false, "price": {"list": 3.58, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 1, "displayCondition": null, "displayPrice": 3.58, "displayUnitPrice": null, "isClearance": false, "isRollback": false, "unit": 3.58}}}, {"USItemId": "44390951", "offerId": "323E7ECDAEB748E1AE00FA525E207996", "sku": "3000054326", "basic": {"salesUnit": "Each", "name": "Clementines, 5lb bag", "image": {"thumbnail": "https://i5.walmartimages.com/asr/c83f8718-dd19-4078-b174-da2b415c6b03.460b122f83e3f29a2c591bbaec12c5ea.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 12, "productUrl": "/ip/Clementines-5lb-bag/44390951", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 3.8, "reviewsCount": 38}, "store": {"isOutOfStock": true, "price": {"list": 6.56, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 5, "displayCondition": null, "displayPrice": 6.56, "displayUnitPrice": "($1.31/lb)", "isClearance": false, "isRollback": false, "unit": 1.31}}}, {"USItemId": "51259229", "offerId": "2C3CCCEB24FB4F0E92FB52A10BEC0246", "sku": "1022885", "basic": {"salesUnit": "Each", "name": "Fresh Mangoes, each", "image": {"thumbnail": "https://i5.walmartimages.com/asr/3d15ee0d-110f-4043-8ad1-738a9a32859e_3.f00a50c3a83d24ea44407bc0d18e4a62.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"}, "weightIncrement": 1, "averageWeight": null, "maxAllowed": 24, "productUrl": "/ip/Fresh-Mangoes-each/51259229", "isSnapEligible": true, "type": "REGULAR"}, "detailed": {"rating": 4.4, "reviewsCount": 25}, "store": {"isOutOfStock": true, "price": {"list": 0.86, "previousPrice": 0, "priceUnitOfMeasure": "each", "salesUnitOfMeasure": "each", "salesQuantity": 1, "displayCondition": null, "displayPrice": 0.86, "displayUnitPrice": null, "isClearance": false, "isRollback": false, "unit": 0.86}}}], "totalCount": 153, "filters": {"categories": [{"name": "Departments", "values": [{"id": "1255027787041", "name": "Beverages", "count": 106, "queryParam": "cat_id~1255027787041", "values": [{"id": "1255027787041_1256653761126", "name": "Bulk Beverages", "count": 2, "queryParam": "cat_id~1255027787041_1256653761126"}, {"id": "1255027787041_1255027787601", "name": "Cocktails & Mixers", "count": 2, "queryParam": "cat_id~1255027787041_1255027787601"}, {"id": "1255027787041_1255027789393", "name": "Drink Mixes and Water Enhancers", "count": 20, "queryParam": "cat_id~1255027787041_1255027789393"}, {"id": "1255027787041_2023721512", "name": "Fresh Juice & Chilled Beverage", "count": 44, "queryParam": "cat_id~1255027787041_2023721512"}, {"id": "1255027787041_2613944087", "name": "Mini Cans & Portion Control", "count": 1, "queryParam": "cat_id~1255027787041_2613944087"}, {"id": "1255027787041_1255027789253", "name": "Soft Drinks", "count": 7, "queryParam": "cat_id~1255027787041_1255027789253"}, {"id": "1255027787041_1255027789353", "name": "Sports & Energy Drinks", "count": 3, "queryParam": "cat_id~1255027787041_1255027789353"}]}, {"id": "1255027787111", "name": "Pantry", "count": 33, "queryParam": "cat_id~1255027787111", "values": [{"id": "1255027787111_1255027787501", "name": "Cereal & Breakfast Food", "count": 3, "queryParam": "cat_id~1255027787111_1255027787501"}, {"id": "1255027787111_1256653760508", "name": "Easter Meal Must-Haves", "count": 1, "queryParam": "cat_id~1255027787111_1256653760508"}, {"id": "1255027787111_1255027788476", "name": "International Foods", "count": 4, "queryParam": "cat_id~1255027787111_1255027788476"}, {"id": "1255027787111_2392837169", "name": "Pack your lunch!", "count": 3, "queryParam": "cat_id~1255027787111_2392837169"}]}, {"id": "1255027787131", "name": "Fruits & Vegetables", "count": 59, "queryParam": "cat_id~1255027787131", "values": [{"id": "1255027787131_2023721512", "name": "Fresh Juice & Chilled Beverage", "count": 44, "queryParam": "cat_id~1255027787131_2023721512"}, {"id": "1255027787131_4364938242", "name": "Fresh Prepared Produce", "count": 2, "queryParam": "cat_id~1255027787131_4364938242"}, {"id": "1255027787131_4585348430", "name": "Healthy Snacking", "count": 1, "queryParam": "cat_id~1255027787131_4585348430"}, {"id": "1255027787131_3518708856", "name": "Nuts, Dried Fruit, & Healthy Snacks", "count": 1, "queryParam": "cat_id~1255027787131_3518708856"}, {"id": "1255027787131_1255200063365", "name": "Organic Produce", "count": 2, "queryParam": "cat_id~1255027787131_1255200063365"}]}, {"id": "1256653758154", "name": "Organic Shop", "count": 2, "queryParam": "cat_id~1256653758154", "values": [{"id": "1256653758154_1256653758256", "name": "Organic Beverages", "count": 1, "queryParam": "cat_id~1256653758154_1256653758256"}, {"id": "1256653758154_1256653758268", "name": "Organic Fruits & Vegetables", "count": 1, "queryParam": "cat_id~1256653758154_1256653758268"}]}, {"id": "1256653758166", "name": "Special Diets", "count": 2, "queryParam": "cat_id~1256653758166"}, {"id": "1256653758048", "name": "Featured Products", "count": 4, "queryParam": "cat_id~1256653758048", "values": [{"id": "1256653758048_0814626053", "name": "Basket Starters", "count": 3, "queryParam": "cat_id~1256653758048_0814626053"}, {"id": "1256653758048_1471981554", "name": "Rollbacks", "count": 1, "queryParam": "cat_id~1256653758048_1471981554"}]}, {"id": "2393438169", "name": "Easter Meal", "count": 1, "queryParam": "cat_id~2393438169"}, {"id": "1256653760657", "name": "Kid Friendly Foods", "count": 7, "queryParam": "cat_id~1256653760657", "values": [{"id": "1256653760657_0901101881", "name": "Lunchbox Top Picks", "count": 5, "queryParam": "cat_id~1256653760657_0901101881"}, {"id": "1256653760657_1104974483", "name": "School Lunch Top Picks", "count": 3, "queryParam": "cat_id~1256653760657_1104974483"}]}, {"id": "1255027787071", "name": "Frozen", "count": 5, "queryParam": "cat_id~1255027787071"}, {"id": "1255027787021", "name": "Baby", "count": 4, "queryParam": "cat_id~1255027787021"}]}], "others": [{"name": "Special Offer", "values": [{"name": "Rollback", "count": 1, "queryParam": "special_offers~Rollback"}]}, {"name": "Price"}, {"name": "Brand", "values": [{"name": "PRODUCE UNBRANDED", "count": 11, "queryParam": "ghs_brand~PRODUCE UNBRANDED"}, {"name": "Great Value", "count": 19, "queryParam": "ghs_brand~Great Value"}, {"name": "Marketside", "count": 2, "queryParam": "ghs_brand~Marketside"}, {"name": "Dole", "count": 18, "queryParam": "ghs_brand~Dole"}, {"name": "simply...", "count": 7, "queryParam": "ghs_brand~simply..."}, {"name": "Tropicana", "count": 12, "queryParam": "ghs_brand~Tropicana"}, {"name": "Del Monte", "count": 8, "queryParam": "ghs_brand~Del Monte"}, {"name": "Generic", "count": 1, "queryParam": "ghs_brand~Generic"}, {"name": "Minute Maid", "count": 9, "queryParam": "ghs_brand~Minute Maid"}, {"name": "Ocean Spray", "count": 2, "queryParam": "ghs_brand~Ocean Spray"}, {"name": "Coca-Cola", "count": 1, "queryParam": "ghs_brand~Coca-Cola"}, {"name": "Pepperidge Farm", "count": 1, "queryParam": "ghs_brand~Pepperidge Farm"}, {"name": "Welch's", "count": 3, "queryParam": "ghs_brand~Welch's"}, {"name": "Capri Sun", "count": 1, "queryParam": "ghs_brand~Capri Sun"}, {"name": "Kool-Aid", "count": 1, "queryParam": "ghs_brand~Kool-Aid"}, {"name": "V8", "count": 4, "queryParam": "ghs_brand~V8"}]}]}, "breadcrumbs": [{"id": "0", "name": "All Departments", "cat_level": 0, "queryParam": "cat_id~0"}], "sortOptions": [{"sortId": "best_match", "sortName": "Best match", "isDefault": true}, {"sortId": "best_seller", "sortName": "Best sellers", "isDefault": false}, {"sortId": "price_low", "sortName": "Price: low to high", "isDefault": false}, {"sortId": "price_high", "sortName": "Price: high to low", "isDefault": false}], "errors": [], "searchMatchType": "{\"dept\":\"/1255027787131/1255027788181/1255027796247\",\"ba_pre\":\"0\",\"id\":\"1624155378019:mglider-902387447-32-1101347093:26781:kpeftrr2:69151\",\"req\":\"A\",\"A\":\"NoAds\",\"B\":\"0,1,27,\",\"css\":\"0|0|0|0\",\"ba_post\":\"0\",\"cs\":false}", "wpaBeacon": {"moduleData": {"adUuid": "1624155378019:mglider-902387447-32-1", "pageBeacons": {}, "moduleInfo": "{\"adUuid\":\"1624155378019:mglider-902387447-32-1\",\"tenant\":\"GR\",\"storeId\":\"3785\",\"platform\":\"desktop\",\"pageType\":\"search\",\"pageId\":\"oranges\",\"placementId\":\"1145x345_T-C-IG_TI_1-2_gr-search-ingrid-desktop\",\"normQuery\":\"orange\",\"mloc\":\"middle\"}"}}}}]
+[
+  {
+    "store": "3785",
+    "product": "ice cream",
+    "result": {
+      "products": [
+        {
+          "USItemId": "12329735",
+          "offerId": "3DC7B068E3FE46B488398984D50CE377",
+          "sku": "1016404",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Great Value Cookies & Cream Ice Cream, 48 fl oz",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/f578c656-3d1f-4f22-827f-4fbc254e71e1_1.a318fd569aa768a5b9d99d694c9fa336.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Great-Value-Cookies-Cream-Ice-Cream-48-fl-oz/12329735",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.7,
+            "reviewsCount": 211
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 2.97,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 48,
+              "displayCondition": null,
+              "displayPrice": 2.97,
+              "displayUnitPrice": "(6.2 \u00a2/fl oz)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 0.062
+            }
+          }
+        },
+        {
+          "USItemId": "12329733",
+          "offerId": "D969EBF39E794F34B4DB20DD50E952CB",
+          "sku": "1016408",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Great Value Vanilla Bean Ice Cream, 48 fl oz",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/4d4e9f81-4fdf-4312-8675-6e3a2e135066_1.06e7353135dacdc62899dc38d84344e4.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Great-Value-Vanilla-Bean-Ice-Cream-48-fl-oz/12329733",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4,
+            "reviewsCount": 94
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 2.97,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 48,
+              "displayCondition": null,
+              "displayPrice": 2.97,
+              "displayUnitPrice": "(6.2 \u00a2/fl oz)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 0.062
+            }
+          }
+        },
+        {
+          "USItemId": "11047625",
+          "offerId": "6D01B06385A9423C918E79802F4246AA",
+          "sku": "1017152",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Great Value Vanilla Flavored Ice Cream Sandwiches, 42 oz, 12 Count",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/31571415-5c7b-4ac9-878d-6bcf1f169588_1.c0afc49d3888ec602ec99eb8da1fcbd2.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Great-Value-Vanilla-Flavored-Ice-Cream-Sandwiches-42-oz-12-Count/11047625",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4,
+            "reviewsCount": 405
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 2.56,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 42,
+              "displayCondition": null,
+              "displayPrice": 2.56,
+              "displayUnitPrice": "(6.1 \u00a2/fl oz)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 0.061
+            }
+          }
+        },
+        {
+          "USItemId": "44391090",
+          "offerId": "1D2650E3D3BF48D08AD9D1364909557C",
+          "sku": "3000153117",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Blue Bell Gold Rim, Homemade Vanilla Ice Cream, 64 oz",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/2a1b2fbf-e3c8-4a77-bc55-6fc6aa176a20.b26321dfe99ba21e652be76742c8ebe5.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Blue-Bell-Gold-Rim-Homemade-Vanilla-Ice-Cream-64-oz/44391090",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.7,
+            "reviewsCount": 75
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 6.97,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 64,
+              "displayCondition": null,
+              "displayPrice": 6.97,
+              "displayUnitPrice": "(10.9 \u00a2/fl oz)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 0.109
+            }
+          }
+        },
+        {
+          "USItemId": "20525252",
+          "offerId": "F814C51E5C58453A8B80C832AFA88B72",
+          "sku": "3000140660",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Great Value Homestyle Vanilla Ice Cream, 48 fl oz",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/e580006b-13c7-4ecb-8aa5-c81e6f473357_1.29e4c8f80548eed9bf9bafeabc0f4011.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Great-Value-Homestyle-Vanilla-Ice-Cream-48-fl-oz/20525252",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.5,
+            "reviewsCount": 338
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 2.97,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 48,
+              "displayCondition": null,
+              "displayPrice": 2.97,
+              "displayUnitPrice": "(6.2 \u00a2/fl oz)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 0.062
+            }
+          }
+        },
+        {
+          "USItemId": "12329744",
+          "offerId": "FEA6B40EC251496FB3881B5100D4095F",
+          "sku": "1016406",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Great Value Chocolate Chip Cookie Dough Ice Cream, 48 fl oz",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/9acc6613-b3cc-4a24-ad74-4ebcb0324b9f_1.9fbc58349253b51808ce899637f3fb95.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Great-Value-Chocolate-Chip-Cookie-Dough-Ice-Cream-48-fl-oz/12329744",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 3.7,
+            "reviewsCount": 86
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 2.97,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 48,
+              "displayCondition": null,
+              "displayPrice": 2.97,
+              "displayUnitPrice": "(6.2 \u00a2/fl oz)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 0.062
+            }
+          }
+        },
+        {
+          "USItemId": "12329734",
+          "offerId": "95D8140A26B442AE87C676406FFA6985",
+          "sku": "1016400",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Great Value Ice Cream, Chocolate, 48 Fl Oz",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/3e6d6d0b-1f16-428d-a22e-0754ec3f9a9f_1.7f2023d79c221d4cf60c55faf1e0e1a2.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Great-Value-Ice-Cream-Chocolate-48-Fl-Oz/12329734",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.4,
+            "reviewsCount": 39
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 2.97,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 48,
+              "displayCondition": null,
+              "displayPrice": 2.97,
+              "displayUnitPrice": "(6.2 \u00a2/fl oz)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 0.062
+            }
+          }
+        },
+        {
+          "USItemId": "12329737",
+          "offerId": "5E3D6F04EEDF45C8AC9E2A86DDF0529D",
+          "sku": "1016402",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Great Value Butter Pecan Ice Cream, 48 fl oz",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/13b4c39b-2e3f-4163-84e2-3207d6acaac5_1.c66cdb918e8d755fdb5d4cb8fcf1c212.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Great-Value-Butter-Pecan-Ice-Cream-48-fl-oz/12329737",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.3,
+            "reviewsCount": 100
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 2.97,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 48,
+              "displayCondition": null,
+              "displayPrice": 2.97,
+              "displayUnitPrice": "(6.2 \u00a2/fl oz)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 0.062
+            }
+          }
+        },
+        {
+          "USItemId": "12329742",
+          "offerId": "0AEC9B3D42754D6C97B53C7C98804374",
+          "sku": "1016397",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Great Value Rocky Road Ice Cream, 48 oz",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/62411116-5773-4ef5-9e7c-75248839cc6e_1.b5e9e0bddbd6d121422f9507e64c8d44.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Great-Value-Rocky-Road-Ice-Cream-48-oz/12329742",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 3.7,
+            "reviewsCount": 177
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 2.97,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 48,
+              "displayCondition": null,
+              "displayPrice": 2.97,
+              "displayUnitPrice": "(6.2 \u00a2/fl oz)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 0.062
+            }
+          }
+        },
+        {
+          "USItemId": "20441644",
+          "offerId": "55BB44A35B0C46D288AAD103F80900CE",
+          "sku": "3000146020",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Great Value Peanut Butter Cup Ice Cream, 48 fl oz",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/90b1bd4c-fc07-4367-8bfe-148cc102939c_1.80ad4625774914103c69e84047e0c0e4.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Great-Value-Peanut-Butter-Cup-Ice-Cream-48-fl-oz/20441644",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.5,
+            "reviewsCount": 61
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 2.97,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 48,
+              "displayCondition": null,
+              "displayPrice": 2.97,
+              "displayUnitPrice": "(6.2 \u00a2/fl oz)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 0.062
+            }
+          }
+        }
+      ],
+      "totalCount": 618,
+      "filters": {
+        "categories": [
+          {
+            "name": "Departments",
+            "values": [
+              {
+                "id": "1255027787071",
+                "name": "Frozen",
+                "count": 547,
+                "queryParam": "cat_id~1255027787071",
+                "values": [
+                  {
+                    "id": "1255027787071_1255027788456",
+                    "name": "Ice Cream",
+                    "count": 512,
+                    "queryParam": "cat_id~1255027787071_1255027788456",
+                    "values": []
+                  },
+                  {
+                    "id": "1255027787071_1255027788061",
+                    "name": "Frozen Desserts",
+                    "count": 76,
+                    "queryParam": "cat_id~1255027787071_1255027788061",
+                    "values": []
+                  },
+                  {
+                    "id": "1255027787071_1255027788141",
+                    "name": "Frozen Beverages & Ice",
+                    "count": 2,
+                    "queryParam": "cat_id~1255027787071_1255027788141"
+                  },
+                  {
+                    "id": "1255027787071_1256653759086",
+                    "name": "Frozen Bread & Potatoes",
+                    "count": 1,
+                    "queryParam": "cat_id~1255027787071_1256653759086"
+                  },
+                  {
+                    "id": "1255027787071_1256653759092",
+                    "name": "Frozen Breakfast",
+                    "count": 1,
+                    "queryParam": "cat_id~1255027787071_1256653759092"
+                  },
+                  {
+                    "id": "1255027787071_1255027788081",
+                    "name": "Frozen Family Meals",
+                    "count": 4,
+                    "queryParam": "cat_id~1255027787071_1255027788081"
+                  },
+                  {
+                    "id": "1255027787071_5238483676",
+                    "name": "Frozen Favorites",
+                    "count": 5,
+                    "queryParam": "cat_id~1255027787071_5238483676"
+                  },
+                  {
+                    "id": "1255027787071_1255027788121",
+                    "name": "Frozen Fruits & Vegetables",
+                    "count": 3,
+                    "queryParam": "cat_id~1255027787071_1255027788121"
+                  },
+                  {
+                    "id": "1255027787071_1255027788021",
+                    "name": "Frozen Snacks & Appetizers",
+                    "count": 9,
+                    "queryParam": "cat_id~1255027787071_1255027788021"
+                  },
+                  {
+                    "id": "1255027787071_3778029360",
+                    "name": "Holiday Frozen Treats",
+                    "count": 2,
+                    "queryParam": "cat_id~1255027787071_3778029360"
+                  },
+                  {
+                    "id": "1255027787071_7962904531",
+                    "name": "New In Frozen",
+                    "count": 3,
+                    "queryParam": "cat_id~1255027787071_7962904531"
+                  }
+                ]
+              },
+              {
+                "id": "1256653758166",
+                "name": "Special Diets",
+                "count": 1,
+                "queryParam": "cat_id~1256653758166"
+              },
+              {
+                "id": "1256653758048",
+                "name": "Featured Products",
+                "count": 11,
+                "queryParam": "cat_id~1256653758048",
+                "values": [
+                  {
+                    "id": "1256653758048_0814626053",
+                    "name": "Basket Starters",
+                    "count": 2,
+                    "queryParam": "cat_id~1256653758048_0814626053"
+                  },
+                  {
+                    "id": "1256653758048_5594694329",
+                    "name": "Celebrando",
+                    "count": 1,
+                    "queryParam": "cat_id~1256653758048_5594694329"
+                  },
+                  {
+                    "id": "1256653758048_6672403104",
+                    "name": "S'Mores",
+                    "count": 1,
+                    "queryParam": "cat_id~1256653758048_6672403104"
+                  },
+                  {
+                    "id": "1256653758048_1256653759172",
+                    "name": "Weekly Ad Feature Items",
+                    "count": 8,
+                    "queryParam": "cat_id~1256653758048_1256653759172"
+                  }
+                ]
+              },
+              {
+                "id": "1255142220583",
+                "name": "Home, Kitchen & Dine",
+                "count": 1,
+                "queryParam": "cat_id~1255142220583",
+                "values": [
+                  {
+                    "id": "1255142220583_0104326710",
+                    "name": "Kitchen",
+                    "count": 1,
+                    "queryParam": "cat_id~1255142220583_0104326710"
+                  },
+                  {
+                    "id": "1255142220583_1256653760026",
+                    "name": "Kitchen Tools & Gadgets",
+                    "count": 1,
+                    "queryParam": "cat_id~1255142220583_1256653760026"
+                  }
+                ]
+              },
+              {
+                "id": "1805926255",
+                "name": "Halloween Shop",
+                "count": 2,
+                "queryParam": "cat_id~1805926255"
+              },
+              {
+                "id": "1255027787041",
+                "name": "Beverages",
+                "count": 3,
+                "queryParam": "cat_id~1255027787041",
+                "values": [
+                  {
+                    "id": "1255027787041_1255027788416",
+                    "name": "Ice",
+                    "count": 2,
+                    "queryParam": "cat_id~1255027787041_1255027788416"
+                  },
+                  {
+                    "id": "1255027787041_1255027789253",
+                    "name": "Soft Drinks",
+                    "count": 1,
+                    "queryParam": "cat_id~1255027787041_1255027789253"
+                  },
+                  {
+                    "id": "1255027787041_1255027788381",
+                    "name": "Tea & Hot Chocolate",
+                    "count": 1,
+                    "queryParam": "cat_id~1255027787041_1255027788381"
+                  }
+                ]
+              },
+              {
+                "id": "1255027787051",
+                "name": "Snacks & Candy",
+                "count": 25,
+                "queryParam": "cat_id~1255027787051",
+                "values": [
+                  {
+                    "id": "1255027787051_1255027787541",
+                    "name": "Chips & Dip",
+                    "count": 1,
+                    "queryParam": "cat_id~1255027787051_1255027787541"
+                  },
+                  {
+                    "id": "1255027787051_1255027787421",
+                    "name": "Chocolate, Candy & Gum",
+                    "count": 20,
+                    "queryParam": "cat_id~1255027787051_1255027787421"
+                  },
+                  {
+                    "id": "1255027787051_1255027787661",
+                    "name": "Cookies & Crackers",
+                    "count": 1,
+                    "queryParam": "cat_id~1255027787051_1255027787661"
+                  },
+                  {
+                    "id": "1255027787051_1256653758414",
+                    "name": "Fruit Snacks",
+                    "count": 3,
+                    "queryParam": "cat_id~1255027787051_1256653758414"
+                  },
+                  {
+                    "id": "1255027787051_3019008069",
+                    "name": "On-the-Go",
+                    "count": 5,
+                    "queryParam": "cat_id~1255027787051_3019008069"
+                  }
+                ]
+              },
+              {
+                "id": "2393438169",
+                "name": "Easter Meal",
+                "count": 8,
+                "queryParam": "cat_id~2393438169",
+                "values": [
+                  {
+                    "id": "2393438169_1160881694",
+                    "name": "Dessert",
+                    "count": 6,
+                    "queryParam": "cat_id~2393438169_1160881694"
+                  },
+                  {
+                    "id": "2393438169_6214936661",
+                    "name": "Sides",
+                    "count": 2,
+                    "queryParam": "cat_id~2393438169_6214936661"
+                  }
+                ]
+              },
+              {
+                "id": "1255064354809",
+                "name": "Deli",
+                "count": 7,
+                "queryParam": "cat_id~1255064354809",
+                "values": [
+                  {
+                    "id": "1255064354809_1288136101",
+                    "name": "Grab & Go Sandwiches, Salads & Snack Packs",
+                    "count": 1,
+                    "queryParam": "cat_id~1255064354809_1288136101"
+                  },
+                  {
+                    "id": "1255064354809_2075111189",
+                    "name": "Hummus, Dips & Salsa",
+                    "count": 2,
+                    "queryParam": "cat_id~1255064354809_2075111189"
+                  },
+                  {
+                    "id": "1255064354809_1279376900",
+                    "name": "Meals & Sides",
+                    "count": 3,
+                    "queryParam": "cat_id~1255064354809_1279376900"
+                  },
+                  {
+                    "id": "1255064354809_2644613234",
+                    "name": "Prepared Meals & Sides",
+                    "count": 3,
+                    "queryParam": "cat_id~1255064354809_2644613234"
+                  },
+                  {
+                    "id": "1255064354809_1137667114",
+                    "name": "Snacks & Fresh Sandwiches",
+                    "count": 2,
+                    "queryParam": "cat_id~1255064354809_1137667114"
+                  }
+                ]
+              },
+              {
+                "id": "1255027787061",
+                "name": "Eggs & Dairy",
+                "count": 12,
+                "queryParam": "cat_id~1255027787061",
+                "values": [
+                  {
+                    "id": "1255027787061_1255027788917",
+                    "name": "Biscuits, Cookies, Doughs & Crusts",
+                    "count": 3,
+                    "queryParam": "cat_id~1255027787061_1255027788917"
+                  },
+                  {
+                    "id": "1255027787061_1255027787401",
+                    "name": "Butter & Margarine",
+                    "count": 2,
+                    "queryParam": "cat_id~1255027787061_1255027787401"
+                  },
+                  {
+                    "id": "1255027787061_1255027787521",
+                    "name": "Cheese",
+                    "count": 5,
+                    "queryParam": "cat_id~1255027787061_1255027787521"
+                  },
+                  {
+                    "id": "1255027787061_1255027788656",
+                    "name": "Milk",
+                    "count": 1,
+                    "queryParam": "cat_id~1255027787061_1255027788656"
+                  },
+                  {
+                    "id": "1255027787061_1255027788897",
+                    "name": "Puddings, Gelatins & Desserts",
+                    "count": 2,
+                    "queryParam": "cat_id~1255027787061_1255027788897"
+                  },
+                  {
+                    "id": "1255027787061_1255027789293",
+                    "name": "Sour Cream, Dips & Sauces",
+                    "count": 1,
+                    "queryParam": "cat_id~1255027787061_1255027789293"
+                  }
+                ]
+              },
+              {
+                "id": "1256653760657",
+                "name": "Kid Friendly Foods",
+                "count": 2,
+                "queryParam": "cat_id~1256653760657",
+                "values": [
+                  {
+                    "id": "1256653760657_0901101881",
+                    "name": "Lunchbox Top Picks",
+                    "count": 2,
+                    "queryParam": "cat_id~1256653760657_0901101881"
+                  },
+                  {
+                    "id": "1256653760657_1104974483",
+                    "name": "School Lunch Top Picks",
+                    "count": 1,
+                    "queryParam": "cat_id~1256653760657_1104974483"
+                  }
+                ]
+              },
+              {
+                "id": "1255027787111",
+                "name": "Pantry",
+                "count": 26,
+                "queryParam": "cat_id~1255027787111",
+                "values": [
+                  {
+                    "id": "1255027787111_1255027787261",
+                    "name": "Baking",
+                    "count": 7,
+                    "queryParam": "cat_id~1255027787111_1255027787261"
+                  },
+                  {
+                    "id": "1255027787111_1256653759416",
+                    "name": "Boxed Dinners",
+                    "count": 7,
+                    "queryParam": "cat_id~1255027787111_1256653759416"
+                  },
+                  {
+                    "id": "1255027787111_1255027789273",
+                    "name": "Canned Goods",
+                    "count": 3,
+                    "queryParam": "cat_id~1255027787111_1255027789273"
+                  },
+                  {
+                    "id": "1255027787111_1255027787501",
+                    "name": "Cereal & Breakfast Food",
+                    "count": 4,
+                    "queryParam": "cat_id~1255027787111_1255027787501"
+                  },
+                  {
+                    "id": "1255027787111_1255027787641",
+                    "name": "Condiments",
+                    "count": 2,
+                    "queryParam": "cat_id~1255027787111_1255027787641"
+                  },
+                  {
+                    "id": "1255027787111_1255027788476",
+                    "name": "International Foods",
+                    "count": 5,
+                    "queryParam": "cat_id~1255027787111_1255027788476"
+                  },
+                  {
+                    "id": "1255027787111_1256653759420",
+                    "name": "Potatoes & Stuffing",
+                    "count": 4,
+                    "queryParam": "cat_id~1255027787111_1256653759420"
+                  }
+                ]
+              },
+              {
+                "id": "1256653758570",
+                "name": "Easy Meal Solutions",
+                "count": 2,
+                "queryParam": "cat_id~1256653758570"
+              },
+              {
+                "id": "1255027787131",
+                "name": "Fruits & Vegetables",
+                "count": 6,
+                "queryParam": "cat_id~1255027787131",
+                "values": [
+                  {
+                    "id": "1255027787131_4364938242",
+                    "name": "Fresh Prepared Produce",
+                    "count": 2,
+                    "queryParam": "cat_id~1255027787131_4364938242"
+                  },
+                  {
+                    "id": "1255027787131_1255027789453",
+                    "name": "Fresh Vegetables",
+                    "count": 4,
+                    "queryParam": "cat_id~1255027787131_1255027789453"
+                  }
+                ]
+              },
+              {
+                "id": "9576778812",
+                "name": "Fall Shop",
+                "count": 7,
+                "queryParam": "cat_id~9576778812"
+              },
+              {
+                "id": "1255027787031",
+                "name": "Bread & Bakery",
+                "count": 33,
+                "queryParam": "cat_id~1255027787031",
+                "values": [
+                  {
+                    "id": "1255027787031_3922724659",
+                    "name": "Cakes & Cupcakes",
+                    "count": 5,
+                    "queryParam": "cat_id~1255027787031_3922724659"
+                  },
+                  {
+                    "id": "1255027787031_6408021135",
+                    "name": "Cookies & Brownies",
+                    "count": 4,
+                    "queryParam": "cat_id~1255027787031_6408021135"
+                  },
+                  {
+                    "id": "1255027787031_2108441412",
+                    "name": "Fresh Bakery Breads",
+                    "count": 1,
+                    "queryParam": "cat_id~1255027787031_2108441412"
+                  },
+                  {
+                    "id": "1255027787031_0460900950",
+                    "name": "From Our Bakery",
+                    "count": 20,
+                    "queryParam": "cat_id~1255027787031_0460900950"
+                  },
+                  {
+                    "id": "1255027787031_8591128458",
+                    "name": "Pies",
+                    "count": 17,
+                    "queryParam": "cat_id~1255027787031_8591128458"
+                  },
+                  {
+                    "id": "1255027787031_1255027788957",
+                    "name": "Rolls & Buns",
+                    "count": 1,
+                    "queryParam": "cat_id~1255027787031_1255027788957"
+                  },
+                  {
+                    "id": "1255027787031_1256653759406",
+                    "name": "Sweet Treats",
+                    "count": 7,
+                    "queryParam": "cat_id~1255027787031_1256653759406"
+                  }
+                ]
+              },
+              {
+                "id": "7781871085",
+                "name": "Fall Comfort Food",
+                "count": 4,
+                "queryParam": "cat_id~7781871085"
+              },
+              {
+                "id": "1255027787101",
+                "name": "Meat",
+                "count": 1,
+                "queryParam": "cat_id~1255027787101"
+              },
+              {
+                "id": "5621371366",
+                "name": "Holiday Meal",
+                "count": 2,
+                "queryParam": "cat_id~5621371366"
+              },
+              {
+                "id": "3189470147",
+                "name": "Summer Flavors",
+                "count": 1,
+                "queryParam": "cat_id~3189470147"
+              }
+            ]
+          }
+        ],
+        "others": [
+          {
+            "name": "Special Offer",
+            "values": [
+              {
+                "name": "Rollback",
+                "count": 85,
+                "queryParam": "special_offers~Rollback"
+              }
+            ]
+          },
+          {
+            "name": "Price"
+          },
+          {
+            "name": "Brand",
+            "values": [
+              {
+                "name": "Great Value",
+                "count": 59,
+                "queryParam": "ghs_brand~Great Value"
+              },
+              {
+                "name": "Blue Bunny",
+                "count": 8,
+                "queryParam": "ghs_brand~Blue Bunny"
+              },
+              {
+                "name": "Breyers",
+                "count": 31,
+                "queryParam": "ghs_brand~Breyers"
+              },
+              {
+                "name": "Ben & Jerry's",
+                "count": 38,
+                "queryParam": "ghs_brand~Ben & Jerry's"
+              },
+              {
+                "name": "Blue Bell",
+                "count": 20,
+                "queryParam": "ghs_brand~Blue Bell"
+              },
+              {
+                "name": "Klondike",
+                "count": 10,
+                "queryParam": "ghs_brand~Klondike"
+              },
+              {
+                "name": "H\u00e4agen-Dazs",
+                "count": 41,
+                "queryParam": "ghs_brand~H\u00e4agen-Dazs"
+              },
+              {
+                "name": "Dreyer's/Edy's",
+                "count": 36,
+                "queryParam": "ghs_brand~Dreyer's/Edy's"
+              },
+              {
+                "name": "PRODUCE UNBRANDED",
+                "count": 4,
+                "queryParam": "ghs_brand~PRODUCE UNBRANDED"
+              },
+              {
+                "name": "Blue Ribbon Classics",
+                "count": 9,
+                "queryParam": "ghs_brand~Blue Ribbon Classics"
+              },
+              {
+                "name": "Marketside",
+                "count": 8,
+                "queryParam": "ghs_brand~Marketside"
+              },
+              {
+                "name": "Drumstick",
+                "count": 13,
+                "queryParam": "ghs_brand~Drumstick"
+              },
+              {
+                "name": "Snickers",
+                "count": 3,
+                "queryParam": "ghs_brand~Snickers"
+              },
+              {
+                "name": "Good Humor",
+                "count": 4,
+                "queryParam": "ghs_brand~Good Humor"
+              },
+              {
+                "name": "Freshness Guaranteed",
+                "count": 12,
+                "queryParam": "ghs_brand~Freshness Guaranteed"
+              },
+              {
+                "name": "Magnum",
+                "count": 4,
+                "queryParam": "ghs_brand~Magnum"
+              },
+              {
+                "name": "M&M'S",
+                "count": 3,
+                "queryParam": "ghs_brand~M&M'S"
+              },
+              {
+                "name": "Halo Top",
+                "count": 14,
+                "queryParam": "ghs_brand~Halo Top"
+              },
+              {
+                "name": "Mayfield",
+                "count": 49,
+                "queryParam": "ghs_brand~Mayfield"
+              },
+              {
+                "name": "Talenti",
+                "count": 16,
+                "queryParam": "ghs_brand~Talenti"
+              },
+              {
+                "name": "Hershey's",
+                "count": 17,
+                "queryParam": "ghs_brand~Hershey's"
+              },
+              {
+                "name": "Kemps",
+                "count": 1,
+                "queryParam": "ghs_brand~Kemps"
+              },
+              {
+                "name": "Popsicle",
+                "count": 13,
+                "queryParam": "ghs_brand~Popsicle"
+              },
+              {
+                "name": "Pillsbury",
+                "count": 3,
+                "queryParam": "ghs_brand~Pillsbury"
+              },
+              {
+                "name": "Little Debbie",
+                "count": 3,
+                "queryParam": "ghs_brand~Little Debbie"
+              },
+              {
+                "name": "Kraft",
+                "count": 1,
+                "queryParam": "ghs_brand~Kraft"
+              },
+              {
+                "name": "Smucker's",
+                "count": 6,
+                "queryParam": "ghs_brand~Smucker's"
+              },
+              {
+                "name": "Keebler",
+                "count": 3,
+                "queryParam": "ghs_brand~Keebler"
+              },
+              {
+                "name": "Helados Mexico",
+                "count": 3,
+                "queryParam": "ghs_brand~Helados Mexico"
+              },
+              {
+                "name": "Friendly's",
+                "count": 2,
+                "queryParam": "ghs_brand~Friendly's"
+              },
+              {
+                "name": "Outshine",
+                "count": 17,
+                "queryParam": "ghs_brand~Outshine"
+              },
+              {
+                "name": "Skinny Cow",
+                "count": 2,
+                "queryParam": "ghs_brand~Skinny Cow"
+              },
+              {
+                "name": "IttiBitz",
+                "count": 1,
+                "queryParam": "ghs_brand~IttiBitz"
+              },
+              {
+                "name": "So Delicious",
+                "count": 9,
+                "queryParam": "ghs_brand~So Delicious"
+              },
+              {
+                "name": "Marie Callender's",
+                "count": 6,
+                "queryParam": "ghs_brand~Marie Callender's"
+              },
+              {
+                "name": "Bomb Pop",
+                "count": 5,
+                "queryParam": "ghs_brand~Bomb Pop"
+              },
+              {
+                "name": "Betty Crocker",
+                "count": 1,
+                "queryParam": "ghs_brand~Betty Crocker"
+              },
+              {
+                "name": "Hormel",
+                "count": 2,
+                "queryParam": "ghs_brand~Hormel"
+              },
+              {
+                "name": "Budget Saver",
+                "count": 6,
+                "queryParam": "ghs_brand~Budget Saver"
+              },
+              {
+                "name": "Nestl\u00e9 Toll House",
+                "count": 1,
+                "queryParam": "ghs_brand~Nestl\u00e9 Toll House"
+              },
+              {
+                "name": "TWIX",
+                "count": 4,
+                "queryParam": "ghs_brand~TWIX"
+              },
+              {
+                "name": "Wal-Mart Bakery",
+                "count": 3,
+                "queryParam": "ghs_brand~Wal-Mart Bakery"
+              },
+              {
+                "name": "Reese's",
+                "count": 2,
+                "queryParam": "ghs_brand~Reese's"
+              },
+              {
+                "name": "Cheez-It",
+                "count": 1,
+                "queryParam": "ghs_brand~Cheez-It"
+              },
+              {
+                "name": "Luigi's",
+                "count": 2,
+                "queryParam": "ghs_brand~Luigi's"
+              }
+            ]
+          },
+          {
+            "name": "Type",
+            "values": [
+              {
+                "name": "Bars & Popsicles",
+                "count": 6,
+                "queryParam": "ghs_type~Bars & Popsicles"
+              },
+              {
+                "name": "Cups",
+                "count": 4,
+                "queryParam": "ghs_type~Cups"
+              },
+              {
+                "name": "Tubs",
+                "count": 7,
+                "queryParam": "ghs_type~Tubs"
+              },
+              {
+                "name": "Cones",
+                "count": 3,
+                "queryParam": "ghs_type~Cones"
+              },
+              {
+                "name": "Sandwiches",
+                "count": 2,
+                "queryParam": "ghs_type~Sandwiches"
+              },
+              {
+                "name": "Flavored Ice",
+                "count": 1,
+                "queryParam": "ghs_type~Flavored Ice"
+              },
+              {
+                "name": "Cheesecakes",
+                "count": 1,
+                "queryParam": "ghs_type~Cheesecakes"
+              },
+              {
+                "name": "Corn",
+                "count": 1,
+                "queryParam": "ghs_type~Corn"
+              },
+              {
+                "name": "Pies & Pastries",
+                "count": 2,
+                "queryParam": "ghs_type~Pies & Pastries"
+              }
+            ]
+          }
+        ]
+      },
+      "breadcrumbs": [
+        {
+          "id": "0",
+          "name": "All Departments",
+          "cat_level": 0,
+          "queryParam": "cat_id~0"
+        }
+      ],
+      "sortOptions": [
+        {
+          "sortId": "best_match",
+          "sortName": "Best match",
+          "isDefault": true
+        },
+        {
+          "sortId": "best_seller",
+          "sortName": "Best sellers",
+          "isDefault": false
+        },
+        {
+          "sortId": "price_low",
+          "sortName": "Price: low to high",
+          "isDefault": false
+        },
+        {
+          "sortId": "price_high",
+          "sortName": "Price: high to low",
+          "isDefault": false
+        }
+      ],
+      "errors": [],
+      "searchMatchType": "{\"dept\":\"/1255027787071/1255027788456/1255027791823\",\"ba_pre\":\"0\",\"id\":\"1624155376362:mglider-902387447-17-1101347048:25954:kpeftsw3:66266\",\"req\":\"A\",\"A\":\"NoAds\",\"B\":\"0,23,24,\",\"css\":\"0|0|0|0\",\"ba_post\":\"0\",\"cs\":false}",
+      "wpaBeacon": {
+        "moduleData": {
+          "adUuid": "1624155376362:mglider-902387447-17-1",
+          "pageBeacons": {},
+          "moduleInfo": "{\"adUuid\":\"1624155376362:mglider-902387447-17-1\",\"tenant\":\"GR\",\"storeId\":\"3785\",\"platform\":\"desktop\",\"pageType\":\"search\",\"pageId\":\"ice cream\",\"placementId\":\"1145x345_T-C-IG_TI_1-2_gr-search-ingrid-desktop\",\"normQuery\":\"ice cream\",\"mloc\":\"middle\"}"
+        }
+      }
+    }
+  },
+  {
+    "store": "3785",
+    "product": "red apples",
+    "result": {
+      "products": [
+        {
+          "USItemId": "45912954",
+          "offerId": "68261FCF64D3433EA1F4964CBF91CFD7",
+          "sku": "1022625",
+          "basic": {
+            "salesUnit": "Each_Weight",
+            "name": "Red Delicious Apples, each",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/7320e63a-de46-4a16-9b8c-526e15219a12_3.e557c1ad9973e1f76f512b34950243a3.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": 0.6,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Red-Delicious-Apples-each/45912954",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.5,
+            "reviewsCount": 17
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 1.28,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "lb",
+              "salesUnitOfMeasure": "lb",
+              "salesQuantity": 1,
+              "displayCondition": "each",
+              "displayPrice": 0.77,
+              "displayUnitPrice": "($1.28/lb)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 1.28
+            }
+          }
+        },
+        {
+          "USItemId": "363800188",
+          "offerId": "568010D2D7B549E7AF88C06BD99549C4",
+          "sku": "3000040137",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Red Delicious Apples, 5 lb Bag",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/da655f92-7aee-462c-bd7c-542266e8f40c_6.044446c4c25d760a1518740a29684053.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Red-Delicious-Apples-5-lb-Bag/363800188",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.7,
+            "reviewsCount": 24
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 6.27,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 5,
+              "displayCondition": null,
+              "displayPrice": 6.27,
+              "displayUnitPrice": "($1.25/ea)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 1.25
+            }
+          }
+        },
+        {
+          "USItemId": "44390958",
+          "offerId": "56CFAE25F3F3456DB82EE185354A6956",
+          "sku": "3000039639",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Gala Apples, 3 lb Bag",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/e97d7a3f-ed34-4801-aafd-a7008550d36b_2.876fc609cfa3a382b2c033a63d49c14b.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Gala-Apples-3-lb-Bag/44390958",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.4,
+            "reviewsCount": 145
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 3.74,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 3,
+              "displayCondition": null,
+              "displayPrice": 3.74,
+              "displayUnitPrice": "($1.25/lb)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 1.25
+            }
+          }
+        },
+        {
+          "USItemId": "44390953",
+          "offerId": "F98DDB483D9B4395820E03A065732EA9",
+          "sku": "1022608",
+          "basic": {
+            "salesUnit": "Each_Weight",
+            "name": "Gala Apples, each",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/f46d4fa7-6108-4450-a610-cc95a1ca28c5_3.38c2c5b2f003a0aafa618f3b4dc3cbbd.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": 0.5,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Gala-Apples-each/44390953",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.5,
+            "reviewsCount": 28
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 1.34,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "lb",
+              "salesUnitOfMeasure": "lb",
+              "salesQuantity": 1,
+              "displayCondition": "each",
+              "displayPrice": 0.67,
+              "displayUnitPrice": "($1.34/lb)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 1.34
+            }
+          }
+        },
+        {
+          "USItemId": "44391639",
+          "offerId": "AA321511C4A84F9AA33345FDB926F26F",
+          "sku": "3000039631",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Fuji Apples, 3 lb Bag",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/aa8fba7c-7f08-499a-91e9-2a6ec3f59519_3.e5415b1154aad1108196fe24fab9798a.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Fuji-Apples-3-lb-Bag/44391639",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 3.5,
+            "reviewsCount": 24
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 4.13,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 48,
+              "displayCondition": null,
+              "displayPrice": 4.13,
+              "displayUnitPrice": "($1.38/lb)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 1.38
+            }
+          }
+        },
+        {
+          "USItemId": "44390950",
+          "offerId": "EDCCCD78FC5C4552BBF951E4EFC27456",
+          "sku": "1022616",
+          "basic": {
+            "salesUnit": "Each_Weight",
+            "name": "Honeycrisp Apples Bulk",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/fdffb720-8b75-43df-bffe-4ffc4e9369d8_3.d4460fa9146eb9716b5804d61d4b26b9.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": 0.6,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Honeycrisp-Apples-Bulk/44390950",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.7,
+            "reviewsCount": 16
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 2.4,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "lb",
+              "salesUnitOfMeasure": "lb",
+              "salesQuantity": 1,
+              "displayCondition": "each",
+              "displayPrice": 1.44,
+              "displayUnitPrice": "($2.40/lb)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 2.4
+            }
+          }
+        },
+        {
+          "USItemId": "51259197",
+          "offerId": "208A545377C641589AF15AD1F59695E7",
+          "sku": "3000019279",
+          "basic": {
+            "salesUnit": "Each_Weight",
+            "name": "Granny Smith Apples, Each",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/bf2ec88a-2f36-41f2-93d3-c3161772733d_1.cdc913433c6acc6bf9201dc1fa86bac9.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": 0.6,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Granny-Smith-Apples-Each/51259197",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.5,
+            "reviewsCount": 15
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 1.56,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "lb",
+              "salesUnitOfMeasure": "lb",
+              "salesQuantity": 1,
+              "displayCondition": "each",
+              "displayPrice": 0.94,
+              "displayUnitPrice": "($1.56/lb)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 1.56
+            }
+          }
+        },
+        {
+          "USItemId": "151762086",
+          "offerId": "293C45435D9F48E7A6A3B700B50AB7C1",
+          "sku": "3000588669",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Honeycrisp Apples, 3 lb bag",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/723b6688-38d2-4113-a788-894cc1905d82_2.6e8c32faa8bbb7fb35697f4508a7205c.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Honeycrisp-Apples-3-lb-bag/151762086",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.5,
+            "reviewsCount": 17
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 5.64,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 32,
+              "displayCondition": null,
+              "displayPrice": 5.64,
+              "displayUnitPrice": "($1.88/lb)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 1.88
+            }
+          }
+        },
+        {
+          "USItemId": "43923182",
+          "offerId": "452CA5ED0C884C8CAC5EDF4BF8226719",
+          "sku": "1022606",
+          "basic": {
+            "salesUnit": "Each_Weight",
+            "name": "Fuji Apples, each",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/3ec17a04-0333-424f-8076-e2414e013cbd_1.b3e1ec5d2514a86e0492ce1d5d6bb353.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": 0.6,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Fuji-Apples-each/43923182",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.1,
+            "reviewsCount": 14
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 1.37,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "lb",
+              "salesUnitOfMeasure": "lb",
+              "salesQuantity": 1,
+              "displayCondition": "each",
+              "displayPrice": 0.82,
+              "displayUnitPrice": "($1.37/lb)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 1.37
+            }
+          }
+        },
+        {
+          "USItemId": "44390991",
+          "offerId": "00ED8EC57CB24E4FA93B8C047905455D",
+          "sku": "3000028450",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Granny Smith Apples, 3 Lb Bag",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/a498cbe5-c73c-4f94-ae46-39f3e04264aa_1.c70d343bd6765c6a87a00f02d589ecaf.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Granny-Smith-Apples-3-Lb-Bag/44390991",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.9,
+            "reviewsCount": 12
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 5.28,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 3,
+              "displayCondition": null,
+              "displayPrice": 5.28,
+              "displayUnitPrice": "($1.76/lb)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 1.76
+            }
+          }
+        }
+      ],
+      "totalCount": 42,
+      "filters": {
+        "categories": [
+          {
+            "name": "Departments",
+            "values": [
+              {
+                "id": "1255027787131",
+                "name": "Fruits & Vegetables",
+                "count": 37,
+                "queryParam": "cat_id~1255027787131",
+                "values": [
+                  {
+                    "id": "1255027787131_1255027788181",
+                    "name": "Fresh Fruit",
+                    "count": 37,
+                    "queryParam": "cat_id~1255027787131_1255027788181",
+                    "values": []
+                  },
+                  {
+                    "id": "1255027787131_4364938242",
+                    "name": "Fresh Prepared Produce",
+                    "count": 4,
+                    "queryParam": "cat_id~1255027787131_4364938242"
+                  },
+                  {
+                    "id": "1255027787131_4585348430",
+                    "name": "Healthy Snacking",
+                    "count": 4,
+                    "queryParam": "cat_id~1255027787131_4585348430"
+                  },
+                  {
+                    "id": "1255027787131_3518708856",
+                    "name": "Nuts, Dried Fruit, & Healthy Snacks",
+                    "count": 1,
+                    "queryParam": "cat_id~1255027787131_3518708856"
+                  },
+                  {
+                    "id": "1255027787131_1255200063365",
+                    "name": "Organic Produce",
+                    "count": 6,
+                    "queryParam": "cat_id~1255027787131_1255200063365"
+                  }
+                ]
+              },
+              {
+                "id": "1256653758154",
+                "name": "Organic Shop",
+                "count": 5,
+                "queryParam": "cat_id~1256653758154"
+              },
+              {
+                "id": "1256653758048",
+                "name": "Featured Products",
+                "count": 6,
+                "queryParam": "cat_id~1256653758048",
+                "values": [
+                  {
+                    "id": "1256653758048_0814626053",
+                    "name": "Basket Starters",
+                    "count": 5,
+                    "queryParam": "cat_id~1256653758048_0814626053"
+                  },
+                  {
+                    "id": "1256653758048_0648624347",
+                    "name": "Our Best Rollbacks",
+                    "count": 1,
+                    "queryParam": "cat_id~1256653758048_0648624347"
+                  }
+                ]
+              },
+              {
+                "id": "1255142220573",
+                "name": "Office & Electronics",
+                "count": 1,
+                "queryParam": "cat_id~1255142220573"
+              },
+              {
+                "id": "1256653759248",
+                "name": "Party Supplies & Crafts",
+                "count": 1,
+                "queryParam": "cat_id~1256653759248"
+              },
+              {
+                "id": "1255027787041",
+                "name": "Beverages",
+                "count": 1,
+                "queryParam": "cat_id~1255027787041"
+              },
+              {
+                "id": "1256653760657",
+                "name": "Kid Friendly Foods",
+                "count": 1,
+                "queryParam": "cat_id~1256653760657"
+              },
+              {
+                "id": "1255027787071",
+                "name": "Frozen",
+                "count": 1,
+                "queryParam": "cat_id~1255027787071"
+              },
+              {
+                "id": "1255027787111",
+                "name": "Pantry",
+                "count": 2,
+                "queryParam": "cat_id~1255027787111"
+              },
+              {
+                "id": "9576778812",
+                "name": "Fall Shop",
+                "count": 2,
+                "queryParam": "cat_id~9576778812"
+              }
+            ]
+          }
+        ],
+        "others": [
+          {
+            "name": "Brand",
+            "values": [
+              {
+                "name": "PRODUCE UNBRANDED",
+                "count": 23,
+                "queryParam": "ghs_brand~PRODUCE UNBRANDED"
+              },
+              {
+                "name": "Marketside",
+                "count": 4,
+                "queryParam": "ghs_brand~Marketside"
+              },
+              {
+                "name": "Freshness Guaranteed",
+                "count": 2,
+                "queryParam": "ghs_brand~Freshness Guaranteed"
+              },
+              {
+                "name": "Jazz",
+                "count": 1,
+                "queryParam": "ghs_brand~Jazz"
+              },
+              {
+                "name": "Dole",
+                "count": 1,
+                "queryParam": "ghs_brand~Dole"
+              }
+            ]
+          },
+          {
+            "name": "Price"
+          }
+        ]
+      },
+      "breadcrumbs": [
+        {
+          "id": "0",
+          "name": "All Departments",
+          "cat_level": 0,
+          "queryParam": "cat_id~0"
+        }
+      ],
+      "sortOptions": [
+        {
+          "sortId": "best_match",
+          "sortName": "Best match",
+          "isDefault": true
+        },
+        {
+          "sortId": "best_seller",
+          "sortName": "Best sellers",
+          "isDefault": false
+        },
+        {
+          "sortId": "price_low",
+          "sortName": "Price: low to high",
+          "isDefault": false
+        },
+        {
+          "sortId": "price_high",
+          "sortName": "Price: high to low",
+          "isDefault": false
+        }
+      ],
+      "errors": [],
+      "searchMatchType": "{\"dept\":\"/1255027787131/1255027788181/1255027790251\",\"ba_pre\":\"0\",\"id\":\"1624155377448:mglider-902387447-31-1101347090:22839:kpeftoyv:64842\",\"req\":\"A\",\"A\":\"NoAds\",\"B\":\"0,1,12,14,\",\"css\":\"0|0|0|0\",\"ba_post\":\"0\",\"cs\":false}",
+      "wpaBeacon": {
+        "moduleData": {
+          "adUuid": "1624155377448:mglider-902387447-31-1",
+          "pageBeacons": {},
+          "moduleInfo": "{\"adUuid\":\"1624155377448:mglider-902387447-31-1\",\"tenant\":\"GR\",\"storeId\":\"3785\",\"platform\":\"desktop\",\"pageType\":\"search\",\"pageId\":\"red apples\",\"placementId\":\"1145x345_T-C-IG_TI_1-2_gr-search-ingrid-desktop\",\"normQuery\":\"red apples\",\"mloc\":\"middle\"}"
+        }
+      }
+    }
+  },
+  {
+    "store": "3785",
+    "product": "oranges",
+    "result": {
+      "products": [
+        {
+          "USItemId": "11025598",
+          "offerId": "921BB9EA5D8F450EA812370E99DE0324",
+          "sku": "3000674154",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Clementines, 3lb bag",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/33ea1138-975e-47a4-81ff-62d88546df67.419bf6bc44206b42dccd3becbd04f4a4.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Clementines-3lb-bag/11025598",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 3.4,
+            "reviewsCount": 182
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 3.78,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 3,
+              "displayCondition": null,
+              "displayPrice": 3.78,
+              "displayUnitPrice": "($1.26/lb)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 1.26
+            }
+          }
+        },
+        {
+          "USItemId": "44391012",
+          "offerId": "E4FA20C50D904FEDAC91238C6581D441",
+          "sku": "3000054051",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Navel Oranges, 4 lb Bag",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/5fa99ca0-ae7b-4030-ae4e-8ac4e1621eb3_1.d784bf085b7b2b98c065fded42d727f1.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 10,
+            "productUrl": "/ip/Navel-Oranges-4-lb-Bag/44391012",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.4,
+            "reviewsCount": 25
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 3.94,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 3,
+              "displayCondition": null,
+              "displayPrice": 3.94,
+              "displayUnitPrice": "($1.31/lb)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 1.31
+            }
+          }
+        },
+        {
+          "USItemId": "162577028",
+          "offerId": "508D671A070B4235A40FA262453AAB26",
+          "sku": "1022700",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Navel Oranges, each",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/9a23bac1-8817-4845-b235-36e306bd76a1_1.2f100cb67c81b17a44fedcf1f5d9f9da.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Navel-Oranges-each/162577028",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.3,
+            "reviewsCount": 26
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 0.64,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 1,
+              "displayCondition": null,
+              "displayPrice": 0.64,
+              "displayUnitPrice": null,
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 0.64
+            }
+          }
+        },
+        {
+          "USItemId": "44391069",
+          "offerId": "FBAF3BC0172B499B8BF161DD0E5E60C1",
+          "sku": "3001155726",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Navel Oranges, 8 lb Bag",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/35e5e43b-d7f7-4c05-ad55-d2df5404c1cd_1.8a8b9be88694f526967d6d5b24c78bae.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Navel-Oranges-8-lb-Bag/44391069",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 2.8,
+            "reviewsCount": 44
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 6.3,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 5,
+              "displayCondition": null,
+              "displayPrice": 6.3,
+              "displayUnitPrice": "($1.26/lb)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 1.26
+            }
+          }
+        },
+        {
+          "USItemId": "147204902",
+          "offerId": "53B0F5C46F38438C988FFBEEA34192E6",
+          "sku": "3000056923",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Marketside Organic Oranges, 4 lb Bag",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/9475bd9d-1617-43cb-bddb-5f8c1c6ae232_1.454586d4dd01778f60e10249888bbafc.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Marketside-Organic-Oranges-4-lb-Bag/147204902",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 3.3,
+            "reviewsCount": 4
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 4.92,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 48,
+              "displayCondition": null,
+              "displayPrice": 4.92,
+              "displayUnitPrice": "(10.3 \u00a2/oz)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 0.103
+            }
+          }
+        },
+        {
+          "USItemId": "994998279",
+          "offerId": "9526914DF185481AB0E0B11559A15234",
+          "sku": "1022885",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Mango, 1 Each",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/3d15ee0d-110f-4043-8ad1-738a9a32859e_3.f00a50c3a83d24ea44407bc0d18e4a62.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Mango-1-Each/994998279",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 3.9,
+            "reviewsCount": 23
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 0.86,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 1,
+              "displayCondition": null,
+              "displayPrice": 0.86,
+              "displayUnitPrice": null,
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 0.86
+            }
+          }
+        },
+        {
+          "USItemId": "13424464",
+          "offerId": "58DDD6A5B04D4A37BAFC66BDD38CD2B1",
+          "sku": "3000089252",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Valencia Juicing Oranges, 4 lb Bag",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/720bb11c-7f38-410f-a773-6530c81a46af_1.06388963ccdbc1be55d36961ccf3d16c.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Valencia-Juicing-Oranges-4-lb-Bag/13424464",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 3.3,
+            "reviewsCount": 7
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 4.98,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 4,
+              "displayCondition": null,
+              "displayPrice": 4.98,
+              "displayUnitPrice": "($1.25/lb)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 1.25
+            }
+          }
+        },
+        {
+          "USItemId": "959033640",
+          "offerId": "6C91DA3E97B74A6DAC785AF1EEE4AFC3",
+          "sku": "3101005861",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Simply Orange Pulp Free Orange Juice, 52 fl oz",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/1a26c059-839d-42f0-9e04-18e82440b021.9b6300ef6b93f44bfd3342714909fb7f.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Simply-Orange-Pulp-Free-Orange-Juice-52-fl-oz/959033640",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.8,
+            "reviewsCount": 374
+          },
+          "store": {
+            "isOutOfStock": false,
+            "price": {
+              "list": 3.58,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 1,
+              "displayCondition": null,
+              "displayPrice": 3.58,
+              "displayUnitPrice": null,
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 3.58
+            }
+          }
+        },
+        {
+          "USItemId": "44390951",
+          "offerId": "323E7ECDAEB748E1AE00FA525E207996",
+          "sku": "3000054326",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Clementines, 5lb bag",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/c83f8718-dd19-4078-b174-da2b415c6b03.460b122f83e3f29a2c591bbaec12c5ea.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 12,
+            "productUrl": "/ip/Clementines-5lb-bag/44390951",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 3.8,
+            "reviewsCount": 38
+          },
+          "store": {
+            "isOutOfStock": true,
+            "price": {
+              "list": 6.56,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 5,
+              "displayCondition": null,
+              "displayPrice": 6.56,
+              "displayUnitPrice": "($1.31/lb)",
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 1.31
+            }
+          }
+        },
+        {
+          "USItemId": "51259229",
+          "offerId": "2C3CCCEB24FB4F0E92FB52A10BEC0246",
+          "sku": "1022885",
+          "basic": {
+            "salesUnit": "Each",
+            "name": "Fresh Mangoes, each",
+            "image": {
+              "thumbnail": "https://i5.walmartimages.com/asr/3d15ee0d-110f-4043-8ad1-738a9a32859e_3.f00a50c3a83d24ea44407bc0d18e4a62.jpeg?odnHeight=150&odnWidth=150&odnBg=ffffff"
+            },
+            "weightIncrement": 1,
+            "averageWeight": null,
+            "maxAllowed": 24,
+            "productUrl": "/ip/Fresh-Mangoes-each/51259229",
+            "isSnapEligible": true,
+            "type": "REGULAR"
+          },
+          "detailed": {
+            "rating": 4.4,
+            "reviewsCount": 25
+          },
+          "store": {
+            "isOutOfStock": true,
+            "price": {
+              "list": 0.86,
+              "previousPrice": 0,
+              "priceUnitOfMeasure": "each",
+              "salesUnitOfMeasure": "each",
+              "salesQuantity": 1,
+              "displayCondition": null,
+              "displayPrice": 0.86,
+              "displayUnitPrice": null,
+              "isClearance": false,
+              "isRollback": false,
+              "unit": 0.86
+            }
+          }
+        }
+      ],
+      "totalCount": 153,
+      "filters": {
+        "categories": [
+          {
+            "name": "Departments",
+            "values": [
+              {
+                "id": "1255027787041",
+                "name": "Beverages",
+                "count": 106,
+                "queryParam": "cat_id~1255027787041",
+                "values": [
+                  {
+                    "id": "1255027787041_1256653761126",
+                    "name": "Bulk Beverages",
+                    "count": 2,
+                    "queryParam": "cat_id~1255027787041_1256653761126"
+                  },
+                  {
+                    "id": "1255027787041_1255027787601",
+                    "name": "Cocktails & Mixers",
+                    "count": 2,
+                    "queryParam": "cat_id~1255027787041_1255027787601"
+                  },
+                  {
+                    "id": "1255027787041_1255027789393",
+                    "name": "Drink Mixes and Water Enhancers",
+                    "count": 20,
+                    "queryParam": "cat_id~1255027787041_1255027789393"
+                  },
+                  {
+                    "id": "1255027787041_2023721512",
+                    "name": "Fresh Juice & Chilled Beverage",
+                    "count": 44,
+                    "queryParam": "cat_id~1255027787041_2023721512"
+                  },
+                  {
+                    "id": "1255027787041_2613944087",
+                    "name": "Mini Cans & Portion Control",
+                    "count": 1,
+                    "queryParam": "cat_id~1255027787041_2613944087"
+                  },
+                  {
+                    "id": "1255027787041_1255027789253",
+                    "name": "Soft Drinks",
+                    "count": 7,
+                    "queryParam": "cat_id~1255027787041_1255027789253"
+                  },
+                  {
+                    "id": "1255027787041_1255027789353",
+                    "name": "Sports & Energy Drinks",
+                    "count": 3,
+                    "queryParam": "cat_id~1255027787041_1255027789353"
+                  }
+                ]
+              },
+              {
+                "id": "1255027787111",
+                "name": "Pantry",
+                "count": 33,
+                "queryParam": "cat_id~1255027787111",
+                "values": [
+                  {
+                    "id": "1255027787111_1255027787501",
+                    "name": "Cereal & Breakfast Food",
+                    "count": 3,
+                    "queryParam": "cat_id~1255027787111_1255027787501"
+                  },
+                  {
+                    "id": "1255027787111_1256653760508",
+                    "name": "Easter Meal Must-Haves",
+                    "count": 1,
+                    "queryParam": "cat_id~1255027787111_1256653760508"
+                  },
+                  {
+                    "id": "1255027787111_1255027788476",
+                    "name": "International Foods",
+                    "count": 4,
+                    "queryParam": "cat_id~1255027787111_1255027788476"
+                  },
+                  {
+                    "id": "1255027787111_2392837169",
+                    "name": "Pack your lunch!",
+                    "count": 3,
+                    "queryParam": "cat_id~1255027787111_2392837169"
+                  }
+                ]
+              },
+              {
+                "id": "1255027787131",
+                "name": "Fruits & Vegetables",
+                "count": 59,
+                "queryParam": "cat_id~1255027787131",
+                "values": [
+                  {
+                    "id": "1255027787131_2023721512",
+                    "name": "Fresh Juice & Chilled Beverage",
+                    "count": 44,
+                    "queryParam": "cat_id~1255027787131_2023721512"
+                  },
+                  {
+                    "id": "1255027787131_4364938242",
+                    "name": "Fresh Prepared Produce",
+                    "count": 2,
+                    "queryParam": "cat_id~1255027787131_4364938242"
+                  },
+                  {
+                    "id": "1255027787131_4585348430",
+                    "name": "Healthy Snacking",
+                    "count": 1,
+                    "queryParam": "cat_id~1255027787131_4585348430"
+                  },
+                  {
+                    "id": "1255027787131_3518708856",
+                    "name": "Nuts, Dried Fruit, & Healthy Snacks",
+                    "count": 1,
+                    "queryParam": "cat_id~1255027787131_3518708856"
+                  },
+                  {
+                    "id": "1255027787131_1255200063365",
+                    "name": "Organic Produce",
+                    "count": 2,
+                    "queryParam": "cat_id~1255027787131_1255200063365"
+                  }
+                ]
+              },
+              {
+                "id": "1256653758154",
+                "name": "Organic Shop",
+                "count": 2,
+                "queryParam": "cat_id~1256653758154",
+                "values": [
+                  {
+                    "id": "1256653758154_1256653758256",
+                    "name": "Organic Beverages",
+                    "count": 1,
+                    "queryParam": "cat_id~1256653758154_1256653758256"
+                  },
+                  {
+                    "id": "1256653758154_1256653758268",
+                    "name": "Organic Fruits & Vegetables",
+                    "count": 1,
+                    "queryParam": "cat_id~1256653758154_1256653758268"
+                  }
+                ]
+              },
+              {
+                "id": "1256653758166",
+                "name": "Special Diets",
+                "count": 2,
+                "queryParam": "cat_id~1256653758166"
+              },
+              {
+                "id": "1256653758048",
+                "name": "Featured Products",
+                "count": 4,
+                "queryParam": "cat_id~1256653758048",
+                "values": [
+                  {
+                    "id": "1256653758048_0814626053",
+                    "name": "Basket Starters",
+                    "count": 3,
+                    "queryParam": "cat_id~1256653758048_0814626053"
+                  },
+                  {
+                    "id": "1256653758048_1471981554",
+                    "name": "Rollbacks",
+                    "count": 1,
+                    "queryParam": "cat_id~1256653758048_1471981554"
+                  }
+                ]
+              },
+              {
+                "id": "2393438169",
+                "name": "Easter Meal",
+                "count": 1,
+                "queryParam": "cat_id~2393438169"
+              },
+              {
+                "id": "1256653760657",
+                "name": "Kid Friendly Foods",
+                "count": 7,
+                "queryParam": "cat_id~1256653760657",
+                "values": [
+                  {
+                    "id": "1256653760657_0901101881",
+                    "name": "Lunchbox Top Picks",
+                    "count": 5,
+                    "queryParam": "cat_id~1256653760657_0901101881"
+                  },
+                  {
+                    "id": "1256653760657_1104974483",
+                    "name": "School Lunch Top Picks",
+                    "count": 3,
+                    "queryParam": "cat_id~1256653760657_1104974483"
+                  }
+                ]
+              },
+              {
+                "id": "1255027787071",
+                "name": "Frozen",
+                "count": 5,
+                "queryParam": "cat_id~1255027787071"
+              },
+              {
+                "id": "1255027787021",
+                "name": "Baby",
+                "count": 4,
+                "queryParam": "cat_id~1255027787021"
+              }
+            ]
+          }
+        ],
+        "others": [
+          {
+            "name": "Special Offer",
+            "values": [
+              {
+                "name": "Rollback",
+                "count": 1,
+                "queryParam": "special_offers~Rollback"
+              }
+            ]
+          },
+          {
+            "name": "Price"
+          },
+          {
+            "name": "Brand",
+            "values": [
+              {
+                "name": "PRODUCE UNBRANDED",
+                "count": 11,
+                "queryParam": "ghs_brand~PRODUCE UNBRANDED"
+              },
+              {
+                "name": "Great Value",
+                "count": 19,
+                "queryParam": "ghs_brand~Great Value"
+              },
+              {
+                "name": "Marketside",
+                "count": 2,
+                "queryParam": "ghs_brand~Marketside"
+              },
+              {
+                "name": "Dole",
+                "count": 18,
+                "queryParam": "ghs_brand~Dole"
+              },
+              {
+                "name": "simply...",
+                "count": 7,
+                "queryParam": "ghs_brand~simply..."
+              },
+              {
+                "name": "Tropicana",
+                "count": 12,
+                "queryParam": "ghs_brand~Tropicana"
+              },
+              {
+                "name": "Del Monte",
+                "count": 8,
+                "queryParam": "ghs_brand~Del Monte"
+              },
+              {
+                "name": "Generic",
+                "count": 1,
+                "queryParam": "ghs_brand~Generic"
+              },
+              {
+                "name": "Minute Maid",
+                "count": 9,
+                "queryParam": "ghs_brand~Minute Maid"
+              },
+              {
+                "name": "Ocean Spray",
+                "count": 2,
+                "queryParam": "ghs_brand~Ocean Spray"
+              },
+              {
+                "name": "Coca-Cola",
+                "count": 1,
+                "queryParam": "ghs_brand~Coca-Cola"
+              },
+              {
+                "name": "Pepperidge Farm",
+                "count": 1,
+                "queryParam": "ghs_brand~Pepperidge Farm"
+              },
+              {
+                "name": "Welch's",
+                "count": 3,
+                "queryParam": "ghs_brand~Welch's"
+              },
+              {
+                "name": "Capri Sun",
+                "count": 1,
+                "queryParam": "ghs_brand~Capri Sun"
+              },
+              {
+                "name": "Kool-Aid",
+                "count": 1,
+                "queryParam": "ghs_brand~Kool-Aid"
+              },
+              {
+                "name": "V8",
+                "count": 4,
+                "queryParam": "ghs_brand~V8"
+              }
+            ]
+          }
+        ]
+      },
+      "breadcrumbs": [
+        {
+          "id": "0",
+          "name": "All Departments",
+          "cat_level": 0,
+          "queryParam": "cat_id~0"
+        }
+      ],
+      "sortOptions": [
+        {
+          "sortId": "best_match",
+          "sortName": "Best match",
+          "isDefault": true
+        },
+        {
+          "sortId": "best_seller",
+          "sortName": "Best sellers",
+          "isDefault": false
+        },
+        {
+          "sortId": "price_low",
+          "sortName": "Price: low to high",
+          "isDefault": false
+        },
+        {
+          "sortId": "price_high",
+          "sortName": "Price: high to low",
+          "isDefault": false
+        }
+      ],
+      "errors": [],
+      "searchMatchType": "{\"dept\":\"/1255027787131/1255027788181/1255027796247\",\"ba_pre\":\"0\",\"id\":\"1624155378019:mglider-902387447-32-1101347093:26781:kpeftrr2:69151\",\"req\":\"A\",\"A\":\"NoAds\",\"B\":\"0,1,27,\",\"css\":\"0|0|0|0\",\"ba_post\":\"0\",\"cs\":false}",
+      "wpaBeacon": {
+        "moduleData": {
+          "adUuid": "1624155378019:mglider-902387447-32-1",
+          "pageBeacons": {},
+          "moduleInfo": "{\"adUuid\":\"1624155378019:mglider-902387447-32-1\",\"tenant\":\"GR\",\"storeId\":\"3785\",\"platform\":\"desktop\",\"pageType\":\"search\",\"pageId\":\"oranges\",\"placementId\":\"1145x345_T-C-IG_TI_1-2_gr-search-ingrid-desktop\",\"normQuery\":\"orange\",\"mloc\":\"middle\"}"
+        }
+      }
+    }
+  }
+]

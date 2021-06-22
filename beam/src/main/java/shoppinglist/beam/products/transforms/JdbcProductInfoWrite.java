@@ -12,7 +12,7 @@ public class JdbcProductInfoWrite extends PTransform<PCollection<ProductInfo>, P
    @Override
    public PDone expand(PCollection<ProductInfo> input)
    {
-      return input.apply(JdbcIO.<ProductInfo>write()
+      return input.apply("Product stored proc", JdbcIO.<ProductInfo>write()
               .withDataSourceConfiguration(JdbcIO.DataSourceConfiguration.create(
                       "com.mysql.cj.jdbc.Driver", "jdbc:mysql://localhost:3306/shopping_list")
                       .withUsername("root")

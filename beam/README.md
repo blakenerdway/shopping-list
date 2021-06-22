@@ -14,6 +14,8 @@ Set VM arguments: `-Djava.util.logging.config.file=logging.properties`
 **Target Parse** - `--bootstrapServers=localhost:9092 --inputTopics=target.products`
 - Bootstrap server should be set to kafka:9093 if inside a container/network 
 
+**Walmart Parse**
+Set `--enforceImmutability=false` so that nulls don't mess up 
 
 ## Monitoring
 Pipeline runs can be monitored via the Apache Flink console on `localhost:8081`. 
