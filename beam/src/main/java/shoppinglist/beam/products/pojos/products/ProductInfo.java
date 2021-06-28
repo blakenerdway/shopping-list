@@ -3,95 +3,115 @@ package shoppinglist.beam.products.pojos.products;
 import org.apache.beam.sdk.schemas.JavaBeanSchema;
 import org.apache.beam.sdk.schemas.annotations.DefaultSchema;
 
+import java.util.Objects;
+
 @DefaultSchema(JavaBeanSchema.class)
 public class ProductInfo {
    @Override
    public String toString () {
       return "ProductInfo{" +
-              "storeID='" + _storeID + '\'' +
-              ", supplier='" + _supplier + '\'' +
-              ", productName='" + _productName + '\'' +
-              ", brand='" + _brand + '\'' +
-              ", searchTerm='" + _searchTerm + '\'' +
-              ", price=" + _price +
+              "storeID='" + storeID + '\'' +
+              ", supplier='" + supplier + '\'' +
+              ", productName='" + productName + '\'' +
+              ", brand='" + brand + '\'' +
+              ", searchTerm='" + searchTerm + '\'' +
+              ", price=" + price +
               '}';
    }
 
-   private String _storeID;
-   private String _supplier;
-   private String _productName;
-   private String _brand;
-   private String _searchTerm;
-   private double _price;
+   @Override
+   public boolean equals (Object o) {
+      if (this == o) return true;
+      if (o == null || getClass() != o.getClass()) return false;
+      ProductInfo that = (ProductInfo) o;
+      return Double.compare(that.price, price) == 0 &&
+              Objects.equals(storeID, that.storeID) &&
+              Objects.equals(supplier, that.supplier) &&
+              Objects.equals(productName, that.productName) &&
+              Objects.equals(brand, that.brand) &&
+              Objects.equals(searchTerm, that.searchTerm);
+   }
 
+   @Override
+   public int hashCode () {
+      return Objects.hash(storeID, supplier, productName, brand, searchTerm, price);
+   }
+
+   private String storeID = "";
+   private String supplier = "";
+   private String productName = "";
+   private String brand = "";
+   private String searchTerm = "";
+   private double price = -1.0;
+   public ProductInfo(){}
    public ProductInfo(String storeID, String supplier, String productName, String brand, String searchTerm, double price)
    {
 
-      _storeID = storeID;
-      _supplier = supplier;
-      _productName = productName;
-      _brand = brand;
-      _searchTerm = searchTerm;
-      _price = price;
+      this.storeID = storeID;
+      this.supplier = supplier;
+      this.productName = productName;
+      this.brand = brand;
+      this.searchTerm = searchTerm;
+      this.price = price;
    }
 
    public double getPrice()
    {
-      return _price;
+      return price;
    }
 
    public void setPrice(double price)
    {
-      _price = price;
+      this.price = price;
    }
 
    public String getStoreID()
    {
-      return _storeID;
+      return storeID;
    }
 
    public void setStoreID(String storeID)
    {
-      _storeID = storeID;
+      this.storeID = storeID;
    }
 
    public String getSupplier()
    {
-      return _supplier;
+      return supplier;
    }
 
    public void setSupplier(String supplier)
    {
-      _supplier = supplier;
+      this.supplier = supplier;
    }
 
    public String getProductName()
    {
-      return _productName;
+      return productName;
    }
 
    public void setProductName(String productName)
    {
-      _productName = productName;
+      this.productName = productName;
    }
 
    public String getBrand()
    {
-      return _brand;
+      return brand;
    }
 
    public void setBrand(String brand)
    {
-      _brand = brand;
+      this.brand = brand;
    }
 
    public String getSearchTerm()
    {
-      return _searchTerm;
+      return searchTerm;
    }
 
    public void setSearchTerm(String searchTerm)
    {
-      _searchTerm = searchTerm;
+      this.searchTerm = searchTerm;
    }
 }

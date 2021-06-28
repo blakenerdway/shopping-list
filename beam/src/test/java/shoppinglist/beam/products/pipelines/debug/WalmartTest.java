@@ -24,7 +24,7 @@ public class WalmartTest
     @Test
     public void testWalmartParse() throws Exception{
         Gson gson = new GsonBuilder().serializeNulls().create();
-        Reader jsonReader = Files.newBufferedReader(Paths.get("walmart-test-1.json"));
+        Reader jsonReader = Files.newBufferedReader(Paths.get("walmart-example.json"));
         List<?> lists = gson.fromJson(jsonReader, List.class);
         List<String> singleJsons = new ArrayList<>();
         for (Object jsonObj : lists) {
