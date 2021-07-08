@@ -1,0 +1,2 @@
+# Automation
+Website scraping is done automatically on a daily basis via Apache Airflow
