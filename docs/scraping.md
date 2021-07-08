@@ -1,3 +1,9 @@
+---
+layout: default
+title: Scraping
+nav_order: 1
+---
+
 # Scraping store websites
 Data is searched in 2 different stores as of the writing of this documentation: Target and Walmart.
 

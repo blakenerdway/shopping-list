@@ -1,3 +1,9 @@
+---
+layout: default
+title: Parsing
+nav_order: 3
+---
+
 # Parsing data
 Parsing is done using Apache Beam's pipeline SDK. 
 
