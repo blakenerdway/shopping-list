@@ -18,7 +18,7 @@ public class JdbcProductInfoWrite extends PTransform<PCollection<ProductInfo>, P
                       .withUsername("root")
                       .withPassword("password!"))
               // Insert into table only if the brand doesn't exist already
-              .withStatement("Call insert_productinfo(?, ?, ?, ?, ?, ?)")
+              .withStatement("Call insert_product(?, ?, ?, ?, ?, ?)")
               .withPreparedStatementSetter((JdbcIO.PreparedStatementSetter<ProductInfo>) (element, query) -> {
                  String storeID = element.getStoreID();
                  String searchTerm = element.getSearchTerm();

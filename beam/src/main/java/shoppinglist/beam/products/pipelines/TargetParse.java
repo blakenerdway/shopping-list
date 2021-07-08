@@ -9,11 +9,13 @@ import org.apache.beam.sdk.values.PCollection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import shoppinglist.beam.kafka.KafkaReadFactory;
+
 import shoppinglist.beam.products.pojos.products.ProductInfo;
 import shoppinglist.beam.products.pojos.targetjson.Product;
 import shoppinglist.beam.products.pojos.targetjson.TargetProduct;
 import org.apache.beam.sdk.transforms.DoFn;
 import shoppinglist.beam.products.transforms.JdbcProductInfoWrite;
+import shoppinglist.beam.products.transforms.TargetProductInfoConvert;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -41,7 +43,7 @@ public class TargetParse {
       _logger.error("Starting Kafka-To-PubSub pipeline with parameters bootstrap servers: {} input topics: {}",
               options.getBootstrapServers(), options.getInputTopics());
       PCollection<KV<String, KV<String, Product>>> products = pipeline.apply(KafkaReadFactory.readFromKafkaWithoutMetadata(options.getBootstrapServers(), Arrays.asList(options.getInputTopics().split(",")), kafkaConfig))
-              .apply("From values", Values.create())
+           .apply("From values", Values.create())
               .apply("As pojo", ParDo.of(new DoFn<String, KV<String, KV<String, Product>>>() {
                  @ProcessElement
                  public void processElement(ProcessContext c)
@@ -55,29 +57,7 @@ public class TargetParse {
                     }
                  }
               }));
-      products.apply("Convert to ProductInfo", MapElements.via(new SimpleFunction<KV<String, KV<String, Product>>, ProductInfo>() {
-         @Override
-         public ProductInfo apply(KV<String, KV<String, Product>> input)
-         {
-            String storeID = input.getKey();
-            String searchTerm = input.getValue().getKey();
-
-            Product result = input.getValue().getValue();
-            String productName = result.getItem().getProductDescription().getTitle();
-//            String productID = result.getTcin();
-            String supplier = "Target";
-            String brand = "UNKNOWN";
-            try {
-               brand = result.getItem().getPrimaryBrand().getName();
-
-            } catch (NullPointerException e) {
-               _logger.debug("Unknown brand for product name: {}", result.getItem().getProductDescription().getTitle());
-            }
-            double price = result.getPrice().getCurrentRetail();
-
-            return new ProductInfo(storeID, supplier, productName, brand, searchTerm, price);
-         }
-      }))
+      products.apply("Convert to ProductInfo", MapElements.via(new TargetProductInfoConvert()))
               .apply("Product stored proc", new JdbcProductInfoWrite());
 
       pipeline.run().waitUntilFinish();

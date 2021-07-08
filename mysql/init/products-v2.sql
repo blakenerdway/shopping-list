@@ -73,3 +73,7 @@ CREATE TABLE product_searches
     FOREIGN KEY (product_id) REFERENCES products (id),
     FOREIGN KEY (term_id) REFERENCES searches (id)
 );
+
+
+ALTER TABLE `product_info`
+    ADD CONSTRAINT `PRODUCT_INFO_IDENTIFIERS` UNIQUE (product_id, store_id, supplier_name);

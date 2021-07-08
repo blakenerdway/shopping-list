@@ -35,7 +35,6 @@ public class WalmartTest
         jsonReader.close();
 
         WalmartDebug.runDebuggingWalmartPipeline(singleJsons);
-
     }
     private static final Logger _logger = LoggerFactory.getLogger(WalmartTest.class);
 }

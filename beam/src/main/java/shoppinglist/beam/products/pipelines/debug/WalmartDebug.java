@@ -4,6 +4,10 @@ import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.apache.beam.sdk.Pipeline;
+import org.apache.beam.sdk.coders.BigEndianIntegerCoder;
+import org.apache.beam.sdk.coders.KvCoder;
+import org.apache.beam.sdk.coders.StringUtf8Coder;
+import org.apache.beam.sdk.io.jdbc.JdbcIO;
 import org.apache.beam.sdk.options.PipelineOptions;
 import org.apache.beam.sdk.options.PipelineOptionsFactory;
 import org.apache.beam.sdk.transforms.*;
@@ -20,6 +24,7 @@ import shoppinglist.beam.products.pojos.walmartjson.WalmartProduct;
 import shoppinglist.beam.products.transforms.JdbcProductInfoWrite;
 
 import java.lang.reflect.Type;
+import java.sql.ResultSet;
 import java.util.*;
 
 /**
@@ -27,42 +32,46 @@ import java.util.*;
  */
 public class WalmartDebug
 {
-    static void runDebuggingWalmartPipeline(List<String> jsons){
+    static void runDebuggingWalmartPipeline(List<String> jsons) {
 
         Pipeline p = Pipeline.create();
-        PCollection<WalmartProduct> asPojo = p.apply(Create.of(jsons))
-                .apply("Clean json", ParDo.of(new DoFn<String, String>()
-                {
-                    @ProcessElement
-                    public void processElement(ProcessContext c){
-                        Type type = new TypeToken<Map<String, Object>>() {}.getType();
-                        Map<String, Object> data = new Gson().fromJson(c.element(), type);
+        PCollection<WalmartProduct> asPojo =
+                p.apply(Create.of(jsons))
+                        .apply("Clean json", ParDo.of(new DoFn<String, String>()
+                        {
+                            @ProcessElement
+                            public void processElement (ProcessContext c) {
+                                Type type = new TypeToken<Map<String, Object>>()
+                                {
+                                }.getType();
+                                Map<String, Object> data = new Gson().fromJson(c.element(), type);
 
-                        for (Iterator<Map.Entry<String, Object>> it = data.entrySet().iterator(); it.hasNext();) {
-                            Map.Entry<String, Object> entry = it.next();
-                            if (entry.getValue() == null) {
-                                _logger.error("Removing key: {}", entry.getKey());
-                                it.remove();
-                            } else if (entry.getValue() instanceof List) {
-                                if (((List<?>) entry.getValue()).isEmpty()) {
-                                    _logger.error("Removing key: {}", entry.getKey());
-                                    it.remove();
+                                for (Iterator<Map.Entry<String, Object>> it = data.entrySet().iterator(); it.hasNext(); ) {
+                                    Map.Entry<String, Object> entry = it.next();
+                                    if (entry.getValue() == null) {
+                                        _logger.error("Removing key: {}", entry.getKey());
+                                        it.remove();
+                                    }
+                                    else if (entry.getValue() instanceof List) {
+                                        if (((List<?>) entry.getValue()).isEmpty()) {
+                                            _logger.error("Removing key: {}", entry.getKey());
+                                            it.remove();
+                                        }
+                                    }
                                 }
+                                String json = new GsonBuilder().create().toJson(data);
+                                c.output(json);
                             }
-                        }
-                        String json = new GsonBuilder().create().toJson(data);
-                        c.output(json);
-                    }
-                }))
-                .apply("As pojo", ParDo.of(new DoFn<String, WalmartProduct>()
-                {
-                    @ProcessElement
-                    public void processElement (ProcessContext c) {
-                        String input = c.element();
-                        WalmartProduct productPojo = new GsonBuilder().serializeNulls().create().fromJson(input, WalmartProduct.class);
-                        c.output(productPojo);
-                    }
-                }));
+                        }))
+                        .apply("As pojo", ParDo.of(new DoFn<String, WalmartProduct>()
+                        {
+                            @ProcessElement
+                            public void processElement (ProcessContext c) {
+                                String input = c.element();
+                                WalmartProduct productPojo = new GsonBuilder().serializeNulls().create().fromJson(input, WalmartProduct.class);
+                                c.output(productPojo);
+                            }
+                        }));
 
         asPojo.apply("Convert to ProductInfo", ParDo.of(new DoFn<WalmartProduct, ProductInfo>()
         {
@@ -109,12 +118,8 @@ public class WalmartDebug
                         _logger.error(input.toString());
                         return input;
                     }
-                }));
-//                .apply("JDBC transform", new JdbcProductInfoWrite());
-
-
-//      PAssert.that().containsInAnyOrder();
-
+                }))
+                .apply("JDBC transform", new JdbcProductInfoWrite());
 
         p.run().waitUntilFinish();
     }
