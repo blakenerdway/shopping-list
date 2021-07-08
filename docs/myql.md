@@ -1,4 +1,5 @@
-# MySQL Database
+# Data storage
+Data is stored using MySQL 8.
 ## Running
 Start up using docker-compose
 
