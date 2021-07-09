@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Data Storage
-nav_order: 4
+nav_order: 6
 ---
 
 # Data storage

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Scraping
-nav_order: 1
+nav_order: 3
 ---
 
 # Scraping store websites
@@ -9,6 +9,8 @@ Data is searched in 2 different stores as of the writing of this documentation: 
 
 ## Accessing/requesting the scrapers
 Scrapers may be accessed via a REST API created with a Flask package.
+
+##
 
 ## Target test:
 - Store: 1273
