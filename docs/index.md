@@ -18,6 +18,11 @@ I always wanted to know how much a recipe would cost me to make. Sure I could ba
 another container of spice, and that would increase my bill. Or sometimes I wouldn't know which store had the best deals
 on certain items. This made me think that maybe it would be interesting to build a project that helped me solve this problem.
 
+## Architecture
+The following image shows the architecture used to accomplish the end-to-end pipeline
+
+![Architecture](architecture.JPG "Architecture")
+
 ## Technologies
 All components listed below use Docker so that the environment is stable from one machine to another.
 ### Flask
