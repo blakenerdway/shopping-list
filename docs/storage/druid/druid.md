@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Druid information
-nav_order: 1
+parent: Storage
+title: Druid
+nav_order: 2
 ---
 
 # General

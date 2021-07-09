@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Data Storage
+title: Storage
 nav_order: 6
+has_children: true
 ---
 
 # Data storage

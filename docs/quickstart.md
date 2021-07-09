@@ -31,9 +31,9 @@ $ ./setup.sh
 ## Exploring the data
 ### MySQL
 You can explore the dataset in normalized form in the MySQL container running on `localhost:3306`. Take a look at the different
-tables and relations listed in the [data schema](/storage/mysql/schema) page.
+tables and relations listed in the [data schema](/shopping-list/storage/mysql/schema) page.
 
 ### Druid
 The Druid database provides some transformed data better used for analysis. The dataset is still quite small, but it provides
 some interesting uses. You can look at the Druid console at `localhost:8888`. 
-For more information, check out the [page](/storage/druid/information) for Druid.
+For more information, check out the [page](/shopping-list/storage/druid) for Druid.
