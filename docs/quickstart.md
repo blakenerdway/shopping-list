@@ -14,7 +14,7 @@ public use. Using some example data allows us to jump straight into data analysi
 
 A script has been created in `$SHOPPING_LIST_HOME/` to pull the data from the remote repository
 
-1. Run the setup script (this only needs to be done once)
+Run the setup script (this only needs to be done once)
 
 **Windows**
 ```
@@ -26,7 +26,10 @@ C:\Users\default\shopping-list> setup
 $ ./setup.sh
 ```
 
-2. Data has been downloaded and stored in the MySQL database and the Druid database
+Data has been downloaded and stored in the MySQL database and the Druid database. The MySQL database is used as a transactional
+database, good for our front-facing REST API to query for items, and for our pipeline to update items as needed.
+
+The Druid database is used as an analytics database, good for data queries that would take a while with multiple complex joins.
 
 ## Exploring the data
 ### MySQL
