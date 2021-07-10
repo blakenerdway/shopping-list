@@ -19,6 +19,9 @@ apply plugin: 'com.github.johnrengelman.shadow'
 shadowJar {
     mergeServiceFiles()
     zip64 true
+    archiveBaseName.set('beam-pipelines')
+    archiveClassifier.set('')
+    archiveVersion.set('')
 }
 
 repositories {
@@ -55,7 +58,7 @@ dependencies {
     implementation group: 'com.google.protobuf', name: 'protobuf-java', version: '3.1.0'
     runtime 'org.slf4j:slf4j-jdk14:1.7.30'
     runtime 'org.apache.beam:beam-runners-direct-java:2.28.0'
-    runtime 'org.apache.beam:beam-runners-flink-1.12:2.28.0'
+    shadow "org.apache.beam:beam-runners-flink-1.12:2.28.0"
     runtime 'mysql:mysql-connector-java:8.0.25'
 
     testCompile 'org.hamcrest:hamcrest-all:1.3'
