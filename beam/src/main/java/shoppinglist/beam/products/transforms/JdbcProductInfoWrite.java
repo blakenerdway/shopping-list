@@ -8,6 +8,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import shoppinglist.beam.products.pojos.products.ProductInfo;
 
+/**
+ * A {@code PTransform} that writes data to the database using a stored procedure. Input type is not generic, and must be
+ * an {@code PCollection<ProductInfo>}.
+ */
 public class JdbcProductInfoWrite extends PTransform<PCollection<ProductInfo>, PDone> {
    @Override
    public PDone expand(PCollection<ProductInfo> input)
@@ -33,7 +37,6 @@ public class JdbcProductInfoWrite extends PTransform<PCollection<ProductInfo>, P
                  query.setString(4, brand);
                  query.setString(5, supplier);
                  query.setFloat(6, (float)price);
-
               }));
    }
 
