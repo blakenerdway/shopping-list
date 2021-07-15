@@ -1,6 +1,7 @@
 version: "3.2"
 services:
   scrapers:
+    container_name: scrapers
     build: .
     ports:
       - "8480:8480"

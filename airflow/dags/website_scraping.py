@@ -18,20 +18,23 @@ default_args = {
     'retry_delay': timedelta(minutes=5)
 }
 
-f = open('items.json')
+f = open('items-test.json')
 json_items = json.load(f)
 
 
 def target_request(items, stores):
     payload = {'product': items, 'store': stores}
     print(payload)
-    requests.put("http://localhost:8480/target/products", params=payload)
+    res = requests.put("http://scrapers:8480/target/products", params=payload)
+    logging.info(res.json())
 
 
 def walmart_request(items, stores):
     payload = {'product': items, 'store': stores}
     print(payload)
-    requests.put("http://localhost:8480/walmart/products", params=payload)
+    res = requests.put("http://scrapers:8480/walmart/products", params=payload)
+    logging.info(res.json())
+
 
 def create_target_dag(dag_id):
     folder = f'/opt/airflow/logs/{dag_id}'
@@ -43,8 +46,8 @@ def create_target_dag(dag_id):
               description=f"Target website scraper scheduler dag",
               schedule_interval='0 0 * * *',
               start_date=datetime.now() - timedelta(days=1),
-              catchup=False,
-              is_paused_upon_creation=True)
+              catchup=True,
+              is_paused_upon_creation=False)
     with dag:
 
 
@@ -52,7 +55,7 @@ def create_target_dag(dag_id):
         counter = 0
         for grocery_type in json_items:
             search_items = json_items[grocery_type]
-            tasks.append(PythonOperator(task_id=f'{grocery_type}-Target',
+            tasks.append(PythonOperator(task_id=f'{grocery_type}',
                                         python_callable=target_request,
                                         op_kwargs={'items': search_items, 'stores': [1273, 686]}))
             if counter != 0:
@@ -72,14 +75,14 @@ def create_walmart_dag(dag_id):
               description=f"Walmart website scraper scheduler dag",
               schedule_interval='0 8 * * *',
               start_date=datetime.now() - timedelta(days=1),
-              catchup=False,
-              is_paused_upon_creation=True)
+              catchup=True,
+              is_paused_upon_creation=False)
     with dag:
         tasks = []
         counter = 0
         for grocery_type in json_items:
             search_items = json_items[grocery_type]
-            tasks.append(PythonOperator(task_id=f'{grocery_type}-Walmart',
+            tasks.append(PythonOperator(task_id=f'{grocery_type}',
                                         python_callable=walmart_request,
                                         op_kwargs={'items': search_items, 'stores': [1746]}))
             if counter != 0:

@@ -1,0 +1,47 @@
+{
+  "Baking": [
+    "carob",
+    "chocolate",
+    "cocoa",
+    "chocolate chips",
+    "milk chocolate chips",
+    "dark chocolate chips",
+    "semi sweet chips",
+    "chocolate syrup",
+    "dutch chocolate",
+    "mexican chocolate"
+  ],
+  "Condiments_Sauces": [
+    "capers",
+    "chile verde",
+    "chutneys",
+    "gherkins",
+    "horseradish condiment",
+    "ketchup",
+    "kimchi",
+    "mayonnaise",
+    "mustard condiment",
+    "brown mustard",
+    "dijon mustard",
+    "red wine vinegar",
+    "rice vinegar",
+    "sherry vinegar",
+    "verjus vinegar",
+    "white vinegar",
+    "white wine vinegar"
+  ],
+  "Dairy": [
+    "butter",
+    "cheeses",
+    "one percent milk",
+    "powdered milk",
+    "skim milk",
+    "sweetened condensed milk",
+    "two percent milk",
+    "whole milk",
+    "rice milk",
+    "soy milk",
+    "yogurt",
+    "greek yogurt"
+  ]
+}
