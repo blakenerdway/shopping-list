@@ -49,8 +49,6 @@ def create_target_dag(dag_id):
               catchup=True,
               is_paused_upon_creation=False)
     with dag:
-
-
         tasks = []
         counter = 0
         for grocery_type in json_items:

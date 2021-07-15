@@ -1,3 +1,4 @@
+import multiprocessing
 from multiprocessing.pool import Pool
 # Use uuid to generate a random visitor_id
 import uuid
@@ -34,7 +35,10 @@ class TargetProductScraper(GroceryScraper):
 
         if ret_dict is not None:
             if store not in ret_dict:
-                ret_dict[store] = {}
-            ret_dict[store][product] = ret_val
+                ret_dict[store] = {product: ret_val}
+            else:
+                tmp_dict = ret_dict[store]
+                tmp_dict[product] = ret_val
+                ret_dict[store] = tmp_dict
 
         return ret_val

@@ -22,22 +22,3 @@ class PublixSaleScraper(GroceryScraper):
         res = run_request(url, headers, params)
         print(res)
         self.kafka_producer.send('publix.sales', res)
-
-    """
-    Get the products from walmart website. Use multiprocessing if the combination of stores * products is large enough.
-    50 items is the default before it starts using a pool. This is because pooling is not performant enough for small 
-    batches.
-    """
-    def scrape_products(self, stores, products=None):
-        pool_size = int(len(stores) / 50)
-        if pool_size > 0:
-            pool = Pool(pool_size)
-            for store in stores:
-                pool.apply_async(self.__generate_request, (store))
-            pool.close()
-            pool.join()
-        else:
-            for store in stores:
-                self.__generate_request(store)
-
-        self.kafka_producer.flush()

@@ -11,7 +11,6 @@ from walmart.walmart_product_scraper import WalmartProductScraper
 
 app = Flask(__name__)
 is_docker = os.getenv("DOCKER_INSIDE")
-print(is_docker)
 if is_docker is not None:
     kafka_host = 'kafka:9093'
 else:

@@ -1,5 +1,6 @@
 from multiprocessing.pool import Pool
 import multiprocessing
+from multiprocessing.pool import ThreadPool
 
 
 class GroceryScraper:
@@ -15,17 +16,23 @@ class GroceryScraper:
     batches.
     """
     def scrape_products(self, stores, products):
-        pool_size = int(len(stores) * len(products) / 50)
+        total = len(stores) * len(products) / 50
+        pool_size = int(total)
         if pool_size > 0:
-            pool = Pool(pool_size)
-            dict = multiprocessing.Manager().dict()
+            pool = ThreadPool(processes=pool_size)
+            shared_dict = multiprocessing.Manager().dict()
+            processes = []
             for store in stores:
                 for product in products:
                     print(f'{store}: {product}')
-                    pool.apply(self._generate_request, (store, product, dict))
+                    result = pool.apply_async(self._generate_request, (store, product, shared_dict))
+                    processes.append(result)
+
+            [result.wait() for result in processes]
             pool.close()
             pool.join()
-            ret_val = dict
+
+            ret_val = dict(shared_dict)
             print(ret_val)
         else:
             ret_val = {}
