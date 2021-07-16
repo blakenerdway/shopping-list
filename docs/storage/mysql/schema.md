@@ -19,7 +19,7 @@ Contains the brands that have been seen. Primary key **id** is a foreign key of 
 
 ### Schema
 | Field        | Type         | Null | Key | Default           | Extra                                         |
-|--------------|--------------|------|-----|-------------------|-----------------------------------------------|
+|:-------------|:-------------|:-----|:----|:------------------|:----------------------------------------------|
 | id           | int          | NO   | PRI | NULL              | auto_increment                                |
 | name         | varchar(255) | YES  |     | NULL              |                                               |
 | created_time | timestamp    | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED                             |
@@ -32,7 +32,7 @@ or something similar.
 
 ### Schema
 | Field        | Type         | Null | Key | Default           | Extra             |
-|--------------|--------------|------|-----|-------------------|-------------------|
+|:-------------|:-------------|:-----|:----|:------------------|:------------------|
 | id           | int          | NO   | PRI | NULL              | auto_increment    |
 | created_time | timestamp    | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
 | note         | varchar(255) | YES  |     | NULL              |                   |
@@ -45,7 +45,7 @@ writing.
 
 ### Schema
 | Field         | Type         | Null | Key | Default           | Extra                                         |
-|---------------|--------------|------|-----|-------------------|-----------------------------------------------|
+|:--------------|:-------------|:-----|:----|:------------------|:----------------------------------------------|
 | id            | int          | NO   | PRI | NULL              | auto_increment                                |
 | product_id    | int          | YES  | MUL | NULL              |                                               |
 | store_id      | int          | YES  | MUL | NULL              |                                               |
@@ -62,7 +62,7 @@ provides a way to query for an item by a search term.
 
 ### Schema
 | Field        | Type      | Null | Key | Default           | Extra             |
-|--------------|-----------|------|-----|-------------------|-------------------|
+|:-------------|:----------|:-----|:----|:------------------|:------------------|
 | id           | int       | NO   | PRI | NULL              | auto_increment    |
 | product_id   | int       | YES  | MUL | NULL              |                   |
 | term_id      | int       | YES  | MUL | NULL              |                   |
@@ -74,7 +74,7 @@ The products table contains a row for every product/brand combination.
 
 ### Schema
 | Field        | Type         | Null | Key | Default           | Extra                                         |
-|--------------|--------------|------|-----|-------------------|-----------------------------------------------|
+|:-------------|:-------------|:-----|:----|:------------------|:----------------------------------------------|
 | id           | int          | NO   | PRI | NULL              | auto_increment                                |
 | name         | varchar(255) | YES  |     | NULL              |                                               |
 | brand_id     | int          | YES  | MUL | NULL              |                                               |
@@ -87,7 +87,7 @@ Contains all the search terms that were used to query the grocery website.
 
 ### Schema
 | Field        | Type         | Null | Key | Default           | Extra             |
-|--------------|--------------|------|-----|-------------------|-------------------|
+|:-------------|:-------------|:-----|:----|:------------------|:------------------|
 | id           | int          | NO   | PRI | NULL              | auto_increment    |
 | created_time | timestamp    | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
 | term         | varchar(255) | YES  |     | NULL              |                   |
@@ -98,7 +98,7 @@ Contains information related to stores, including location and address.
 
 ### Schema
 | Field         | Type         | Null | Key | Default           | Extra                                         |
-|---------------|--------------|------|-----|-------------------|-----------------------------------------------|
+|:--------------|:-------------|:-----|:----|:------------------|:----------------------------------------------|
 | id            | int          | NO   | PRI | NULL              |                                               |
 | supplier_name | varchar(255) | NO   | PRI | NULL              |                                               |
 | address_line1 | varchar(255) | YES  |     | NULL              |                                               |
