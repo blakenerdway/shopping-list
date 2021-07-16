@@ -4,11 +4,13 @@ from multiprocessing.pool import Pool
 import uuid
 from util import run_request
 from grocery_scraper import GroceryScraper
+from fake_headers import Headers
 
 
 class TargetProductScraper(GroceryScraper):
     def __init__(self, kafka_producer):
         super().__init__(kafka_producer)
+        self.header = Headers(headers=True)
 
     def _generate_request(self, store, product, ret_dict):
         params = {"key": "ff457966e64d5e877fdbad070f276d18ecec4a01",
@@ -21,7 +23,8 @@ class TargetProductScraper(GroceryScraper):
                   # use a randomized hexadecimal uppercase string as the visitor ID
                   "visitor_id": uuid.uuid1().hex.upper()}
 
-        headers = {"Accept": "application/json", "Accept-Language": "en-US", "Connection": "keep-alive"}
+        headers = self.header.generate()
+        headers["Accept"] = "application/json"
 
         url = "https://redsky.target.com/redsky_aggregations/v1/web/plp_search_v1"
 

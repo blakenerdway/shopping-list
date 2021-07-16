@@ -51,13 +51,13 @@ public class TargetParse {
                     String input = c.element();
                     TargetProduct productPojo = new Gson().fromJson(input, TargetProduct.class);
                     List<Product> product = productPojo.getResult().getData().getSearch().getProducts();
-                    _logger.error(input);
+//                    _logger.error(input);
                     for (Product product1 : product) {
                        c.output(KV.of(productPojo.getStore(), KV.of(productPojo.getProduct(), product1)));
                     }
                  }
               }));
-      products.apply("Convert to ProductInfo", MapElements.via(new TargetProductInfoConvert()))
+      products.apply("Convert to ProductInfo", ParDo.of(new TargetProductInfoConvert()))
               .apply("Product stored proc", new JdbcProductInfoWrite());
 
       pipeline.run().waitUntilFinish();

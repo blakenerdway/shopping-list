@@ -3,6 +3,7 @@ package shoppinglist.beam.products.pojos.products;
 import org.apache.beam.sdk.schemas.JavaBeanSchema;
 import org.apache.beam.sdk.schemas.annotations.DefaultSchema;
 
+import javax.annotation.Nullable;
 import java.util.Objects;
 
 @DefaultSchema(JavaBeanSchema.class)
@@ -42,9 +43,9 @@ public class ProductInfo {
    private String productName = "";
    private String brand = "";
    private String searchTerm = "";
-   private double price = -1.0;
+   private Double price = -1.0;
    public ProductInfo(){}
-   public ProductInfo(String storeID, String supplier, String productName, String brand, String searchTerm, double price)
+   public ProductInfo(String storeID, String supplier, String productName, String brand, String searchTerm, Double price)
    {
 
       this.storeID = storeID;
@@ -55,12 +56,12 @@ public class ProductInfo {
       this.price = price;
    }
 
-   public double getPrice()
+   public Double getPrice()
    {
       return price;
    }
 
-   public void setPrice(double price)
+   public void setPrice(Double price)
    {
       this.price = price;
    }

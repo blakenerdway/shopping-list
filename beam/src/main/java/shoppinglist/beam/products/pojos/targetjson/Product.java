@@ -15,6 +15,19 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 @DefaultSchema(JavaBeanSchema.class)
 @SuppressWarnings("unused")
 public class Product implements Serializable {
+   @Override
+   public String toString()
+   {
+      return "Product{" +
+              "typename='" + typename + '\'' +
+              ", item=" + item +
+              ", originalTcin='" + originalTcin + '\'' +
+              ", price=" + price +
+              ", promotions=" + promotions +
+              ", ratingsAndReviews=" + ratingsAndReviews +
+              ", tcin='" + tcin + '\'' +
+              '}';
+   }
 
    public String get_Typename()
    {

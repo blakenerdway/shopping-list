@@ -18,7 +18,7 @@ default_args = {
     'retry_delay': timedelta(minutes=5)
 }
 
-f = open('items-test.json')
+f = open('items-all.json')
 json_items = json.load(f)
 
 

@@ -2,11 +2,13 @@ import multiprocessing
 from multiprocessing.pool import Pool
 from util import run_request
 from grocery_scraper import GroceryScraper
+from fake_headers import Headers
 
 
 class WalmartProductScraper(GroceryScraper):
     def __init__(self, kafka_producer):
         super().__init__(kafka_producer)
+        self.header = Headers(headers=True)
 
     def _generate_request(self, store, product, ret_dict):
         params = {"count": 10,
@@ -15,8 +17,8 @@ class WalmartProductScraper(GroceryScraper):
                   "storeId": store,
                   "query": product}
 
-        headers = {"Accept": "application/json",
-                   "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0"}
+        headers = self.header.generate()
+        headers["Accept"] = "application/json"
 
         url = "https://www.walmart.com/grocery/v4/api/products/search"
 
