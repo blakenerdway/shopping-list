@@ -18,6 +18,7 @@ the different tables.
 Contains the brands that have been seen. Primary key **id** is a foreign key of the [product_info](#product_info) table.
 
 ### Schema
+
 | Field        | Type         | Null | Key | Default           | Extra                                         |
 |:-------------|:-------------|:-----|:----|:------------------|:----------------------------------------------|
 | id           | int          | NO   | PRI | NULL              | auto_increment                                |
@@ -31,6 +32,7 @@ Stores any notes related to some product. This is currently not used, but may be
 or something similar.
 
 ### Schema
+
 | Field        | Type         | Null | Key | Default           | Extra             |
 |:-------------|:-------------|:-----|:----|:------------------|:------------------|
 | id           | int          | NO   | PRI | NULL              | auto_increment    |
@@ -44,6 +46,7 @@ The "main" table that contains all pertinent information to a product entry. Not
 writing.
 
 ### Schema
+
 | Field         | Type         | Null | Key | Default           | Extra                                         |
 |:--------------|:-------------|:-----|:----|:------------------|:----------------------------------------------|
 | id            | int          | NO   | PRI | NULL              | auto_increment                                |
@@ -61,6 +64,7 @@ The product search table is a linking table between the [products](#products) ta
 provides a way to query for an item by a search term.
 
 ### Schema
+
 | Field        | Type      | Null | Key | Default           | Extra             |
 |:-------------|:----------|:-----|:----|:------------------|:------------------|
 | id           | int       | NO   | PRI | NULL              | auto_increment    |
@@ -73,6 +77,7 @@ provides a way to query for an item by a search term.
 The products table contains a row for every product/brand combination.
 
 ### Schema
+
 | Field        | Type         | Null | Key | Default           | Extra                                         |
 |:-------------|:-------------|:-----|:----|:------------------|:----------------------------------------------|
 | id           | int          | NO   | PRI | NULL              | auto_increment                                |
@@ -86,6 +91,7 @@ The products table contains a row for every product/brand combination.
 Contains all the search terms that were used to query the grocery website.
 
 ### Schema
+
 | Field        | Type         | Null | Key | Default           | Extra             |
 |:-------------|:-------------|:-----|:----|:------------------|:------------------|
 | id           | int          | NO   | PRI | NULL              | auto_increment    |
@@ -97,6 +103,7 @@ Contains all the search terms that were used to query the grocery website.
 Contains information related to stores, including location and address.
 
 ### Schema
+
 | Field         | Type         | Null | Key | Default           | Extra                                         |
 |:--------------|:-------------|:-----|:----|:------------------|:----------------------------------------------|
 | id            | int          | NO   | PRI | NULL              |                                               |
