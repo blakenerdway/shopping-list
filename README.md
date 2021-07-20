@@ -1,12 +1,2 @@
-# shopping-list
-Data engineering project for scraping websites
-
-## Running
-`docker-compose up -d`
-`docker-compose stop`
-
-## Requirements
-- Docker
-- Docker-compose
-- Python 3.8
-- Java 8
+# Grocery scraper project
+All information related to the project is found in the [documentation](https://blakenerdway.github.io/shopping-list)
