@@ -1,2 +1,2 @@
-# shopping-list
-Check out the wiki/docs to get all the information. [Link](https://blakenerdway.github.io/shopping-list)
+# Grocery scraper project
+All information related to the project is found in the [documentation](https://blakenerdway.github.io/shopping-list)
