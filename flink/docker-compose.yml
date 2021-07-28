@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   jobmanager:
-    image: flink:1.12-scala_2.12-java8
+    image: flink:1.12-java8
     expose:
       - "6123"
     ports:
