@@ -10,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import shoppinglist.beam.kafka.KafkaReadFactory;
 
-import shoppinglist.beam.products.pojos.products.ProductInfo;
 import shoppinglist.beam.products.pojos.targetjson.Product;
 import shoppinglist.beam.products.pojos.targetjson.TargetProduct;
 import org.apache.beam.sdk.transforms.DoFn;
@@ -51,7 +50,6 @@ public class TargetParse {
                     String input = c.element();
                     TargetProduct productPojo = new Gson().fromJson(input, TargetProduct.class);
                     List<Product> product = productPojo.getResult().getData().getSearch().getProducts();
-//                    _logger.error(input);
                     for (Product product1 : product) {
                        c.output(KV.of(productPojo.getStore(), KV.of(productPojo.getProduct(), product1)));
                     }

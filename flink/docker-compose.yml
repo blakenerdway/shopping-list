@@ -14,7 +14,7 @@ services:
         parallelism.default: 2
         
   taskmanager:
-    image: flink:1.12-scala_2.12-java8
+    image: flink:1.12-java8
     expose:
       - "6121"
       - "6122"
@@ -29,3 +29,6 @@ services:
         jobmanager.rpc.address: jobmanager
         taskmanager.numberOfTaskSlots: 4
         parallelism.default: 2
+    deploy:
+      mode: replicated
+      replicas: 5
