@@ -11,7 +11,7 @@ services:
       - |
         FLINK_PROPERTIES=
         jobmanager.rpc.address: jobmanager
-        parallelism.default: 2
+        parallelism.default: 1
         
   taskmanager:
     image: flink:1.12-java8
@@ -28,7 +28,7 @@ services:
         FLINK_PROPERTIES=
         jobmanager.rpc.address: jobmanager
         taskmanager.numberOfTaskSlots: 4
-        parallelism.default: 2
+        parallelism.default: 1
     deploy:
       mode: replicated
-      replicas: 5
+      replicas: 2
