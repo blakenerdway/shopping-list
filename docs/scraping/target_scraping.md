@@ -30,8 +30,11 @@ determined to be required or important for returning proper values
 After values are returned from the target endpoint, the raw JSON is sent to Kafka for the Beam pipeline to consume and
 parse.
 
-A small example returned value is listed below. The return value is actually about 3x this size, but many values from
-arrays has been removed to try to reduce the size of the data in this example
+A small example returned value is listed at the bottom of this page. 
+
+## Example Product search return value
+The return value is actually about 3x this size, but many values from arrays has been removed to try to reduce the size 
+of the data in this example.
 
 ```
 "result": {
