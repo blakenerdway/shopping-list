@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "pmarsceill/just-the-docs";
+@import "{{ site.theme }}.css";
 .main {
   max-width: none !important;
   margin-right: 2rem !important;
