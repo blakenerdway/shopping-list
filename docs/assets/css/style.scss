@@ -1,5 +1,7 @@
-@import "{{ site.theme }}";
+---
+---
 
+@import "{{ site.theme }}";
 .main {
   max-width: none !important;
   margin-right: 2rem !important;
