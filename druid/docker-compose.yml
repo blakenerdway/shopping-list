@@ -16,7 +16,7 @@
 # specific language governing permissions and limitations
 # under the License.
 #
-version: "2.2"
+version: "3.2"
 
 volumes:
   metadata_data: {}
@@ -57,8 +57,7 @@ services:
       - postgres
     ports:
       - "8081:8081"
-    command:
-      - coordinator
+    command: coordinator
     env_file:
       - environment
 
@@ -73,8 +72,7 @@ services:
       - coordinator
     ports:
       - "8082:8082"
-    command:
-      - broker
+    command: broker
     env_file:
       - environment
 
@@ -90,8 +88,7 @@ services:
       - coordinator
     ports:
       - "8083:8083"
-    command:
-      - historical
+    command: historical
     env_file:
       - environment
 
@@ -107,8 +104,7 @@ services:
       - coordinator
     ports:
       - "8091:8091"
-    command:
-      - middleManager
+    command: middleManager
     env_file:
       - environment
 
@@ -123,7 +119,6 @@ services:
       - coordinator
     ports:
       - "8888:8888"
-    command:
-      - router
+    command: router
     env_file:
       - environment
