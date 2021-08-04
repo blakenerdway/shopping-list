@@ -1,0 +1,22 @@
+@media (min-width: 66.5rem) {
+  .main {
+    margin-left: calc( (100% - 1400px) / 2 + 444px );
+    max-width: none !important;
+    margin-right: 2rem !important;
+  }
+  .side-bar {
+    width: 264px;
+  }
+}
+
+
+@media (min-width: 50rem) {
+  .side-bar {
+    width: 248px;
+  }
+}
+
+.site-header {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
