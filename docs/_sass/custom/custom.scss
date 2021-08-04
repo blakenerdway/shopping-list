@@ -1,11 +1,14 @@
 @media (min-width: 66.5rem) {
   .main {
-    margin-left: calc( (100% - 1400px) / 2 + 444px );
+    margin-left: calc( (100% - 1440px) / 2 + 440px );
     max-width: none !important;
     margin-right: 2rem !important;
   }
   .side-bar {
     width: 264px;
+  }
+  #main-content{
+    margin-left: -10rem;
   }
 }
 
