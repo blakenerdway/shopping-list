@@ -1,10 +1,13 @@
-.main {
-  max-width: none !important;
-  margin-right: 2rem !important;
-}
+@media (min-width: 66.5rem) {
+  .main {
+    margin-left: calc( (100% - 1400px) / 2 + 444px );
+    max-width: none !important;
+    margin-right: 2rem !important;
+  }
 
-.side-bar {
-  width: unset;
+  .side-bar {
+    width: unset;
+  }
 }
 
 .site-header {
